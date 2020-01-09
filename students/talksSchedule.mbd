@@ -1,0 +1,58 @@
+<frontmatter>
+footer:
+</frontmatter>
+{% from "index.mbd" import projects %}
+
+{% macro print_row(student) %}
+<tr>
+<td style="width:150px; height:175px">
+<img src="{{ baseUrl }}/students/{{ student[1] }}/photo.png" height="150" /><br>
+</td>
+<td valign="top" style="border: 1px solid black; padding:5px">
+
+****{{ student[0] }}**** [Topic: <span style="float:right;">Delivery: `1` `2` `3` `4` `5` | Usefulness: `1` `2` `3` `4` `5`]</span><br>
+Liked:
+<br><br>
+To improve:
+
+</td>
+</tr>
+{% endmacro %}
+
+{% macro print_feedback_table(round) %}
+
+## Round {{ round }}
+{{ page_break }}
+
+**Delivery**: `1` very bad | `3` average | `5` very good<br>
+**Usefulness to YOU**: `1` not useful at all | `3` >25% of the talk useful | `5` >75% of the talk useful
+
+<table style="width:100%">
+{% for project in projects %}
+{% for student in project.students %}
+{% if round in student %}
+{{ print_row(student) }}
+{% endif %}
+{% endfor %}
+{% endfor %}
+</table>
+<hr>
+{{ page_break }}
+{% endmacro %}
+
+# Current Round
+
+{{ print_feedback_table('C1') }}
+{{ print_feedback_table('C2') }}
+
+# Previous Rounds
+
+{{ print_feedback_table('B1') }}
+{{ print_feedback_table('B2') }}
+{{ print_feedback_table('B3') }}
+
+{{ print_feedback_table('A1') }}
+{{ print_feedback_table('A2') }}
+{{ print_feedback_table('A3') }}
+
+{{ page_break }}

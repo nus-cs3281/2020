@@ -1,0 +1,37 @@
+<frontmatter>
+title: CS3281&2 - {{ year }} Batch
+header: pagetop.md
+pageNav: 2
+</frontmatter>
+
+# CS3281&2 - {{ year }} Batch
+
+{% set projects = [
+    {name: "MarkBind", students: [
+    ]},
+    {name: "PowerPointLabs", students: [
+    ]},
+    {name: "RepoSense", students: [
+    ]},
+    {name: "SE-EDU", students: [
+    ]},
+    {name: "TEAMMATES", students: [
+    ]}
+] %}
+
+{% for project in projects %}
+**{{ project.name }}:**
+{% for student in project.students %}* [{{ student[0] }}](#{{ student[0] | lower | replace(' ', '-') | replace(',', '')}})
+{% endfor %}
+{% endfor %}
+
+{% for project in projects %}
+# {{ project.name }}
+  {% for student in project.students %}
+
+<include src="students/{{ student[1] }}/studentInfo.md" boilerplate >
+  <span id="name">{{ student[0] }}</span>
+  <span id="folder">{{ student[1] }}</span>
+</include>
+  {% endfor %}
+{% endfor %}

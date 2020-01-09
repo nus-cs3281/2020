@@ -7,15 +7,38 @@ pageNav: 2
 # CS3281&2 - {{ year }} Batch
 
 {% set projects = [
-    {name: "MarkBind", students: [
+    {name: 'MarkBind', students: [
+        ['ANG ZE YU', 'ang-zeyu'],
+        ['DARYL TAN', 'openorclose'],
+        ['LABAYNA NEIL BRIAN NARIDO', 'nbriannl'],
+        ['TAN YUANHONG', 'le0tan'],
+        ['YASH CHOWDHARY', 'yash-chowdhary'],
+        ['YIP SENG YEUN', 'alyip98']
     ]},
-    {name: "PowerPointLabs", students: [
+    {name: 'PowerPointLabs', students: [
+        ['ISKANDAR ZULKARNAIEN B SUHAINI', 'TheRealRavager'],
+        ['MUHAMMAD IRHAM RASYIDI BIN ZAINAL', 'xantho09']
     ]},
-    {name: "RepoSense", students: [
+    {name: 'RepoSense', students: [
+        ['ANUBHAV', 'anubh-v'],
+        ['CHONG CHEE YUAN', 'ccyccyccy'],
+        ['JAMES PANG MUN WAI', 'jamessspanggg'],
+        ['LIU YIWEN', '0blivious'],
+        ['TEJAS BHUWANIA', 'Tejas2805']
     ]},
-    {name: "SE-EDU", students: [
+    {name: 'SE-EDU', students: [
+        ['GE SHUMING', 'geshuming'],
+        ['JEREMY TAN JIERUI', 'Parcly-Taxel'],
+        ['LUM KA FAI JEFFRY', 'j-lum']
     ]},
-    {name: "TEAMMATES", students: [
+    {name: 'TEAMMATES', students: [
+        ['CHAN KOK JING, DARYL', 'dvrylc'],
+        ['JOSHUA WONG HSIEN-CHIEN', 'hcwong'],
+        ['LIM DAEKOON', 'daekoon'],
+        ['MUHAMMAD AHMED BIN ANWAR BAHAJJAJ', 'madanalogy'],
+        ['NI TIANZHEN', 'niqiukun'],
+        ['SNG JIA MING FADI FARIS', 'fadisng'],
+        ['TIU WEE HAN', 'tiuweehan']
     ]}
 ] %}
 

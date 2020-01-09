@@ -18,9 +18,6 @@
  </div>
 </div>
 
-<panel header="**Resume**" minimized>
-  <include src="resume.md" optional />
-</panel>
 <panel header="**Progress**" minimized>
   <include src="progress.md" optional />
 </panel>

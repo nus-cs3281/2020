@@ -1,0 +1,87 @@
+{
+  "enableSearch": true,
+  "pages": [
+    {
+      "headings": {
+        "cs3281-and-2-2020-batch": "CS3281&amp;2 - 2020 Batch",
+        "markbind": "MarkBind",
+        "powerpointlabs": "PowerPointLabs",
+        "reposense": "RepoSense",
+        "se-edu": "SE-EDU",
+        "teammates": "TEAMMATES"
+      },
+      "title": "CS3281&2 - 2020 Batch",
+      "header": "pagetop.md",
+      "pageNav": 2,
+      "src": "index.mbd",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "instructions-for-updating-this-website": "Instructions for Updating this Website",
+        "general-instructions-for-updating-this-repo": "General Instructions for Updating This Repo",
+        "updating-your-basic-info": "Updating Your Basic Info",
+        "updating-your-project-progress": "Updating Your Project Progress",
+        "updating-the-process-observations-page": "Updating the Process Observations Page"
+      },
+      "title": "Updating this website",
+      "header": "pagetop.md",
+      "pageNav": 2,
+      "src": "instructions.mbd",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "observations-from-external-projects": "Observations from External Projects",
+        "markbind": "MarkBind",
+        "chin-kun-song-marvin": "CHIN KUN SONG, MARVIN",
+        "lin-si-jie": "LIN SI JIE",
+        "lu-yang-kenneth": "LU YANG KENNETH",
+        "maddi-aadyaa": "MADDI AADYAA",
+        "tan-zhen-yong": "TAN ZHEN YONG",
+        "powerpointlabs": "PowerPointLabs",
+        "bryan-lew-ju-yu": "BRYAN LEW JU YU",
+        "sng-yu-feng-chester": "SNG YU FENG CHESTER",
+        "yu-pei-henry": "YU PEI, HENRY",
+        "reposense": "RepoSense",
+        "chelsey-ong-hee": "CHELSEY ONG HEE",
+        "gilbert-emerson": "GILBERT EMERSON",
+        "ong-shu-peng": "ONG SHU PENG",
+        "wang-chao": "WANG CHAO",
+        "teammates": "TEAMMATES",
+        "amrut-prabhu": "AMRUT PRABHU",
+        "chattoraj-ayush": "CHATTORAJ AYUSH",
+        "jeremy-choo-wun-ka": "JEREMY CHOO WUN KA",
+        "jiang-chunhui": "JIANG CHUNHUI",
+        "li-pengcheng": "LI PENGCHENG",
+        "monika-manuela-hengki": "MONIKA MANUELA HENGKI",
+        "rahul-rajesh": "RAHUL RAJESH",
+        "ronak-lakhotia": "RONAK LAKHOTIA",
+        "tan-heng-yeow": "TAN HENG YEOW",
+        "wang-junming": "WANG JUNMING"
+      },
+      "header": "pagetop.md",
+      "src": "students/observations.mbd",
+      "title": "",
+      "layout": "default"
+    },
+    {
+      "headings": {
+        "current-round": "Current Round",
+        "round-c1": "Round C1",
+        "round-c2": "Round C2",
+        "previous-rounds": "Previous Rounds",
+        "round-b1": "Round B1",
+        "round-b2": "Round B2",
+        "round-b3": "Round B3",
+        "round-a1": "Round A1",
+        "round-a2": "Round A2",
+        "round-a3": "Round A3"
+      },
+      "footer": null,
+      "src": "students/talksSchedule.mbd",
+      "title": "",
+      "layout": "default"
+    }
+  ]
+}

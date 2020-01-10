@@ -21,12 +21,10 @@ function flattenModals() {
 
 function setupAnchors() {
   jQuery('h1, h2, h3, h4, h5, h6, .header-wrapper').each((index, heading) => {
-    if (heading.id) {
-      jQuery(heading).on('mouseenter',
-                         () => jQuery(heading).find('.fa.fa-anchor').css('visibility', 'visible'));
-      jQuery(heading).on('mouseleave',
-                         () => jQuery(heading).find('.fa.fa-anchor').css('visibility', 'hidden'));
-    }
+    jQuery(heading).on('mouseenter',
+                       () => jQuery(heading).find('.fa.fa-anchor').css('visibility', 'visible'));
+    jQuery(heading).on('mouseleave',
+                       () => jQuery(heading).find('.fa.fa-anchor').css('visibility', 'hidden'));
   });
   jQuery('.fa-anchor').each((index, anchor) => {
     jQuery(anchor).on('click', function () {

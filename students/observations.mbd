@@ -1,5 +1,6 @@
 <frontmatter>
 header: pagetop.md
+pageNav: 2
 </frontmatter>
 {% from "index.mbd" import projects %}
 
@@ -17,7 +18,7 @@ header: pagetop.md
 
 <box>
 
-### {{ student[0] }}
+## {{ student[0] }}
 <include src="{{ student[1] }}/observations.md" />
 </box>
 

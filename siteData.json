@@ -155,6 +155,7 @@
         "my-observations-23": "My Observations"
       },
       "header": "pagetop.md",
+      "pageNav": 2,
       "src": "students/observations.mbd",
       "title": "",
       "layout": "default"

@@ -11,8 +11,6 @@
 
 **GitHub:** <include src="info.md#github" optional inline trim /><br>
 
-**Expert areas:** <include src="info.md#areas" optional inline trim /><br>
-
 **Projects:** <include src="info.md#projects" optional inline trim />
  </div>
  </div>

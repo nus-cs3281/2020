@@ -1,11 +1,11 @@
-## Project: Foo
+### Project: Foo
 
 Give an intro to the project here ...
 
-## My Contributions
+### My Contributions
 
 Give a description of your contributions, including links to relevant PRs
 
-## My Observations
+### My Observations
 
 Give your observations about the project here

@@ -15,7 +15,7 @@
  </div>
  </div>
 </div>
-
+<p/>
 <panel header="**Progress**" minimized>
   <include src="progress.md" optional />
 </panel>

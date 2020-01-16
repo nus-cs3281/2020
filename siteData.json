@@ -163,15 +163,15 @@
     {
       "headings": {
         "current-round": "Current Round",
-        "round-c1": "Round C1",
-        "round-c2": "Round C2",
-        "previous-rounds": "Previous Rounds",
+        "round-a1": "Round A1",
+        "round-a2": "Round A2",
+        "round-a3": "Round A3",
+        "future-rounds": "Future Rounds",
         "round-b1": "Round B1",
         "round-b2": "Round B2",
         "round-b3": "Round B3",
-        "round-a1": "Round A1",
-        "round-a2": "Round A2",
-        "round-a3": "Round A3"
+        "round-c1": "Round C1",
+        "round-c2": "Round C2"
       },
       "footer": null,
       "src": "students/talksSchedule.mbd",

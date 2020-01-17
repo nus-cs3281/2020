@@ -3,4 +3,4 @@
 <span id="github">https://www.github.com/iskandarzulkarnaien</span>
 
 <!-- Give your internal and external projects related to the module -->
-<span id="projects">[PowerPointLabs](https://github.com/powerpointlabs/powerpointlabs)</span>
+<span id="projects">[PowerPointLabs](https://github.com/PowerPointLabs/PowerPointLabs)</span>

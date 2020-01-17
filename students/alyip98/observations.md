@@ -1,6 +1,6 @@
-### Project: Foo
+### Project: Markbind
 
-Give an intro to the project here ...
+MarkBind is a tool for generating content-heavy websites from source files in Markdown format
 
 ### My Contributions
 

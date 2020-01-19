@@ -1,0 +1,3 @@
+Weeks | Achievements
+-----|-------------
+1 |Merged PRs: <ul><li>[[#947]Synchronising different tab views](https://github.com/reposense/RepoSense/pull/948)</li></ul>Submitted Issues:<ul><li>[Give a way to view code for the entire repository](https://github.com/reposense/RepoSense/issues/996)</ul>Reviewed PRs:<ul><li>[[#1005 & #1010] Code Panel: Set file path and code to break into next lines when overflows](https://github.com/reposense/RepoSense/pull/1008)</li><li>[[#946] Improve visualization on sorting parameters](https://github.com/reposense/RepoSense/pull/959)</li><li>[[#980] Date in url adapted without validation](https://github.com/reposense/RepoSense/pull/990)</li></ul>

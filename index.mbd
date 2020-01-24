@@ -13,7 +13,7 @@ pageNav: 2
         ['LABAYNA NEIL BRIAN NARIDO', 'nbriannl', 'A1', 'B3', 'C2'],
         ['TAN YUANHONG', 'le0tan', 'A2', 'B2', 'C1'],
         ['YASH CHOWDHARY', 'yash-chowdhary', 'A1', 'B2', 'C1'],
-        ['YIP SENG YEUN', 'alyip98', 'A1', 'B3', 'C2']
+        ['YIP SENG YEUN', 'alyip98', 'A3', 'B3', 'C2']
     ]},
     {name: 'PowerPointLabs', students: [
         ['ISKANDAR ZULKARNAIEN B SUHAINI', 'iskandarzulkarnaien', 'A2', 'B1', 'C1'],
@@ -37,7 +37,6 @@ pageNav: 2
         ['LIM DAEKOON', 'daekoon', 'A2', 'B2', 'C2'],
         ['MUHAMMAD AHMED BIN ANWAR BAHAJJAJ', 'madanalogy', 'A2', 'B2', 'C2'],
         ['NI TIANZHEN', 'niqiukun', 'A1', 'B3', 'C2'],
-        ['SNG JIA MING FADI FARIS', 'fadisng', 'A3', 'B1', 'C1'],
         ['TIU WEE HAN', 'tiuweehan', 'A1', 'B1', 'C1']
     ]}
 ] %}

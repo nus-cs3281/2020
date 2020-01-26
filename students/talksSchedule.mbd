@@ -42,17 +42,19 @@ To improve:
 
 # Current Round
 
-{{ print_feedback_table('C1') }}
-{{ print_feedback_table('C2') }}
+{{ print_feedback_table('A1') }}
+{{ print_feedback_table('A2') }}
+{{ print_feedback_table('A3') }}
 
-# Previous Rounds
+# Future Rounds
 
 {{ print_feedback_table('B1') }}
 {{ print_feedback_table('B2') }}
 {{ print_feedback_table('B3') }}
 
-{{ print_feedback_table('A1') }}
-{{ print_feedback_table('A2') }}
-{{ print_feedback_table('A3') }}
+{{ page_break }}
+
+{{ print_feedback_table('C1') }}
+{{ print_feedback_table('C2') }}
 
 {{ page_break }}

@@ -8,37 +8,36 @@ pageNav: 2
 
 {% set projects = [
     {name: 'MarkBind', students: [
-        ['ANG ZE YU', 'ang-zeyu'],
-        ['DARYL TAN', 'openorclose'],
-        ['LABAYNA NEIL BRIAN NARIDO', 'nbriannl'],
-        ['TAN YUANHONG', 'le0tan'],
-        ['YASH CHOWDHARY', 'yash-chowdhary'],
-        ['YIP SENG YEUN', 'alyip98']
+        ['ANG ZE YU', 'ang-zeyu', 'A1', 'B3', 'C2'],
+        ['DARYL TAN', 'openorclose', 'A3', 'B2', 'C2'],
+        ['LABAYNA NEIL BRIAN NARIDO', 'nbriannl', 'A1', 'B3', 'C2'],
+        ['TAN YUANHONG', 'le0tan', 'A2', 'B2', 'C1'],
+        ['YASH CHOWDHARY', 'yash-chowdhary', 'A1', 'B2', 'C1'],
+        ['YIP SENG YEUN', 'alyip98', 'A3', 'B3', 'C2']
     ]},
     {name: 'PowerPointLabs', students: [
-        ['ISKANDAR ZULKARNAIEN B SUHAINI', 'TheRealRavager'],
-        ['MUHAMMAD IRHAM RASYIDI BIN ZAINAL', 'xantho09']
+        ['ISKANDAR ZULKARNAIEN B SUHAINI', 'iskandarzulkarnaien', 'A2', 'B1', 'C1'],
+        ['MUHAMMAD IRHAM RASYIDI BIN ZAINAL', 'xantho09', 'A2', 'B2', 'C1']
     ]},
     {name: 'RepoSense', students: [
-        ['ANUBHAV', 'anubh-v'],
-        ['CHONG CHEE YUAN', 'ccyccyccy'],
-        ['JAMES PANG MUN WAI', 'jamessspanggg'],
-        ['LIU YIWEN', '0blivious'],
-        ['TEJAS BHUWANIA', 'Tejas2805']
+        ['ANUBHAV', 'anubh-v', 'A1', 'B1', 'C1'],
+        ['CHONG CHEE YUAN', 'ccyccyccy', 'A3', 'B3', 'C2'],
+        ['JAMES PANG MUN WAI', 'jamessspanggg', 'A3', 'B3', 'C2'],
+        ['LIU YIWEN', '0blivious', 'A3', 'B2', 'C2'],
+        ['TEJAS BHUWANIA', 'Tejas2805', 'A2', 'B1', 'C1']
     ]},
     {name: 'SE-EDU', students: [
-        ['GE SHUMING', 'geshuming'],
-        ['JEREMY TAN JIERUI', 'Parcly-Taxel'],
-        ['LUM KA FAI JEFFRY', 'j-lum']
+        ['GE SHUMING', 'geshuming', 'A2', 'B3', 'C2'],
+        ['JEREMY TAN JIERUI', 'Parcly-Taxel', 'A3', 'B1', 'C1'],
+        ['LUM KA FAI JEFFRY', 'j-lum', 'A1', 'B1', 'C1']
     ]},
     {name: 'TEAMMATES', students: [
-        ['CHAN KOK JING, DARYL', 'dvrylc'],
-        ['JOSHUA WONG HSIEN-CHIEN', 'hcwong'],
-        ['LIM DAEKOON', 'daekoon'],
-        ['MUHAMMAD AHMED BIN ANWAR BAHAJJAJ', 'madanalogy'],
-        ['NI TIANZHEN', 'niqiukun'],
-        ['SNG JIA MING FADI FARIS', 'fadisng'],
-        ['TIU WEE HAN', 'tiuweehan']
+        ['CHAN KOK JING, DARYL', 'dvrylc', 'A3', 'B1', 'C1'],
+        ['JOSHUA WONG HSIEN-CHIEN', 'hcwong', 'A2', 'B2', 'C1'],
+        ['LIM DAEKOON', 'daekoon', 'A2', 'B2', 'C2'],
+        ['MUHAMMAD AHMED BIN ANWAR BAHAJJAJ', 'madanalogy', 'A2', 'B2', 'C2'],
+        ['NI TIANZHEN', 'niqiukun', 'A1', 'B3', 'C2'],
+        ['TIU WEE HAN', 'tiuweehan', 'A1', 'B1', 'C1']
     ]}
 ] %}
 

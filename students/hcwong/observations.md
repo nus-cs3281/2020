@@ -1,11 +1,11 @@
-### Project: Foo
+### Project: Hugo
 
-Give an intro to the project here ...
+Hugo is a widely used static site generator written in Go, with over 40.7k stars on Github.
 
 ### My Contributions
 
-Give a description of your contributions, including links to relevant PRs
+Added support for raw string literals to be used in the shortcode params. Link to PR [here](https://github.com/gohugoio/hugo/pull/6753/)
 
 ### My Observations
 
-Give your observations about the project here
+The lexer was based on a talk by Rob Pike and is quite interesting.

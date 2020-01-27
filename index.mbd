@@ -9,9 +9,9 @@ pageNav: 2
 {% set projects = [
     {name: 'MarkBind', students: [
         ['ANG ZE YU', 'ang-zeyu', 'A1', 'B3', 'C2'],
-        ['DARYL TAN', 'openorclose', 'A3', 'B2', 'C2'],
+        ['DARYL TAN', 'openorclose', 'A2', 'B2', 'C2'],
         ['LABAYNA NEIL BRIAN NARIDO', 'nbriannl', 'A1', 'B3', 'C2'],
-        ['TAN YUANHONG', 'le0tan', 'A2', 'B2', 'C1'],
+        ['TAN YUANHONG', 'le0tan', 'A3', 'B2', 'C1'],
         ['YASH CHOWDHARY', 'yash-chowdhary', 'A1', 'B2', 'C1'],
         ['YIP SENG YEUN', 'alyip98', 'A3', 'B3', 'C2']
     ]},

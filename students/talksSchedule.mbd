@@ -11,6 +11,7 @@ footer:
 <td valign="top" style="border: 1px solid black; padding:5px">
 
 ****{{ student[0] }}**** [Topic: <span style="float:right;">Delivery: `1` `2` `3` `4` `5` | Usefulness: `1` `2` `3` `4` `5`]</span><br>
+:far-square: started with PUNCH | :far-square: gave WIIFY | :far-square: gave roadmap | :far-square: key points clear | :far-square: ended with key points and CtA<br>
 Liked:
 <br><br>
 To improve:

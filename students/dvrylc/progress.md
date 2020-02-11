@@ -14,3 +14,4 @@ Week | Achievements
 3 | Merged PR: [[vscode] Hide Markdown preview editor icon when there is no active icon theme](https://github.com/microsoft/vscode/pull/88692)
 4 | Merged PR: [[gatsby] fix(gatsby-graphiql-explorer): Allow graphiql to set initial query variables from query string](https://github.com/gatsbyjs/gatsby/pull/21158)
 4 | Submitted PR: [[gatsby] refactor(www): Split up gatsby-node](https://github.com/gatsbyjs/gatsby/pull/21217)
+5 | Merged PR: [[gatsby] refactor(www): Split up gatsby-node](https://github.com/gatsbyjs/gatsby/pull/21217)

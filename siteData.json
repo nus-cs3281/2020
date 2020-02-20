@@ -172,6 +172,15 @@
       "src": "students/talksSchedule.mbd",
       "title": "",
       "layout": "default"
+    },
+    {
+      "headings": {
+        "feedback-for-round-a-slides": "Feedback for Round A Slides"
+      },
+      "footer": null,
+      "src": "students/worksheet.mbd",
+      "title": "",
+      "layout": "default"
     }
   ]
 }

@@ -21,6 +21,8 @@ Week | Achievements
 
 ### RepoSense
 
+Week | Achievements
+---- | ------------
 4 | Submitted issue - RepoSense: [Add Issue Selector and Templates #1052](https://github.com/reposense/RepoSense/issues/1052)
 6 | Authored PR (WIP) - RepoSense : [Add issue templates #1063](https://github.com/reposense/RepoSense/pull/1063)
 6 | Investigated Issue - RepoSense : [Test: use generic throw Exception in all tests #937](https://github.com/reposense/RepoSense/issues/937)

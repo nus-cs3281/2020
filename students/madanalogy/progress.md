@@ -6,3 +6,6 @@ Week | Achievements
 3 | Merged PR: [Login Dropdown List is Not Positioned Properly #9924](https://github.com/TEAMMATES/teammates/pull/9924)
 4 | Merged PR: [Remove HttpRequestService dependency from StudentListComponent #9927](https://github.com/TEAMMATES/teammates/pull/9927)
 4 | Reviewed new contributor PR: [#9941](https://github.com/TEAMMATES/teammates/pull/9941)
+5 | Merged PR: [Add Access Control Tests for UpdateFeedbackResponseAction](https://github.com/TEAMMATES/teammates/pull/9930)
+6 | Raised Issue: [Add Cancel Button for Course Editing](https://github.com/TEAMMATES/teammates/issues/9948)
+6 | Merged PR: [Add MasqueradeModeService Tests](https://github.com/TEAMMATES/teammates/pull/9955)

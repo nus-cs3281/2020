@@ -31,5 +31,5 @@ Week | Achievements
 Week | Achievements
 ---- | ------------
 4 | Investigated issue: [Hard to understand code snippet in v_summary.js/#1047](https://github.com/reposense/RepoSense/issues/1047)
-4 | Merged PRs: [Simplify toDisplay user logic in v_summary/#1051](https://github.com/reposense/RepoSense/pull/1051)
+4 | Authored PRs: [Simplify toDisplay user logic in v_summary/#1051](https://github.com/reposense/RepoSense/pull/1051)
 8 | Merged PRs: [Simplify toDisplay user logic in v_summary/#1051](https://github.com/reposense/RepoSense/pull/1051)

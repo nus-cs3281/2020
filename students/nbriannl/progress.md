@@ -17,3 +17,6 @@ Week | Achievements
 7 | Merged PR: [Add warnings for conflicting/deprecated component attribs markbind/#1057](https://github.com/MarkBind/vue-strap/pull/1057)
 7 | Reviewed PR: [Add dividers and fix bug in siteNav markbind/#1063](https://github.com/MarkBind/markbind/pull/1063)
 8 | Reviewed PR: [Add example for using multiple features in code-blocks markbind/#1102](https://github.com/MarkBind/vue-strap/pull/1102)
+8 | Reviewed PR: [Align and use fixed widths for icons vue-strap/#131](https://github.com/MarkBind/vue-strap/pull/131)
+8 | Reviewed PR: [Convert to code block markbind/#1086](https://github.com/MarkBind/markbind/pull/1086)
+8 | Submitted Issue: [User Guide: Document more styling methods for NavBar markbind/#1113](https://github.com/MarkBind/markbind/issues/1113)

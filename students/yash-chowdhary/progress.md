@@ -19,7 +19,7 @@ Week | Achievements
 6 | Merged PR  : [TipBox.vue: Support different size icons #124](https://github.com/MarkBind/vue-strap/pull/124)
 Recess | Authored PR (WIP) : [Add copy code-block plugin #1043](https://github.com/MarkBind/markbind/pull/1043)
 7 | Submitted Issue : [Improper linking of headings that have part of text enclosed within "<>" #1076](https://github.com/MarkBind/markbind/issues/1076)
-7 | Investigated Issue : [Remove <include dynamic ... /> implementations #1036](https://github.com/MarkBind/markbind/issues/1036)
+7 | Investigated Issue : [Remove `<include dynamic ... />` implementations #1036](https://github.com/MarkBind/markbind/issues/1036)
 7 | Investigated Issue : [Built-in Variable timestamp: support specifying a time zone #1072](https://github.com/MarkBind/markbind/issues/1072)
 8 | Investigated Issue : [Upgrade js-beautify and provide a site configuration option to turn it on #1067](https://github.com/MarkBind/markbind/issues/1067) 
 8 | Merged PR : [Enable AppVeyor CI #1040](https://github.com/MarkBind/markbind/pull/1040)

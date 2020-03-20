@@ -20,7 +20,7 @@ React-Bootstrap is a open source library of Bootstrap 4 components re-built with
 
 1. The project encouraged **Test Driven Development**, which provided me a straightforward and pleasant experience when working on an enhancement. First, I add small unit test like the code block below representing my intended behavior. Then, I will code until I pass the test case. In MarkBind, I would have my own test site and add all the components and attributes I want to test for in the markdown file. While coding a feature, I would `serve` the test site and visually check if I have implemented my intended behavior. It works but is slightly a more clunky experience, and visual inspection is not always reliable. Why I did not use the existing snapshot-like testing tool MarkBind had, i.e. `npm run testwin`, is something worth further reflection/discussion with the MarkBind team. I know for sure, one thing I appreciated in React-Bootstrap, was that their **testing framework gave feedback via a delightful UI**, showing specific headings stating which component and what behavior is currently being tested. One could consider my observation a small nit, but in my opinion, it goes a long way in encouraging test driven development.
 
-  ```js {heading="Adding an as prop with legend value should turn the DOM type to a legend"}
+  ```js{heading="Adding an as prop with legend value should turn the DOM type to a legend"}
   it("accepts as prop", () => {
     mount(<FormLabel as="legend">body</FormLabel>).assertSingle("legend");
   });

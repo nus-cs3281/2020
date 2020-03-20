@@ -498,12 +498,54 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-3">Project: Foo<a class="fa fa-anchor" href="#project-foo-3"></a></h3>
-                <p>Give an intro to the project here ...</p>
+                <h3 id="project-react-bootstrap">Project: <a href="https://react-bootstrap.github.io/">React Bootstrap</a><a class="fa fa-anchor" href="#project-react-bootstrap"></a></h3>
+                <p>React-Bootstrap is a open source library of Bootstrap 4 components re-built with React, to be used with React.</p>
+                <p><strong>Links to documentation of project workflow:</strong></p>
+                <ul>
+                  <li><a href="https://github.com/react-bootstrap/react-bootstrap/blob/master/CONTRIBUTING.md">Contributing</a></li>
+                  <li><a href="https://github.com/react-bootstrap/react-bootstrap/blob/master/MAINTAINING.md">Maintaining</a></li>
+                </ul>
                 <h3 id="my-contributions-3">My Contributions<a class="fa fa-anchor" href="#my-contributions-3"></a></h3>
-                <p>Give a description of your contributions, including links to relevant PRs</p>
+                <ul>
+                  <li><a href="https://github.com/react-bootstrap/react-bootstrap/pull/5041">docs(Navs): Add missing documentation for NavDropdown on website #5041</a></li>
+                  <li><a href="https://github.com/react-bootstrap/react-bootstrap/pull/5044">Make FormLabel support <code>as</code> prop #5044</a></li>
+                </ul>
                 <h3 id="my-observations-3">My Observations<a class="fa fa-anchor" href="#my-observations-3"></a></h3>
-                <p>Give your observations about the project here</p>
+                <ol>
+                  <li>
+                    <p>The use of a <strong>sandbox environment with an intergrated editor</strong>, particulary via <a href="http://codesandbox.io">codesandbox.io</a> makes it easier to report bugs. One just needs to paste the corresponding source code, and the rendered output can be seen on the other half of the screen. Bug reporters would also give brief instructions, such as steps for reproduction or state what to focus on. The sandbox environment makes it easy for developers to see what bug is being reporting, and reproduce issues easily and quickly. It seems that for now, sandboxes in <a href="http://sandbox.io">sandbox.io</a> can be configured for popular libraries (such as Vue, React, Angular), it would be extremely nice to investigate how to configure one for MarkBind. Be it by talking to the developers of <a href="http://codesandbox.io">codesandbox.io</a> or by building our own code playground ourselves.</p>
+                  </li>
+                  <li>
+                    <p>Writing documentation comments on the attributes in javascript comment (in React terms, <code>props</code>), <strong>automatically generates documentation</strong> in the form of a table. This is acheived via the use of a <a href="https://github.com/react-bootstrap/react-bootstrap/blob/master/www/src/components/ComponentApi.js">function/component</a> they made themselves. This makes the documentation and code always in sync, and also decreasing the number of places to update from the 2 places (the code, and the docs), to just 1 place (the code). This is easy for the project to implement because each React-Bootstrap component is isolated in its own React Javascript file. The closest thing we have similar in MarkBind would be vue-strap components. Unfortunately, it seems more difficult to do the same for MarkBind syntax, especially elements that use <code>markdown-it-attrs</code>.</p>
+                  </li>
+                  <li>
+                    <p>The project encouraged <strong>Test Driven Development</strong>, which provided me a straightforward and pleasant experience when working on an enhancement. First, I add small unit test like the code block below representing my intended behavior. Then, I will code until I pass the test case. In MarkBind, I would have my own test site and add all the components and attributes I want to test for in the markdown file. While coding a feature, I would <code>serve</code> the test site and visually check if I have implemented my intended behavior. It works but is slightly a more clunky experience, and visual inspection is not always reliable. Why I did not use the existing snapshot-like testing tool MarkBind had, i.e. <code>npm run testwin</code>, is something worth further reflection/discussion with the MarkBind team. I know for sure, one thing I appreciated in React-Bootstrap, was that their <strong>testing framework gave feedback via a delightful UI</strong>, showing specific headings stating which component and what behavior is currently being tested. One could consider my observation a small nit, but in my opinion, it goes a long way in encouraging test driven development.</p>
+                  </li>
+                </ol>
+                <pre><code class="hljs js">it(<span class="hljs-string">"accepts as prop"</span>, () =&gt; {
+  mount(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">FormLabel</span> <span class="hljs-attr">as</span>=<span class="hljs-string">"legend"</span>&gt;</span>body<span class="hljs-tag">&lt;/<span class="hljs-name">FormLabel</span>&gt;</span></span>).assertSingle(<span class="hljs-string">"legend"</span>);
+});
+</code></pre>
+                <ol start="4">
+                  <li>
+                    <p><strong>Public communication channels</strong> are important for both users and developers of open source libraries. Bootstrap-React has a public Discord as an open channel for contributors, new and old, to come and discuss, or ask quick questions, regarding the project/workflow. I learnt from one of the maintainers in the channel that discussions over the project take place both in Github issues as well as in the Discord channel. To my knowledge, MarkBind has a Slack, but it seems to be invite only. Should MarkBind want to open up to public contributors, it should consider providing and promoting a public channel as well. When it comes to usage of the library, Bootstrap-React directs such questions to Stack Overflow with questions tagged <code>react-bootstrap</code>, or a different channel in their Discord suited for &quot;How do I use X&quot; type of queries.</p>
+                  </li>
+                  <li>
+                    <p><strong>Code coverage</strong> is a major issue for the project, starting June 11 2019 and almost completed. To organise efforts to increase the coverage of tests, a central hub was created in the form of a pinned Github issue. In it, was a checkbox list of links to a code coverage site (<a href="http://codecov.io">codecov.io</a>) that detailed coverage per file, mostly those of the major components. From that page, interested contributors can indicate their interest to add tests for a specific component, preventing contributors from doing overlapping work.</p>
+                  </li>
+                  <li>
+                    <p>The use of <strong>Prettier</strong> reduced the possibiliy of dealing with coding style nits, both as a contributor as well as a reviewer. Speeding the time taken to have a successful PR. Which can and had been suggested for MarkBind before.</p>
+                  </li>
+                  <li>
+                    <p>These two observations are things worth taking note when a library/project matures. One of the issue raised was regarding adding <strong>blog for future releases</strong>, which is useful for users of the library to reference to when migrating to a newer release. MarkBind is still relatively young. But in the far future, when we might go to v3, we need to take not of having a point of reference for migrators. Another issue raised asked <strong>what organisations are using Bootstrap-React</strong>. Even though Bootstrap-React is <code>Used by</code> 198172 repos, even such a widely use library does not know if it's used by any major organisation. Unfortunately, only 2 organisations replied to that issue, which is now buried past the first page of issues.</p>
+                  </li>
+                  <li>
+                    <p>Bootstrap-React has a <strong>repo of examples</strong>. Which is useful for users to reference to. Beyond the 2 templates for Markbind, we can consider adding templates showing more in depth usages, or suited to a particular use case. For example, a 'portfolio site' template, or a 'module site' template.</p>
+                  </li>
+                  <li>
+                    <p><strong>Lack of Triaging is not the end of the world</strong> to a project. While exploring projects before Bootstrap-React, I realised that even the <code>good first issue</code> label isn't exactly useful. If anything, it's rarely labeled accordingly in most projects I've seen, or very quickly taken up. From my observations, if you have active maintainers commenting on issues, it does alot to encourage new contributors on bored. There are better way to judge whether a project is in good health, such as by seeing that new PRs are merged to close to a day to day basis, as opposed to how colorful their issues are labelled.</p>
+                  </li>
+                </ol>
               </div>
             </panel>
           </box>
@@ -618,7 +660,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-4">Project: Foo<a class="fa fa-anchor" href="#project-foo-4"></a></h3>
+                <h3 id="project-foo-3">Project: Foo<a class="fa fa-anchor" href="#project-foo-3"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-4">My Contributions<a class="fa fa-anchor" href="#my-contributions-4"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -790,7 +832,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-5">Project: Foo<a class="fa fa-anchor" href="#project-foo-5"></a></h3>
+                <h3 id="project-foo-4">Project: Foo<a class="fa fa-anchor" href="#project-foo-4"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-5">My Contributions<a class="fa fa-anchor" href="#my-contributions-5"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -849,7 +891,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-6">Project: Foo<a class="fa fa-anchor" href="#project-foo-6"></a></h3>
+                <h3 id="project-foo-5">Project: Foo<a class="fa fa-anchor" href="#project-foo-5"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-7">My Contributions<a class="fa fa-anchor" href="#my-contributions-7"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -878,7 +920,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-7">Project: Foo<a class="fa fa-anchor" href="#project-foo-7"></a></h3>
+                <h3 id="project-foo-6">Project: Foo<a class="fa fa-anchor" href="#project-foo-6"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-8">My Contributions<a class="fa fa-anchor" href="#my-contributions-8"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -1057,7 +1099,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-8">Project: Foo<a class="fa fa-anchor" href="#project-foo-8"></a></h3>
+                <h3 id="project-foo-7">Project: Foo<a class="fa fa-anchor" href="#project-foo-7"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-9">My Contributions<a class="fa fa-anchor" href="#my-contributions-9"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -1127,7 +1169,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-9">Project: Foo<a class="fa fa-anchor" href="#project-foo-9"></a></h3>
+                <h3 id="project-foo-8">Project: Foo<a class="fa fa-anchor" href="#project-foo-8"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-10">My Contributions<a class="fa fa-anchor" href="#my-contributions-10"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -1347,7 +1389,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-10">Project: Foo<a class="fa fa-anchor" href="#project-foo-10"></a></h3>
+                <h3 id="project-foo-9">Project: Foo<a class="fa fa-anchor" href="#project-foo-9"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-11">My Contributions<a class="fa fa-anchor" href="#my-contributions-11"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -1493,7 +1535,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-11">Project: Foo<a class="fa fa-anchor" href="#project-foo-11"></a></h3>
+                <h3 id="project-foo-10">Project: Foo<a class="fa fa-anchor" href="#project-foo-10"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-12">My Contributions<a class="fa fa-anchor" href="#my-contributions-12"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -1663,7 +1705,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-12">Project: Foo<a class="fa fa-anchor" href="#project-foo-12"></a></h3>
+                <h3 id="project-foo-11">Project: Foo<a class="fa fa-anchor" href="#project-foo-11"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-13">My Contributions<a class="fa fa-anchor" href="#my-contributions-13"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -1693,7 +1735,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-13">Project: Foo<a class="fa fa-anchor" href="#project-foo-13"></a></h3>
+                <h3 id="project-foo-12">Project: Foo<a class="fa fa-anchor" href="#project-foo-12"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-14">My Contributions<a class="fa fa-anchor" href="#my-contributions-14"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -1798,7 +1840,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-14">Project: Foo<a class="fa fa-anchor" href="#project-foo-14"></a></h3>
+                <h3 id="project-foo-13">Project: Foo<a class="fa fa-anchor" href="#project-foo-13"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-16">My Contributions<a class="fa fa-anchor" href="#my-contributions-16"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -1909,7 +1951,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-15">Project: Foo<a class="fa fa-anchor" href="#project-foo-15"></a></h3>
+                <h3 id="project-foo-14">Project: Foo<a class="fa fa-anchor" href="#project-foo-14"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-17">My Contributions<a class="fa fa-anchor" href="#my-contributions-17"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -2143,7 +2185,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-16">Project: Foo<a class="fa fa-anchor" href="#project-foo-16"></a></h3>
+                <h3 id="project-foo-15">Project: Foo<a class="fa fa-anchor" href="#project-foo-15"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-19">My Contributions<a class="fa fa-anchor" href="#my-contributions-19"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -2231,7 +2273,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-17">Project: Foo<a class="fa fa-anchor" href="#project-foo-17"></a></h3>
+                <h3 id="project-foo-16">Project: Foo<a class="fa fa-anchor" href="#project-foo-16"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-20">My Contributions<a class="fa fa-anchor" href="#my-contributions-20"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -2285,7 +2327,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-18">Project: Foo<a class="fa fa-anchor" href="#project-foo-18"></a></h3>
+                <h3 id="project-foo-17">Project: Foo<a class="fa fa-anchor" href="#project-foo-17"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-21">My Contributions<a class="fa fa-anchor" href="#my-contributions-21"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -2385,7 +2427,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-19">Project: Foo<a class="fa fa-anchor" href="#project-foo-19"></a></h3>
+                <h3 id="project-foo-18">Project: Foo<a class="fa fa-anchor" href="#project-foo-18"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-22">My Contributions<a class="fa fa-anchor" href="#my-contributions-22"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -2445,7 +2487,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Fri, 20 Mar 2020 06:05:07 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Fri, 20 Mar 2020 12:08:48 GMT</small></p>
       </div>
     </footer>
   </div>

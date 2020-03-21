@@ -20,3 +20,4 @@ Week | Achievements
 8 | Reviewed PR: [Align and use fixed widths for icons vue-strap/#131](https://github.com/MarkBind/vue-strap/pull/131)
 8 | Reviewed PR: [Convert to code block markbind/#1086](https://github.com/MarkBind/markbind/pull/1086)
 8 | Submitted Issue: [User Guide: Document more styling methods for NavBar markbind/#1113](https://github.com/MarkBind/markbind/issues/1113)
+9 | Authored PR: [Code blocks: Implement inline markdown support for heading markbind/#1137](https://github.com/MarkBind/vue-strap/pull/1137)

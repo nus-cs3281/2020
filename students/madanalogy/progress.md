@@ -1,4 +1,4 @@
-## TEAMMATES
+### TEAMMATES
 
 Week | Achievements
 ---- | ------------
@@ -18,7 +18,7 @@ Week | Achievements
 9 | Reviewed PR: [Create Unit Tests for Feedback*QuestionDetails classes #9984](https://github.com/TEAMMATES/teammates/pull/9984)
 10 | Merged PR: [Add Instructor Institution Validation #9912](https://github.com/TEAMMATES/teammates/pull/9912)
 
-## MarkBind
+### MarkBind
 
 Week | Achievements
 ---- | ------------

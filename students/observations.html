@@ -355,18 +355,46 @@
         <box>
           <h2 id="muhammad-ahmed-bin-anwar-bahajjaj">MUHAMMAD AHMED BIN ANWAR BAHAJJAJ<a class="fa fa-anchor" href="#muhammad-ahmed-bin-anwar-bahajjaj"></a></h2>
           <div>
-            <h3 id="project-foo-16">Project: Foo<a class="fa fa-anchor" href="#project-foo-16"></a></h3>
-            <p>Give an intro to the project here ...</p>
+            <h3 id="project-owasp-zed-attack-proxy-zap">Project: OWASP Zed-Attack-Proxy (ZAP)<a class="fa fa-anchor" href="#project-owasp-zed-attack-proxy-zap"></a></h3>
+            <p><a href="https://www.zaproxy.org">ZAP</a> is a flagship project from the Open Web Application Security Project (<a href="https://owasp.org">OWASP</a>) that has become the world's most popular free, open source web security tool. ZAP is actively used by penetration testers and security specialists worldwide, maintained by a dedicated international team of volunteers. Under the hood, ZAP is a complex and mature Java desktop application created for web application security testing with an experienced and dedicated core of developers and maintainers.</p>
             <h3 id="my-contributions-20">My Contributions<a class="fa fa-anchor" href="#my-contributions-20"></a></h3>
-            <p>Give a description of your contributions, including links to relevant PRs</p>
+            <h4 id="enhancement-csrf-token-regeneration-in-http-manual-resend">Enhancement: CSRF Token Regeneration in HTTP Manual Resend</h4>
+            <p>I added a button to the HTTP manual resend screen in ZAP core to enable regeneration of the Anti-CSRF token if any were present. This addition was difficult as it involved code from the UI all the way to the HTTP APIs. Furthermore, extensive research on Cross Site Request Forgery (CSRF) attacks and their protection mechanisms was required to understand how to regenerate anti-csrf tokens and inject them into the HTTP request to be sent out.</p>
+            <p>Relevant PRs:</p>
+            <ul>
+              <li><a href="https://github.com/zaproxy/zaproxy/pull/5828">Add a button on the resend screen to inject a CSRF token #5828</a></li>
+              <li><a href="https://github.com/zaproxy/zap-core-help/pull/301">Add help message for Regenerate Anti-CSRF #301</a></li>
+            </ul>
+            <h4 id="enhancement-passive-scan-rule-for-dangerous-js-functions">Enhancement: Passive Scan Rule for Dangerous JS Functions</h4>
+            <p>I added a new passive scan rule to ZAP which would allow for the scanning of HTML and javascript responses to look for dangerous JS functions that could leave a web application vulnerable. The implementation for this was particularly difficult as the senior developers suggested I support a custom payload so that users can define their own functions to look for at runtime. On top of learning how HTML/JS is structured for effective scanning, I had to learn how to utilise a custom extension and manage dependencies in gradle.</p>
+            <p>Relevant PRs:</p>
+            <ul>
+              <li><a href="https://github.com/zaproxy/zap-extensions/pull/2317">Add passive scan rule for dangerous js functions #2317</a></li>
+              <li><a href="https://github.com/zaproxy/zaproxy/pull/5882">Update scanners.md for dangerous js function scanner id #5882</a></li>
+            </ul>
             <h3 id="my-observations-20">My Observations<a class="fa fa-anchor" href="#my-observations-20"></a></h3>
-            <p>Give your observations about the project here</p>
+            <h4 id="external-project-workflow">External Project Workflow</h4>
+            <p>ZAP has extensive documentation on contribution and development guidelines. In brief, they follow a forking workflow similar to most OSS projects, and require that PRs made be associated with issues raised. There was also a very useful blog post series outlining in detail how one can start contributing to ZAP.</p>
+            <p>Relevant Links:</p>
+            <ul>
+              <li><a href="https://github.com/zaproxy/zaproxy/blob/develop/CONTRIBUTING.md">Contributing to OWASP ZAP</a></li>
+              <li><a href="https://github.com/zaproxy/zaproxy/wiki/DevGuidelines">Development Rules &amp; Guidelines</a></li>
+              <li><a href="https://www.zaproxy.org/blog/2014-03-10-hacking-zap-1-why-should-you/">Hack The ZAP Source Code</a></li>
+            </ul>
+            <h4 id="important-lessons-learned">Important Lessons Learned</h4>
+            <p>I chose ZAP as my external project so that I could begin to develop expertise in both <strong>Java</strong> and <strong>Computer Security</strong>. I learned a lot about functional interfaces, callback patterns, and method forwarding in Java. I also learned in greater depth how UI design and implementation is done in Java swing. One interesting lesson was how to operate multiple repositories in one workspace on IntelliJ. Since my external project had different git repositories interacting with each other, learning how to work with multiple modules using gradle was quite enlightening.</p>
+            <p>Equally as important was the knowledge I gained about web application security. The contributions I made to ZAP were highly non-trivial and required extensive research into security concepts. I learned a lot about the CSRF attack as well as professional defences against it in great detail. I was also exposed to a lot of application security concepts in breadth and have a much better appreciation for the topic now, with a firm grasp of the jargon involved.</p>
+            <p>Additionally, one of the most important lessons for me was learning how to ask for help. This was the first time I had to work on such a complex project that I couldn't easily understand how things worked. Learning to ask the right questions and getting over the fact that you just had no idea what was going on was a very humbling experience.</p>
+            <h4 id="suggestions-for-internal-project">Suggestions for Internal Project</h4>
+            <p>Currently, TEAMMATES requires a review from a &quot;junior&quot; developer followed by a review by a senior developer for PR merging or approval. In that sense, there exists two teams of starkly different authority over the application. The current two-tier structure limits the availability of developers with the capacity to deal with issues like stale PRs or design conflicts, and furthermore restricts the agency of the junior developer which consequently carries the potential to disincentivise them from further involvement.</p>
+            <p>One interesting practice of the external project that I feel could be adopted by TEAMMATES was the relatively flat maintainer hierarchy approach to resolving PRs and issues. In order to be merged, PRs in my external project required two approvals from the dev team. There only exists the one team, and two approvals from any member of the team suffices for resolving PRs. In that sense, each member of the dev team carried with them equal ownership over the project, which could be a very large motivating factor for continued involvement.</p>
+            <p>My suggestion is that a similar approach be taken with TEAMMATES, where either the function of the senior dev team gets expanded to allow inclusion of some junior developers or more authority is given to the junior development team (e.g. two reviews from a junior dev is equivalent to one from a senior dev). This helps provide the agency needed to sustain involvement and subsequently grow the application. The success of an open source project relies upon the developer experience, which is directly improved with a larger pool of dedicated maintainers to attend to new contributors and triage issues.</p>
           </div>
         </box>
         <box>
           <h2 id="ni-tianzhen">NI TIANZHEN<a class="fa fa-anchor" href="#ni-tianzhen"></a></h2>
           <div>
-            <h3 id="project-foo-17">Project: Foo<a class="fa fa-anchor" href="#project-foo-17"></a></h3>
+            <h3 id="project-foo-16">Project: Foo<a class="fa fa-anchor" href="#project-foo-16"></a></h3>
             <p>Give an intro to the project here ...</p>
             <h3 id="my-contributions-21">My Contributions<a class="fa fa-anchor" href="#my-contributions-21"></a></h3>
             <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -377,7 +405,7 @@
         <box>
           <h2 id="tiu-wee-han">TIU WEE HAN<a class="fa fa-anchor" href="#tiu-wee-han"></a></h2>
           <div>
-            <h3 id="project-foo-18">Project: Foo<a class="fa fa-anchor" href="#project-foo-18"></a></h3>
+            <h3 id="project-foo-17">Project: Foo<a class="fa fa-anchor" href="#project-foo-17"></a></h3>
             <p>Give an intro to the project here ...</p>
             <h3 id="my-contributions-22">My Contributions<a class="fa fa-anchor" href="#my-contributions-22"></a></h3>
             <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -435,7 +463,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sat, 21 Mar 2020 13:12:10 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sat, 21 Mar 2020 14:15:07 GMT</small></p>
       </div>
     </footer>
   </div>

@@ -240,29 +240,65 @@
         <box>
           <h2 id="james-pang-mun-wai">JAMES PANG MUN WAI<a class="fa fa-anchor" href="#james-pang-mun-wai"></a></h2>
           <div>
-            <h3 id="project-foo-9">Project: Foo<a class="fa fa-anchor" href="#project-foo-9"></a></h3>
-            <p>Give an intro to the project here ...</p>
+            <h3 id="project-openrefine">Project: <a href="http://openrefine.org">OpenRefine</a><a class="fa fa-anchor" href="#project-openrefine"></a></h3>
+            <p>OpenRefine (previously known as Google Refine) is a powerful tool for working with messy data. The tool is capable of cleaning data, transforming it from one format into another, and extending it with web services and external data.</p>
+            <p>The server-side of OpenRefine is implemented in Java as a single servlet which is executed by the <a href="http://jetty.codehaus.org/jetty/">Jetty</a> web server + servlet container. The client-side is implemented in HTML, CSS, Javascript and libraries such as <a href="http://jquery.com/">jQuery</a>, <a href="https://github.com/recurser/jquery-i18n">Recurser jquery-i18n</a>.</p>
+            <h3 id="project-documents">Project Documents<a class="fa fa-anchor" href="#project-documents"></a></h3>
+            <ul>
+              <li><a href="https://github.com/OpenRefine/OpenRefine/blob/master/CONTRIBUTING.md">Contribution Guidelines</a></li>
+              <li><a href="https://github.com/OpenRefine/OpenRefine/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+              <li><a href="https://github.com/OpenRefine/OpenRefine/wiki/Documentation-For-Users">User Guide</a></li>
+              <li><a href="https://github.com/OpenRefine/OpenRefine/blob/master/README.md">Project README</a></li>
+            </ul>
             <h3 id="my-contributions-11">My Contributions<a class="fa fa-anchor" href="#my-contributions-11"></a></h3>
-            <p>Give a description of your contributions, including links to relevant PRs</p>
+            <p>The following are my merged PRs for OpenRefine:</p>
+            <ol>
+              <li><a href="https://github.com/OpenRefine/OpenRefine/pull/2275">Translate Sort link to the language of the UI</a></li>
+              <li><a href="https://github.com/OpenRefine/OpenRefine/pull/2274">Standardise 'edit' cell dialogue with 'toNumber()' when parsing String to Number</a></li>
+              <li><a href="https://github.com/OpenRefine/OpenRefine/pull/2297">[#2220] Add facet for blank values/records per column</a></li>
+              <li><a href="https://github.com/OpenRefine/OpenRefine/pull/2296">[#2280] Add fill down and blank down operations for all columns</a></li>
+            </ol>
+            <p>My contributions for the project starts off with mainly bug fixes (PR 1 &amp; 2) to ease my understanding to the large existing codebase. After having a deeper understanding of the existing codebase, I added some new features (PR 3 and 4) that provide more value and simplifies the effort of the user.</p>
             <h3 id="my-observations-11">My Observations<a class="fa fa-anchor" href="#my-observations-11"></a></h3>
-            <p>Give your observations about the project here</p>
+            <ol>
+              <li><strong>Motivation for new contributors</strong>. OpenRefine provides a good starting point for new contributors in the form of their <a href="https://github.com/OpenRefine/OpenRefine/blob/master/CONTRIBUTING.md">Contribution Guidelines</a>. The guidelines cover multiple ways to contribute (in the form of PRs, feature requests, bug reports, documentation) as well as things to take note before contributing. Several first timer issues and second timer issues were also offered to ensure that new contributors can ease their way through the codebase with simple features/fixes.</li>
+              <li><strong>Having good documentation is crucial for developers to get started with the project</strong>. Initially it was very daunting for me to start working on such as large codebase that are built with some technologies that I was not familiar with. OpenRefine's developer guide did not help me much either, as it only describes the application architecture on a high level, the content was not structured well, there's even missing info about several components. I had to take quite some time and dive deep into the code to figure out how the components tie with one another.</li>
+              <li><strong>Specific issue templates</strong>. The issue templates have clear and concise structure which allows the developers to know all information about the bug/feature requests. This reduces potential confusion and the need to clarify and ask for more information, while forcing contributors to be more clear and specific when describing the issue. Issue templates are not set up on RepoSense and I believe it will greatly improve the quality of our submitted issues.</li>
+              <li><strong>Every feature addition requires multiple tests to go with it</strong>. This is because OpenRefine's code coverage is rather low and having a higher coverage will increase the confidence in thoroughness of testing.</li>
+              <li><strong>Support for multiple languages is important</strong>. OpenRefine is available in more than 15 languages. The front-end of the application is localized using the <a href="https://github.com/wikimedia/jquery.i18n">Wikimedia's jquery-i18n plugin</a>. This is done to accommodate with the wide range of users that OpenRefine has. So whenever adding a new feature involves displaying texts, the corresponding translation for the other languages should also be added.</li>
+              <li><strong>Good and effective code reviews</strong>. Even though OpenRefine has only two active reviewers, they keep up with the pull requests very efficiently and will review usually in a day or two. The code reviews that I have gotten were complete, clear and concise. The reviewers know that I'm a new contributor and thus providing more information about how a certain component works while correcting some mistakes in my solution. The code reviews are also done in a positive, motivating tone which really helps new contributors to feel less daunting.</li>
+            </ol>
+            <h3 id="project-video-hub-app">Project: <a href="https://videohubapp.com">Video Hub App</a><a class="fa fa-anchor" href="#project-video-hub-app"></a></h3>
+            <p>Video Hub App is an application that provides a fast way to browse and search for videos on your computer. It is like a YouTube for videos on your computer that allows browsing, searching and previewing.</p>
+            <p>The application is build with tools such as <a href="https://github.com/angular/angular">Angular</a> and <a href="https://github.com/electron/electron">Electron</a>.</p>
+            <h3 id="project-documents-2">Project Documents<a class="fa fa-anchor" href="#project-documents-2"></a></h3>
+            <ul>
+              <li><a href="https://github.com/whyboris/Video-Hub-App/blob/master/README.md">Project README</a></li>
+              <li><a href="https://github.com/whyboris/Video-Hub-App/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
+            </ul>
+            <h3 id="my-contributions-12">My Contributions<a class="fa fa-anchor" href="#my-contributions-12"></a></h3>
+            <p>The following are my merged PRs for Video Hub App:</p>
+            <ol>
+              <li><a href="https://github.com/whyboris/Video-Hub-App/pull/334">[#332] Fix bug of tags that persists after switching hubs</a></li>
+              <li><a href="https://github.com/whyboris/Video-Hub-App/pull/329">[#324] Fix scrolling bug after switching from text view</a></li>
+            </ol>
+            <p>Submitted Issues:</p>
+            <ol>
+              <li><a href="https://github.com/whyboris/Video-Hub-App/issues/336">Adding tags to videos does not update tag tray if open</a></li>
+            </ol>
+            <p>My contributions for the project mainly consists of fixing and detecting bugs that exist in the application.</p>
+            <h3 id="my-observations-12">My Observations<a class="fa fa-anchor" href="#my-observations-12"></a></h3>
+            <p>Video Hub App is a rather small and new application, with only two active developers working on features while other small bug fixes/features are open to external contributors.</p>
+            <ol>
+              <li><strong>Simple contribution guidelines</strong>. There's no format or procedures to follow in order to contribute to the project, there are no code styles to follow as well. I think it is fine at this stage, but I think in the future when the codebase increases in size, there needs to be a certain code style to follow so that code consistency is achieved, which makes code check ins and reviews easier.</li>
+              <li><strong>There's no developer guide</strong>. This is perhaps due to the developers not having enough time to document their work, as I believe they are focused on churning out as much features as possible in a short amount of time. However, this decreases the willingness of external contributors to contribute to the project, as they would not know where and how to start working on the existing codebase.</li>
+            </ol>
           </div>
         </box>
         <box>
           <h2 id="liu-yiwen">LIU YIWEN<a class="fa fa-anchor" href="#liu-yiwen"></a></h2>
           <div>
-            <h3 id="project-foo-10">Project: Foo<a class="fa fa-anchor" href="#project-foo-10"></a></h3>
-            <p>Give an intro to the project here ...</p>
-            <h3 id="my-contributions-12">My Contributions<a class="fa fa-anchor" href="#my-contributions-12"></a></h3>
-            <p>Give a description of your contributions, including links to relevant PRs</p>
-            <h3 id="my-observations-12">My Observations<a class="fa fa-anchor" href="#my-observations-12"></a></h3>
-            <p>Give your observations about the project here</p>
-          </div>
-        </box>
-        <box>
-          <h2 id="tejas-bhuwania">TEJAS BHUWANIA<a class="fa fa-anchor" href="#tejas-bhuwania"></a></h2>
-          <div>
-            <h3 id="project-foo-11">Project: Foo<a class="fa fa-anchor" href="#project-foo-11"></a></h3>
+            <h3 id="project-foo-9">Project: Foo<a class="fa fa-anchor" href="#project-foo-9"></a></h3>
             <p>Give an intro to the project here ...</p>
             <h3 id="my-contributions-13">My Contributions<a class="fa fa-anchor" href="#my-contributions-13"></a></h3>
             <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -270,15 +306,26 @@
             <p>Give your observations about the project here</p>
           </div>
         </box>
-        <h1 id="se-edu">SE-EDU<a class="fa fa-anchor" href="#se-edu"></a></h1>
         <box>
-          <h2 id="ge-shuming">GE SHUMING<a class="fa fa-anchor" href="#ge-shuming"></a></h2>
+          <h2 id="tejas-bhuwania">TEJAS BHUWANIA<a class="fa fa-anchor" href="#tejas-bhuwania"></a></h2>
           <div>
-            <h3 id="project-foo-12">Project: Foo<a class="fa fa-anchor" href="#project-foo-12"></a></h3>
+            <h3 id="project-foo-10">Project: Foo<a class="fa fa-anchor" href="#project-foo-10"></a></h3>
             <p>Give an intro to the project here ...</p>
             <h3 id="my-contributions-14">My Contributions<a class="fa fa-anchor" href="#my-contributions-14"></a></h3>
             <p>Give a description of your contributions, including links to relevant PRs</p>
             <h3 id="my-observations-14">My Observations<a class="fa fa-anchor" href="#my-observations-14"></a></h3>
+            <p>Give your observations about the project here</p>
+          </div>
+        </box>
+        <h1 id="se-edu">SE-EDU<a class="fa fa-anchor" href="#se-edu"></a></h1>
+        <box>
+          <h2 id="ge-shuming">GE SHUMING<a class="fa fa-anchor" href="#ge-shuming"></a></h2>
+          <div>
+            <h3 id="project-foo-11">Project: Foo<a class="fa fa-anchor" href="#project-foo-11"></a></h3>
+            <p>Give an intro to the project here ...</p>
+            <h3 id="my-contributions-15">My Contributions<a class="fa fa-anchor" href="#my-contributions-15"></a></h3>
+            <p>Give a description of your contributions, including links to relevant PRs</p>
+            <h3 id="my-observations-15">My Observations<a class="fa fa-anchor" href="#my-observations-15"></a></h3>
             <p>Give your observations about the project here</p>
           </div>
         </box>
@@ -288,12 +335,12 @@
             <h3 id="project-markbind-d3">Project: MarkBind / D3<a class="fa fa-anchor" href="#project-markbind-d3"></a></h3>
             <p>Essentially &quot;Markdown plus&quot;, MarkBind is a tool to generate dynamic websites using a Markdown-like syntax. It supports tooltips, icons, search, navigation and more.</p>
             <p><a href="https://d3js.org">D3</a> stands for Data-Driven Documents and is a JavaScript library for manipulating web pages based on data. It is comprised of several modules (d3-array, d3-color, etc.) that can be imported either independently or all at once, and contributions to this project are per-module. <a href="https://observablehq.com">Observable</a>, by the same author as D3 (<a href="https://github.com/mbostock">Mike Bostock</a>), is a web application for creating interactive notebooks that uses D3.</p>
-            <h3 id="my-contributions-15">My Contributions<a class="fa fa-anchor" href="#my-contributions-15"></a></h3>
+            <h3 id="my-contributions-16">My Contributions<a class="fa fa-anchor" href="#my-contributions-16"></a></h3>
             <ul>
               <li>MarkBind: authored and merged <a href="https://github.com/MarkBind/markbind/pull/1068">pull request #1068</a> to fix <a href="https://github.com/MarkBind/markbind/issues/1001">issue #1001</a>.</li>
               <li><a href="https://github.com/d3/d3-random">d3-random</a>: authored <a href="https://github.com/d3/d3-random/pull/30">pull request #30</a> that fixed three issues among other improvements. It was subsequently merged as part of a new release <a href="https://github.com/d3/d3-random/releases/tag/v2.1.0">v2.1.0</a>.</li>
             </ul>
-            <h3 id="my-observations-15">My Observations<a class="fa fa-anchor" href="#my-observations-15"></a></h3>
+            <h3 id="my-observations-16">My Observations<a class="fa fa-anchor" href="#my-observations-16"></a></h3>
             <p>MarkBind is an NUS-OSS project that functions much like other projects out in the open.</p>
             <ul>
               <li>Pull requests need at least one approval (review) before merging.</li>
@@ -310,11 +357,11 @@
         <box>
           <h2 id="lum-ka-fai-jeffry">LUM KA FAI JEFFRY<a class="fa fa-anchor" href="#lum-ka-fai-jeffry"></a></h2>
           <div>
-            <h3 id="project-foo-13">Project: Foo<a class="fa fa-anchor" href="#project-foo-13"></a></h3>
+            <h3 id="project-foo-12">Project: Foo<a class="fa fa-anchor" href="#project-foo-12"></a></h3>
             <p>Give an intro to the project here ...</p>
-            <h3 id="my-contributions-16">My Contributions<a class="fa fa-anchor" href="#my-contributions-16"></a></h3>
+            <h3 id="my-contributions-17">My Contributions<a class="fa fa-anchor" href="#my-contributions-17"></a></h3>
             <p>Give a description of your contributions, including links to relevant PRs</p>
-            <h3 id="my-observations-16">My Observations<a class="fa fa-anchor" href="#my-observations-16"></a></h3>
+            <h3 id="my-observations-17">My Observations<a class="fa fa-anchor" href="#my-observations-17"></a></h3>
             <p>Give your observations about the project here</p>
           </div>
         </box>
@@ -322,11 +369,11 @@
         <box>
           <h2 id="chan-kok-jing-daryl">CHAN KOK JING, DARYL<a class="fa fa-anchor" href="#chan-kok-jing-daryl"></a></h2>
           <div>
-            <h3 id="project-foo-14">Project: Foo<a class="fa fa-anchor" href="#project-foo-14"></a></h3>
+            <h3 id="project-foo-13">Project: Foo<a class="fa fa-anchor" href="#project-foo-13"></a></h3>
             <p>Give an intro to the project here ...</p>
-            <h3 id="my-contributions-17">My Contributions<a class="fa fa-anchor" href="#my-contributions-17"></a></h3>
+            <h3 id="my-contributions-18">My Contributions<a class="fa fa-anchor" href="#my-contributions-18"></a></h3>
             <p>Give a description of your contributions, including links to relevant PRs</p>
-            <h3 id="my-observations-17">My Observations<a class="fa fa-anchor" href="#my-observations-17"></a></h3>
+            <h3 id="my-observations-18">My Observations<a class="fa fa-anchor" href="#my-observations-18"></a></h3>
             <p>Give your observations about the project here</p>
           </div>
         </box>
@@ -335,20 +382,20 @@
           <div>
             <h3 id="project-hugo">Project: Hugo<a class="fa fa-anchor" href="#project-hugo"></a></h3>
             <p>Hugo is a widely used static site generator written in Go, with over 40.7k stars on Github.</p>
-            <h3 id="my-contributions-18">My Contributions<a class="fa fa-anchor" href="#my-contributions-18"></a></h3>
+            <h3 id="my-contributions-19">My Contributions<a class="fa fa-anchor" href="#my-contributions-19"></a></h3>
             <p>Added support for raw string literals to be used in the shortcode params. Link to PR <a href="https://github.com/gohugoio/hugo/pull/6753/">here</a></p>
-            <h3 id="my-observations-18">My Observations<a class="fa fa-anchor" href="#my-observations-18"></a></h3>
+            <h3 id="my-observations-19">My Observations<a class="fa fa-anchor" href="#my-observations-19"></a></h3>
             <p>The lexer was based on a talk by Rob Pike and is quite interesting.</p>
           </div>
         </box>
         <box>
           <h2 id="lim-daekoon">LIM DAEKOON<a class="fa fa-anchor" href="#lim-daekoon"></a></h2>
           <div>
-            <h3 id="project-foo-15">Project: Foo<a class="fa fa-anchor" href="#project-foo-15"></a></h3>
+            <h3 id="project-foo-14">Project: Foo<a class="fa fa-anchor" href="#project-foo-14"></a></h3>
             <p>Give an intro to the project here ...</p>
-            <h3 id="my-contributions-19">My Contributions<a class="fa fa-anchor" href="#my-contributions-19"></a></h3>
+            <h3 id="my-contributions-20">My Contributions<a class="fa fa-anchor" href="#my-contributions-20"></a></h3>
             <p>Give a description of your contributions, including links to relevant PRs</p>
-            <h3 id="my-observations-19">My Observations<a class="fa fa-anchor" href="#my-observations-19"></a></h3>
+            <h3 id="my-observations-20">My Observations<a class="fa fa-anchor" href="#my-observations-20"></a></h3>
             <p>Give your observations about the project here</p>
           </div>
         </box>
@@ -357,7 +404,7 @@
           <div>
             <h3 id="project-owasp-zed-attack-proxy-zap">Project: OWASP Zed-Attack-Proxy (ZAP)<a class="fa fa-anchor" href="#project-owasp-zed-attack-proxy-zap"></a></h3>
             <p><a href="https://www.zaproxy.org">ZAP</a> is a flagship project from the Open Web Application Security Project (<a href="https://owasp.org">OWASP</a>) that has become the world's most popular free, open source web security tool. ZAP is actively used by penetration testers and security specialists worldwide, maintained by a dedicated international team of volunteers. Under the hood, ZAP is a complex and mature Java desktop application created for web application security testing with an experienced and dedicated core of developers and maintainers.</p>
-            <h3 id="my-contributions-20">My Contributions<a class="fa fa-anchor" href="#my-contributions-20"></a></h3>
+            <h3 id="my-contributions-21">My Contributions<a class="fa fa-anchor" href="#my-contributions-21"></a></h3>
             <h4 id="enhancement-csrf-token-regeneration-in-http-manual-resend">Enhancement: CSRF Token Regeneration in HTTP Manual Resend</h4>
             <p>I added a button to the HTTP manual resend screen in ZAP core to enable regeneration of the Anti-CSRF token if any were present. This addition was difficult as it involved code from the UI all the way to the HTTP APIs. Furthermore, extensive research on Cross Site Request Forgery (CSRF) attacks and their protection mechanisms was required to understand how to regenerate anti-csrf tokens and inject them into the HTTP request to be sent out.</p>
             <p>Relevant PRs:</p>
@@ -372,7 +419,7 @@
               <li><a href="https://github.com/zaproxy/zap-extensions/pull/2317">Add passive scan rule for dangerous js functions #2317</a></li>
               <li><a href="https://github.com/zaproxy/zaproxy/pull/5882">Update scanners.md for dangerous js function scanner id #5882</a></li>
             </ul>
-            <h3 id="my-observations-20">My Observations<a class="fa fa-anchor" href="#my-observations-20"></a></h3>
+            <h3 id="my-observations-21">My Observations<a class="fa fa-anchor" href="#my-observations-21"></a></h3>
             <h4 id="external-project-workflow">External Project Workflow</h4>
             <p>ZAP has extensive documentation on contribution and development guidelines. In brief, they follow a forking workflow similar to most OSS projects, and require that PRs made be associated with issues raised. There was also a very useful blog post series outlining in detail how one can start contributing to ZAP.</p>
             <p>Relevant Links:</p>
@@ -394,22 +441,22 @@
         <box>
           <h2 id="ni-tianzhen">NI TIANZHEN<a class="fa fa-anchor" href="#ni-tianzhen"></a></h2>
           <div>
-            <h3 id="project-foo-16">Project: Foo<a class="fa fa-anchor" href="#project-foo-16"></a></h3>
+            <h3 id="project-foo-15">Project: Foo<a class="fa fa-anchor" href="#project-foo-15"></a></h3>
             <p>Give an intro to the project here ...</p>
-            <h3 id="my-contributions-21">My Contributions<a class="fa fa-anchor" href="#my-contributions-21"></a></h3>
+            <h3 id="my-contributions-22">My Contributions<a class="fa fa-anchor" href="#my-contributions-22"></a></h3>
             <p>Give a description of your contributions, including links to relevant PRs</p>
-            <h3 id="my-observations-21">My Observations<a class="fa fa-anchor" href="#my-observations-21"></a></h3>
+            <h3 id="my-observations-22">My Observations<a class="fa fa-anchor" href="#my-observations-22"></a></h3>
             <p>Give your observations about the project here</p>
           </div>
         </box>
         <box>
           <h2 id="tiu-wee-han">TIU WEE HAN<a class="fa fa-anchor" href="#tiu-wee-han"></a></h2>
           <div>
-            <h3 id="project-foo-17">Project: Foo<a class="fa fa-anchor" href="#project-foo-17"></a></h3>
+            <h3 id="project-foo-16">Project: Foo<a class="fa fa-anchor" href="#project-foo-16"></a></h3>
             <p>Give an intro to the project here ...</p>
-            <h3 id="my-contributions-22">My Contributions<a class="fa fa-anchor" href="#my-contributions-22"></a></h3>
+            <h3 id="my-contributions-23">My Contributions<a class="fa fa-anchor" href="#my-contributions-23"></a></h3>
             <p>Give a description of your contributions, including links to relevant PRs</p>
-            <h3 id="my-observations-22">My Observations<a class="fa fa-anchor" href="#my-observations-22"></a></h3>
+            <h3 id="my-observations-23">My Observations<a class="fa fa-anchor" href="#my-observations-23"></a></h3>
             <p>Give your observations about the project here</p>
           </div>
         </box>
@@ -463,7 +510,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sat, 21 Mar 2020 14:15:07 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Mon, 23 Mar 2020 04:20:37 GMT</small></p>
       </div>
     </footer>
   </div>

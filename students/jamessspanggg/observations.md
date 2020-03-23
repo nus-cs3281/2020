@@ -58,3 +58,10 @@ Video Hub App is a rather small and new application, with only two active develo
 
 1. **Simple contribution guidelines**. There's no format or procedures to follow in order to contribute to the project, there are no code styles to follow as well. I think it is fine at this stage, but I think in the future when the codebase increases in size, there needs to be a certain code style to follow so that code consistency is achieved, which makes code check ins and reviews easier.  
 2. **There's no developer guide**. This is perhaps due to the developers not having enough time to document their work, as I believe they are focused on churning out as much features as possible in a short amount of time. However, this decreases the willingness of external contributors to contribute to the project, as they would not know where and how to start working on the existing codebase. 
+
+
+### Suggestions for Internal Project
+
+1. **Can consider to set up issue templates**. It is common that contributors who submitted issues without providing full information. Issue templates allows contributors to submit their issues in a systematic and specific way, while helping to save the time and effort for developers to clarify about the issue.
+2. **Provide more first timer issues**. There are existing first timer issues in RepoSense, but those are mainly targeted towards the back end of the application. Perhaps we can provide more first timer issues targeted towards the front end of the application, since the front end part was the harder part to grasp. This will invite more external contributors to work on the front end of the application, easing their way towards understanding how the front end ties together.
+3. **Can include more people in the level 2 reviewers**. The number of pull requests are increasing constantly, while the reviewing progress of the stage 2 reviewers are slightly behind. Perhaps we can include current students/developers as stage 2 reviewers.  

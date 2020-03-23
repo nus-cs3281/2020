@@ -298,6 +298,9 @@
               <li><strong>Can consider to set up issue templates</strong>. It is common that contributors who submitted issues without providing full information. Issue templates allows contributors to submit their issues in a systematic and specific way, while helping to save the time and effort for developers to clarify about the issue.</li>
               <li><strong>Provide more first timer issues</strong>. There are existing first timer issues in RepoSense, but those are mainly targeted towards the back end of the application. Perhaps we can provide more first timer issues targeted towards the front end of the application, since the front end part was the harder part to grasp. This will invite more external contributors to work on the front end of the application, easing their way towards understanding how the front end ties together.</li>
               <li><strong>Can include more people in the level 2 reviewers</strong>. The number of pull requests are increasing constantly, while the reviewing progress of the stage 2 reviewers are slightly behind. Perhaps we can include current students/developers as stage 2 reviewers.</li>
+              <li><strong>User Interface changes should be decided before starting to work on them</strong>. There are a lot of instances where developers contribute PRs that involves UI addition/changes, but require multiple changes due to opinions of different reviewers. This causes a lot of unnecessary rework and effort. Perhaps we can have a discussion in the issue on the UI changes, stating the reasons why the UI should be implemented in this way etc. Once we have a general consensus, the need to change the implementation of UI would be less likely.</li>
+              <li><strong>Utilise Github Actions for general housekeeping tasks</strong>. Currently, we are manually doing housekeeping tasks such as reminding contributors to follow our contributing guidelines, fixing the CI checks before continuing, reminding contributors about their stale PRs etc. These housekeeping tasks can be automated using Github Actions, so that us developers can focus on solely reviewing the code.</li>
+              <li><strong>RepoSense requires more robust front end tests</strong>. There were a lot of merged PRs that caused regressions in the front end of the RepoSense dashboard. A big part of this is due to our front end tests not being robust enough.</li>
             </ol>
           </div>
         </box>
@@ -516,7 +519,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Mon, 23 Mar 2020 05:10:16 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Mon, 23 Mar 2020 13:29:19 GMT</small></p>
       </div>
     </footer>
   </div>

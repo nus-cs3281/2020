@@ -1,6 +1,6 @@
 ### Project: Babel
 
-Babel lets you use next-generation JavaScript while still supporting older browsers. Babel will compile your JavaScript into JavaScript that all of your targeted environments support.
+[Babel](https://github.com/babel/babel) lets you use next-generation JavaScript while still supporting older browsers. Babel will compile your JavaScript into JavaScript that all of your targeted environments support.
 
 ### My Contributions
 

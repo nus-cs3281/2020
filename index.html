@@ -1876,25 +1876,22 @@
             <panel header="**Observations**" minimized>
               <div>
                 <h3 id="project-markbind-d3">Project: MarkBind / D3<a class="fa fa-anchor" href="#project-markbind-d3"></a></h3>
-                <p>Essentially &quot;Markdown plus&quot;, MarkBind is a tool to generate dynamic websites using a Markdown-like syntax. It supports tooltips, icons, search, navigation and more.</p>
-                <p><a href="https://d3js.org">D3</a> stands for Data-Driven Documents and is a JavaScript library for manipulating web pages based on data. It is comprised of several modules (d3-array, d3-color, etc.) that can be imported either independently or all at once, and contributions to this project are per-module. <a href="https://observablehq.com">Observable</a>, by the same author as D3 (<a href="https://github.com/mbostock">Mike Bostock</a>), is a web application for creating interactive notebooks that uses D3.</p>
+                <p>Essentially &quot;Markdown plus&quot;, MarkBind is a tool to generate dynamic websites using a Markdown-like syntax. It supports tooltips, icons, search, navigation and more. MarkBind's development workflow can be found <a href="https://markbind.org/devdocs/devGuide/index.html">here</a>.</p>
+                <p><a href="https://d3js.org">D3</a> is a JavaScript library for manipulating web pages based on data. It is comprised of several modules (d3-array, d3-color, etc.) that can be imported either independently or all at once, and contributions to this project are per-module. D3 has little mention of a development workflow, only a small note in its <a href="https://github.com/d3/d3/wiki">main wiki page</a> about running a local version of D3 in the browser for development purposes – I used the Node.js console and <a href="https://observablehq.com">Observable</a>, a repository of JavaScript notebooks, to develop my code.</p>
                 <h3 id="my-contributions-16">My Contributions<a class="fa fa-anchor" href="#my-contributions-16"></a></h3>
                 <ul>
-                  <li>MarkBind: authored and merged <a href="https://github.com/MarkBind/markbind/pull/1068">pull request #1068</a> to fix <a href="https://github.com/MarkBind/markbind/issues/1001">issue #1001</a>.</li>
-                  <li><a href="https://github.com/d3/d3-random">d3-random</a>: authored <a href="https://github.com/d3/d3-random/pull/30">pull request #30</a> that fixed three issues among other improvements. It was subsequently merged as part of a new release <a href="https://github.com/d3/d3-random/releases/tag/v2.1.0">v2.1.0</a>.</li>
+                  <li>MarkBind: authored and merged <a href="https://github.com/MarkBind/markbind/pull/1068">pull request #1068</a> to fix <a href="https://github.com/MarkBind/markbind/issues/1001">issue #1001</a>. The PR fixed a bug in the default site templates.</li>
+                  <li><a href="https://github.com/d3/d3-random">d3-random</a>: authored <a href="https://github.com/d3/d3-random/pull/30">pull request #30</a> that fixed three issues among other improvements. Six new random number distributions were added and the implementation of other distributions improved. The PR was subsequently merged as part of a new release <a href="https://github.com/d3/d3-random/releases/tag/v2.1.0">v2.1.0</a>.</li>
                 </ul>
                 <h3 id="my-observations-16">My Observations<a class="fa fa-anchor" href="#my-observations-16"></a></h3>
-                <p>MarkBind is an NUS-OSS project that functions much like other projects out in the open.</p>
-                <ul>
-                  <li>Pull requests need at least one approval (review) before merging.</li>
-                  <li>There is a set template that appears when making a new pull request, detailing fields that ideally should be filled in before submitting.</li>
-                </ul>
-                <p>For D3:</p>
-                <ul>
-                  <li>Despite the project's size and reach, Bostock is the only person who performs the actual merges. He was very busy handling other parts of D3 while my pull request awaited merging.</li>
-                  <li>The use of Observable notebooks to explain new contributions to D3 is encouraged.</li>
-                  <li>D3 uses modules, but other ES6 features (e.g. <code>**</code> for exponentiation) are not widely used in older code – the project started before ES6 came out. There is no style guide on this matter; seeing that d3-random did not heavily use ES6, I stuck to ES5 when writing the pull request for it, and Bostock did not mind.</li>
-                </ul>
+
+                <p>The contrast between MarkBind (an NUS-OSS project) and D3 (an external project) provided some insights:</p>
+                <ol>
+                  <li>MarkBind has a good number of developers who can cover for each other in merging pull requests and making other updates as necessary. Despite D3 being larger than MarkBind, there is only one developer who can push commits, its creator <a href="https://github.com/mbostock">Mike Bostock</a>, who has to tend to over 30 repositories (one for each module) that comprise the entire library. This leads to longer waiting times on pull requests for D3 than for MarkBind, though some informal responses (e.g. reactions on pull requests) provided quicker feedback as to the merits of my contributions. Hence, having more than one developer should be the norm for any project put into production use, as the major NUS-OSS projects all are.</li>
+                  <li>MarkBind has a template to use when reporting issues or opening pull requests; D3 does not, and pull request/issue descriptions take many shapes and forms. While using set templates does lighten the load of developers processing issues or pull requests by eye, D3 compensates with its long, often insightful, conversations between the single committer Bostock and the issue/pull request authors, though some pinging was sometimes needed to move the conversations forward. From this I learned that &quot;best practices&quot; in software engineering are never universal; there are exceptions to every practice and such exceptions are OK as long as the developers and contributors can feel mutually comfortable.</li>
+                  <li>For the pull request to d3-random I made a series of Observable notebooks detailing my contributions; for MarkBind I was asked to include instructions for developer testing. The notebook was not needed, but providing background information helped to shorten the time between opening the pull request and merging. Regardless, this shows that requiring a rationale for pull requests is a good thing to have for any project, large or small.</li>
+                  <li>My MarkBind pull request originally came in a disjointed series of commits. I was told to properly make a new branch on my fork, squash the commits and try again, which I did. My D3 pull request also comprised several different commits, but Bostock put those changes in a new branch himself without telling me anything, and later on merged them all without squashing. So the <em>commit tree structure</em>, accessible via <code>git log --graph</code>, can with proper management provide as much information as the commit messages themselves. A project's workflow should, as far as possible, keep a <em>linear</em> sequence of commits in each branch, but not necessarily one commit per branch.</li>
+                </ol>
               </div>
             </panel>
           </box>
@@ -2635,7 +2632,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Thu, 26 Mar 2020 04:27:01 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Thu, 26 Mar 2020 07:46:10 GMT</small></p>
       </div>
     </footer>
   </div>

@@ -25,6 +25,11 @@ Recess | Authored PR (WIP) : [Add copy code-block plugin #1043](https://github.c
 8 | Merged PR : [Enable AppVeyor CI #1040](https://github.com/MarkBind/markbind/pull/1040)
 8 | Merged PR : [Custom timezone for built-in timestamp #1073](https://github.com/MarkBind/markbind/pull/1073)
 8 | Merged PR : [Add copy code-block plugin #1043](https://github.com/MarkBind/markbind/pull/1043)
+9 | Authored PR :[Remove dynamic include feature #1037](https://github.com/MarkBind/markbind/pull/1037)
+9 | Authored PR : [Align and use fixed widths for icons #131](https://github.com/MarkBind/vue-strap/pull/131)
+10 | Submitted Issue : [PlantUML diagrams always "update" on updating test sites #1130](https://github.com/MarkBind/markbind/issues/1130)
+10 | Investigated Issue : [Improper linking of headings that have part of text enclosed within "<>" #1076](https://github.com/MarkBind/markbind/issues/1076)
+10 | Reviewed PR : [Add panel expand and collapse transitions #132](https://github.com/MarkBind/vue-strap/pull/132)
 
 
 ### RepoSense
@@ -37,3 +42,4 @@ Week | Achievements
 6 | Investigated Issue : [Test: use generic throw Exception in all tests #937](https://github.com/reposense/RepoSense/issues/937)
 7 | Authored PR (Under Review) : [[#937] Use generic 'throw Exception' in all tests #1072](https://github.com/reposense/RepoSense/pull/1072)
 8 | Authored PR (Approved) : [[#1046] Refactor duplicate code #1056](https://github.com/reposense/RepoSense/pull/1056)
+10 | Merged PR : [[#1046] Refactor duplicate code #1056](https://github.com/reposense/RepoSense/pull/1056)

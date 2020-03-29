@@ -6,7 +6,9 @@ Essentially "Markdown plus", MarkBind is a tool to generate dynamic websites usi
 
 ### My Contributions
 
-* MarkBind: authored and merged [pull request #1068](https://github.com/MarkBind/markbind/pull/1068) to fix [issue #1001](https://github.com/MarkBind/markbind/issues/1001). The PR fixed a bug in the default site templates.
+* MarkBind: authored and merged
+  * [pull request #1068](https://github.com/MarkBind/markbind/pull/1068) to fix [issue #1001](https://github.com/MarkBind/markbind/issues/1001). The PR fixed a bug in the default site templates.
+  * [pull request #1112](https://github.com/MarkBind/markbind/pull/1112) to update dependencies in light of a few security vulnerabilities.
 * [d3-random](https://github.com/d3/d3-random): authored [pull request #30](https://github.com/d3/d3-random/pull/30) that fixed three issues among other improvements. Six new random number distributions were added and the implementation of other distributions improved. The PR was subsequently merged as part of a new release [v2.1.0](https://github.com/d3/d3-random/releases/tag/v2.1.0).
 
 ### My Observations

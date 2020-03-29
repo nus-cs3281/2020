@@ -21,3 +21,8 @@ Week | Achievements
 8 | Reviewed PR: [Convert to code block markbind/#1086](https://github.com/MarkBind/markbind/pull/1086)
 8 | Submitted Issue: [User Guide: Document more styling methods for NavBar markbind/#1113](https://github.com/MarkBind/markbind/issues/1113)
 9 | Authored PR: [Code blocks: Implement inline markdown support for heading markbind/#1137](https://github.com/MarkBind/vue-strap/pull/1137)
+10 | Authored PR: [Docs: Add CONTRIBUTING.md markbind/#1139](https://github.com/MarkBind/markbind/pull/1139)
+10 | Reviewed PR: [Remove fixed bugs from test\functional\test_site\bugs\index.md markbind/#1086](https://github.com/MarkBind/markbind/pull/1086)
+10 | Reviewed PR: [Update navbar doc markbind/#1146](https://github.com/MarkBind/markbind/pull/1146)
+10 | Merged PR: [Docs: Add CONTRIBUTING.md markbind/#1139](https://github.com/MarkBind/markbind/pull/1139)
+10 | Merged PR: [Code blocks: Implement inline markdown support for heading markbind/#1137](https://github.com/MarkBind/markbind/pull/#1137)

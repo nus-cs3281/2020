@@ -462,6 +462,52 @@
         <box>
           <h2 id="liu-yiwen">LIU YIWEN<a class="fa fa-anchor" href="#liu-yiwen"></a></h2>
           <div>
+            <h2 id="project-checkstyle"><strong>Project</strong>: <a href="https://github.com/checkstyle/checkstyle">CheckStyle</a><a class="fa fa-anchor" href="#project-checkstyle"></a></h2>
+            <p>Checkstyle is a tool for checking Java source code for adherence to a Code Standard or set of validation rules.</p>
+            <h3 id="links">Links<a class="fa fa-anchor" href="#links"></a></h3>
+            <p>The link of the workflow of contributing to CheckStyle is <a href="https://checkstyle.org/contributing.html#Content">here</a></p>
+            <h3 id="contributions-made">Contributions made<a class="fa fa-anchor" href="#contributions-made"></a></h3>
+            <ul>
+              <li><a href="https://github.com/checkstyle/checkstyle/pull/7775">Issue #7183: add JavadocMissingWhitespaceAfterAsteriskCheck</a></li>
+              <li><a href="https://github.com/checkstyle/checkstyle/pull/7883">minor: fix missed space violation from JavadocMissingWhitespaceAfterAsteriskCheck</a></li>
+              <li><a href="https://github.com/checkstyle/checkstyle/pull/7550">Issue #5832: add javadoc and xdoc example for LambdaParameterName</a></li>
+              <li><a href="https://github.com/checkstyle/checkstyle/pull/7525">Issue #5832: Add javadoc and xdoc Example for TypeName</a></li>
+              <li><a href="https://github.com/checkstyle/checkstyle/pull/7539">Issue #5832: add javadoc and xdoc Example for ParameterName</a></li>
+              <li><a href="https://github.com/checkstyle/checkstyle/pull/7530">Issue #5832: add javadoc and xdoc Example for StaticVariableName</a></li>
+            </ul>
+            <h3 id="workflow">Workflow<a class="fa fa-anchor" href="#workflow"></a></h3>
+            <p>Below is the workflow for contributing to CheckStyle:</p>
+            <ol>
+              <li>Submit an issue and wait to be approved or choose an approved issue from the issue list.</li>
+              <li>Work on the issue and squash the changes to one commit.</li>
+              <li>Raise a PR and wait to be reviewed.</li>
+              <li>Edit your PR until being approved by all maintainers.</li>
+            </ol>
+            <p>The workflow of CheckStyle is similar to RepoSense. The section listed some major difference between the projects.</p>
+            <h4 id="differences">Differences:</h4>
+            <ol>
+              <li>
+                <p><strong>Fast Response</strong>: The developers of CheckStyle are very active and will ususally respond to PR within one day. Also, they have a very clear workflow by requesting approval in a certain series. The PR will only be merged after obtaining all approvals from requested developers.</p>
+              </li>
+              <li>
+                <p><strong>Issue Label</strong>: They have a very complete set of issue labels. The 'approved' label is used to distinguish issue waiting for PR and issue for discussion. Contributors should only work for issue with the 'approved' label. While Reposense does have the 'todiscuss' label, it does not enforce it. This may cause difficulty for new contributors to find a issue to work on.</p>
+              </li>
+              <li>
+                <p><strong>CI Checks</strong>: CheckStyle has in total 16 checks to pass before the PR can be merged. The tests covers a variety of aspects. They even have CI checks for commit message and number. Also, it requires the code to have 100% coverage using the Jacoco test report. CheckStyle also have a test named <code>pitest</code>, which is a kind of mutation test. It will modify some part of the code and expect the test to fail. If the code does not pass mutation test, possibly the test case or the main code can be improved.</p>
+              </li>
+              <li>
+                <p><strong>Regression Report</strong>: CheckStyle has its own test tool and each time a new check is implemented, contributor is expected to submit a diff report which can displays the difference in terms of violation reported after introducing this new check. This can be very helpful for checking the effectiveness of the new code as well as determine the regression caused immediately.</p>
+              </li>
+            </ol>
+            <h3 id="suggestions-to-reposense">Suggestions to RepoSense<a class="fa fa-anchor" href="#suggestions-to-reposense"></a></h3>
+            <p>For now, it seems RepoSense does not enfore a regression check before merging PR. Since most of our job now is dealing with the frontend, maybe we should have a more complete set of cypress test to detect any possible change in the frontend behavioiur.</p>
+            <p>We can also have a PR template to remind the new contributor to stick to our guidelines, especially the format the the line length constraints.</p>
+            <p>In addition, we should enfore a stricter rule in terms of reviewing sequence. Maybe we should even write this into our developer guide so that the new contributor will know who to seek help to. Also some contribution guidelines are not written explicitly in our developer guide such as the coding block for PR message and the 72 character rule.</p>
+          </div>
+        </box>
+        <box>
+          <h2 id="tejas-bhuwania">TEJAS BHUWANIA<a class="fa fa-anchor" href="#tejas-bhuwania"></a></h2>
+          <div>
             <h3 id="project-foo-6">Project: Foo<a class="fa fa-anchor" href="#project-foo-6"></a></h3>
             <p>Give an intro to the project here ...</p>
             <h3 id="my-contributions-13">My Contributions<a class="fa fa-anchor" href="#my-contributions-13"></a></h3>
@@ -470,8 +516,9 @@
             <p>Give your observations about the project here</p>
           </div>
         </box>
+        <h1 id="se-edu">SE-EDU<a class="fa fa-anchor" href="#se-edu"></a></h1>
         <box>
-          <h2 id="tejas-bhuwania">TEJAS BHUWANIA<a class="fa fa-anchor" href="#tejas-bhuwania"></a></h2>
+          <h2 id="ge-shuming">GE SHUMING<a class="fa fa-anchor" href="#ge-shuming"></a></h2>
           <div>
             <h3 id="project-foo-7">Project: Foo<a class="fa fa-anchor" href="#project-foo-7"></a></h3>
             <p>Give an intro to the project here ...</p>
@@ -481,25 +528,13 @@
             <p>Give your observations about the project here</p>
           </div>
         </box>
-        <h1 id="se-edu">SE-EDU<a class="fa fa-anchor" href="#se-edu"></a></h1>
-        <box>
-          <h2 id="ge-shuming">GE SHUMING<a class="fa fa-anchor" href="#ge-shuming"></a></h2>
-          <div>
-            <h3 id="project-foo-8">Project: Foo<a class="fa fa-anchor" href="#project-foo-8"></a></h3>
-            <p>Give an intro to the project here ...</p>
-            <h3 id="my-contributions-15">My Contributions<a class="fa fa-anchor" href="#my-contributions-15"></a></h3>
-            <p>Give a description of your contributions, including links to relevant PRs</p>
-            <h3 id="my-observations-14">My Observations<a class="fa fa-anchor" href="#my-observations-14"></a></h3>
-            <p>Give your observations about the project here</p>
-          </div>
-        </box>
         <box>
           <h2 id="jeremy-tan-jierui">JEREMY TAN JIERUI<a class="fa fa-anchor" href="#jeremy-tan-jierui"></a></h2>
           <div>
             <h3 id="project-markbind-d3">Project: MarkBind / D3<a class="fa fa-anchor" href="#project-markbind-d3"></a></h3>
             <p>Essentially &quot;Markdown plus&quot;, MarkBind is a tool to generate dynamic websites using a Markdown-like syntax. It supports tooltips, icons, search, navigation and more. MarkBind's development workflow can be found <a href="https://markbind.org/devdocs/devGuide/index.html">here</a>.</p>
             <p><a href="https://d3js.org">D3</a> is a JavaScript library for manipulating web pages based on data. It is comprised of several modules (d3-array, d3-color, etc.) that can be imported either independently or all at once, and contributions to this project are per-module. D3 has little mention of a development workflow, only a small note in its <a href="https://github.com/d3/d3/wiki">main wiki page</a> about running a local version of D3 in the browser for development purposes – I used the Node.js console and <a href="https://observablehq.com">Observable</a>, a repository of JavaScript notebooks, to develop my code.</p>
-            <h3 id="my-contributions-16">My Contributions<a class="fa fa-anchor" href="#my-contributions-16"></a></h3>
+            <h3 id="my-contributions-15">My Contributions<a class="fa fa-anchor" href="#my-contributions-15"></a></h3>
             <ul>
               <li>MarkBind: authored and merged
                 <ul>
@@ -509,7 +544,7 @@
               </li>
               <li><a href="https://github.com/d3/d3-random">d3-random</a>: authored <a href="https://github.com/d3/d3-random/pull/30">pull request #30</a> that fixed three issues among other improvements. Six new random number distributions were added and the implementation of other distributions improved. The PR was subsequently merged as part of a new release <a href="https://github.com/d3/d3-random/releases/tag/v2.1.0">v2.1.0</a>.</li>
             </ul>
-            <h3 id="my-observations-15">My Observations<a class="fa fa-anchor" href="#my-observations-15"></a></h3>
+            <h3 id="my-observations-14">My Observations<a class="fa fa-anchor" href="#my-observations-14"></a></h3>
             <p>The contrast between MarkBind (an NUS-OSS project) and D3 (an external project) provided some insights:</p>
             <ol>
               <li>MarkBind has a good number of developers who can cover for each other in merging pull requests and making other updates as necessary. Despite D3 being larger than MarkBind, there is only one developer who can push commits, its creator <a href="https://github.com/mbostock">Mike Bostock</a>, who has to tend to over 30 repositories (one for each module) that comprise the entire library. This leads to longer waiting times on pull requests for D3 than for MarkBind, though some informal responses (e.g. reactions on pull requests) provided quicker feedback as to the merits of my contributions. Hence, having more than one developer should be the norm for any project put into production use, as the major NUS-OSS projects all are.</li>
@@ -523,11 +558,11 @@
         <box>
           <h2 id="lum-ka-fai-jeffry">LUM KA FAI JEFFRY<a class="fa fa-anchor" href="#lum-ka-fai-jeffry"></a></h2>
           <div>
-            <h3 id="project-foo-9">Project: Foo<a class="fa fa-anchor" href="#project-foo-9"></a></h3>
+            <h3 id="project-foo-8">Project: Foo<a class="fa fa-anchor" href="#project-foo-8"></a></h3>
             <p>Give an intro to the project here ...</p>
-            <h3 id="my-contributions-17">My Contributions<a class="fa fa-anchor" href="#my-contributions-17"></a></h3>
+            <h3 id="my-contributions-16">My Contributions<a class="fa fa-anchor" href="#my-contributions-16"></a></h3>
             <p>Give a description of your contributions, including links to relevant PRs</p>
-            <h3 id="my-observations-16">My Observations<a class="fa fa-anchor" href="#my-observations-16"></a></h3>
+            <h3 id="my-observations-15">My Observations<a class="fa fa-anchor" href="#my-observations-15"></a></h3>
             <p>Give your observations about the project here</p>
           </div>
         </box>
@@ -543,7 +578,7 @@
               <li>It has a <a href="https://www.gatsbyjs.org/docs/content-and-data/">flexible and robust data layer powered by GraphQL</a> that allows developers to build ambitious static sites from dynamic data.</li>
             </ul>
             <p>Gatsby also provides <a href="https://www.gatsbyjs.org/contributing/how-to-contribute/">a set of contributor guides</a> that I found very useful when trying to contribute to the project.</p>
-            <h3 id="my-contributions-18">My Contributions<a class="fa fa-anchor" href="#my-contributions-18"></a></h3>
+            <h3 id="my-contributions-17">My Contributions<a class="fa fa-anchor" href="#my-contributions-17"></a></h3>
             <ul>
               <li><a href="https://github.com/gatsbyjs/gatsby/pull/21158">Allow graphiql to set initial query variables from query string</a></li>
               <li><a href="https://github.com/gatsbyjs/gatsby/pull/21217">Split up gatsby-node</a></li>
@@ -552,7 +587,7 @@
               <li><a href="https://github.com/gatsbyjs/gatsby/pull/22422">Migrate gatsby-dependents to TypeScript</a></li>
             </ul>
             <p>Initially, I familiarized myself with the Gatsby codebase by fixing a bug in the GraphiQL inspector. Once I was familiar with the project, I started to take up larger issues like refactoring <code>gatsby-node</code> into a set of well-structured utilities categorized by their function. I also contributed to their ongoing TypeScript migration, helping to migrate some of their source files and fixing some incorrect types.</p>
-            <h3 id="my-observations-17">My Observations<a class="fa fa-anchor" href="#my-observations-17"></a></h3>
+            <h3 id="my-observations-16">My Observations<a class="fa fa-anchor" href="#my-observations-16"></a></h3>
             <p>These are some positive things that I've observed as a contributor on Gatsby.</p>
             <ol>
               <li>
@@ -593,20 +628,20 @@
           <div>
             <h3 id="project-hugo">Project: Hugo<a class="fa fa-anchor" href="#project-hugo"></a></h3>
             <p>Hugo is a widely used static site generator written in Go, with over 40.7k stars on Github.</p>
-            <h3 id="my-contributions-19">My Contributions<a class="fa fa-anchor" href="#my-contributions-19"></a></h3>
+            <h3 id="my-contributions-18">My Contributions<a class="fa fa-anchor" href="#my-contributions-18"></a></h3>
             <p>Added support for raw string literals to be used in the shortcode params. Link to PR <a href="https://github.com/gohugoio/hugo/pull/6753/">here</a></p>
-            <h3 id="my-observations-18">My Observations<a class="fa fa-anchor" href="#my-observations-18"></a></h3>
+            <h3 id="my-observations-17">My Observations<a class="fa fa-anchor" href="#my-observations-17"></a></h3>
             <p>The lexer was based on a talk by Rob Pike and is quite interesting.</p>
           </div>
         </box>
         <box>
           <h2 id="lim-daekoon">LIM DAEKOON<a class="fa fa-anchor" href="#lim-daekoon"></a></h2>
           <div>
-            <h3 id="project-foo-10">Project: Foo<a class="fa fa-anchor" href="#project-foo-10"></a></h3>
+            <h3 id="project-foo-9">Project: Foo<a class="fa fa-anchor" href="#project-foo-9"></a></h3>
             <p>Give an intro to the project here ...</p>
-            <h3 id="my-contributions-20">My Contributions<a class="fa fa-anchor" href="#my-contributions-20"></a></h3>
+            <h3 id="my-contributions-19">My Contributions<a class="fa fa-anchor" href="#my-contributions-19"></a></h3>
             <p>Give a description of your contributions, including links to relevant PRs</p>
-            <h3 id="my-observations-19">My Observations<a class="fa fa-anchor" href="#my-observations-19"></a></h3>
+            <h3 id="my-observations-18">My Observations<a class="fa fa-anchor" href="#my-observations-18"></a></h3>
             <p>Give your observations about the project here</p>
           </div>
         </box>
@@ -615,7 +650,7 @@
           <div>
             <h3 id="project-owasp-zed-attack-proxy-zap">Project: OWASP Zed-Attack-Proxy (ZAP)<a class="fa fa-anchor" href="#project-owasp-zed-attack-proxy-zap"></a></h3>
             <p><a href="https://www.zaproxy.org">ZAP</a> is a flagship project from the Open Web Application Security Project (<a href="https://owasp.org">OWASP</a>) that has become the world's most popular free, open source web security tool. ZAP is actively used by penetration testers and security specialists worldwide, maintained by a dedicated international team of volunteers. Under the hood, ZAP is a complex and mature Java desktop application created for web application security testing with an experienced and dedicated core of developers and maintainers.</p>
-            <h3 id="my-contributions-21">My Contributions<a class="fa fa-anchor" href="#my-contributions-21"></a></h3>
+            <h3 id="my-contributions-20">My Contributions<a class="fa fa-anchor" href="#my-contributions-20"></a></h3>
             <h4 id="enhancement-csrf-token-regeneration-in-http-manual-resend">Enhancement: CSRF Token Regeneration in HTTP Manual Resend</h4>
             <p>I added a button to the HTTP manual resend screen in ZAP core to enable regeneration of the Anti-CSRF token if any were present. This addition was difficult as it involved code from the UI all the way to the HTTP APIs. Furthermore, extensive research on Cross Site Request Forgery (CSRF) attacks and their protection mechanisms was required to understand how to regenerate anti-csrf tokens and inject them into the HTTP request to be sent out.</p>
             <p>Relevant PRs:</p>
@@ -630,7 +665,7 @@
               <li><a href="https://github.com/zaproxy/zap-extensions/pull/2317">Add passive scan rule for dangerous js functions #2317</a></li>
               <li><a href="https://github.com/zaproxy/zaproxy/pull/5882">Update scanners.md for dangerous js function scanner id #5882</a></li>
             </ul>
-            <h3 id="my-observations-20">My Observations<a class="fa fa-anchor" href="#my-observations-20"></a></h3>
+            <h3 id="my-observations-19">My Observations<a class="fa fa-anchor" href="#my-observations-19"></a></h3>
             <h4 id="external-project-workflow">External Project Workflow</h4>
             <p>ZAP has extensive documentation on contribution and development guidelines. In brief, they follow a forking workflow similar to most OSS projects, and require that PRs made be associated with issues raised. There was also a very useful blog post series outlining in detail how one can start contributing to ZAP.</p>
             <p>Relevant Links:</p>
@@ -657,7 +692,7 @@
             <p>Ionic Framework is essentially a UI toolkit that consists of customized <a href="https://www.webcomponents.org/introduction">Web Components</a> that achieve the same functionality as native mobile components on iOS and Android and mimic their look and feel. A comprehensive list of components available in Ionic Framework can be found <a href="https://ionicframework.com/docs/components">here</a>.</p>
             <h4 id="documentations">Documentations</h4>
             <p>The document outlining the contribution workflow can be found here: <a href="https://github.com/ionic-team/ionic/blob/master/.github/CONTRIBUTING.md">CONTRIBUTING.md</a></p>
-            <h3 id="my-contributions-22">My Contributions<a class="fa fa-anchor" href="#my-contributions-22"></a></h3>
+            <h3 id="my-contributions-21">My Contributions<a class="fa fa-anchor" href="#my-contributions-21"></a></h3>
             <p>Bug fixes:</p>
             <ul>
               <li><a href="https://github.com/ionic-team/ionic/pull/20359">fix(overlay): attach overlay element to document body</a></li>
@@ -667,7 +702,7 @@
             <ul>
               <li><a href="https://github.com/ionic-team/ionic/pull/20804">feat(datetime): add default value when picker opens</a></li>
             </ul>
-            <h3 id="my-observations-21">My Observations<a class="fa fa-anchor" href="#my-observations-21"></a></h3>
+            <h3 id="my-observations-20">My Observations<a class="fa fa-anchor" href="#my-observations-20"></a></h3>
             <p>The contributing workflow of Ionic is a standard one similar to other open-source projects. Since Ionic Framework consists of multiple packages (core, angular, react, and vue), all new issues submitted by the contributors are first labelled <code>triage</code>. One of the core developers then attends to the issue and label the issue with its package and type (bug or feature request).</p>
             <p>Here are some observations made while contributing to Ionic:</p>
             <ul>
@@ -692,7 +727,7 @@
             <h3 id="project-netlify-cms">Project: Netlify CMS<a class="fa fa-anchor" href="#project-netlify-cms"></a></h3>
             <p><a href="https://www.netlifycms.org/">Netlify CMS</a> is an open source content management system that enables developers to provide editors with a friendly UI and intuitive workflows. It can be used with any static site generator to create faster, more flexible web projects. Content is stored in the developer's Git repository alongside the code for easier versioning, multi-channel publishing, and the option to handle content updates directly in Git.</p>
             <p>I chose Netlfiy CMS as my external project as it aims to be a core feature within the <a href="https://jamstack.org/">JAMStack</a>, an up and coming tech stack that delivers fast and secure sites and apps by pre-rendering files and serving them directly from a CDN, removing the requirement to manage or run web servers.</p>
-            <h3 id="my-contributions-23">My Contributions<a class="fa fa-anchor" href="#my-contributions-23"></a></h3>
+            <h3 id="my-contributions-22">My Contributions<a class="fa fa-anchor" href="#my-contributions-22"></a></h3>
             <h4 id="enhancement-add-support-for-multiple-languages">Enhancement: Add support for multiple languages</h4>
             <p>I helped to add support for different languages within the application and some external widgets using the <a href="https://www.npmjs.com/package/react-polyglot">React Polyglot</a> library. This was particularly difficult as the application uses a single source of truth for the different locales within the core component, but also had to be referenced by the external widgets. I managed to figure out how the widgets were integrated into the core component and subsequently how to pass the references over. As proof that it works, I also added several screenshots and translations to the PRs.</p>
             <p>Relevant PRs:</p>
@@ -706,7 +741,7 @@
             <ul>
               <li><a href="https://github.com/netlify/netlify-cms/pull/3181">docs: fix media library usage #3181</a></li>
             </ul>
-            <h3 id="my-observations-22">My Observations<a class="fa fa-anchor" href="#my-observations-22"></a></h3>
+            <h3 id="my-observations-21">My Observations<a class="fa fa-anchor" href="#my-observations-21"></a></h3>
             <h4 id="external-project-workflow-2">External Project Workflow</h4>
             <p>Netlify CMS has documentation page on contribution and development guidelines. They utilise a <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">forking workflow</a> and <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow">feature branches</a>. Contributors are required to rebase on master when opening a Pull Request and before merging in a Pull Request. Pull Requests are reviewed by at least two maintainers prior to merging. There is also a community slack channel and forums to allow new developers to chat with maintainers and see what are some of the issues being actively discussed.</p>
             <h4 id="well-documented-contributing-guide">Well-documented Contributing Guide</h4>
@@ -765,6 +800,7 @@
               <a class="nav-link py-1" href="#chong-chee-yuan">CHONG CHEE YUAN&#x200E;</a>
               <a class="nav-link py-1" href="#james-pang-mun-wai">JAMES PANG MUN WAI&#x200E;</a>
               <a class="nav-link py-1" href="#liu-yiwen">LIU YIWEN&#x200E;</a>
+              <a class="nav-link py-1" href="#project-checkstyle">Project: CheckStyle&#x200E;</a>
               <a class="nav-link py-1" href="#tejas-bhuwania">TEJAS BHUWANIA&#x200E;</a>
             </nav>
             <a class="nav-link py-1" href="#se-edu">SE-EDU&#x200E;</a>
@@ -789,7 +825,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sun, 29 Mar 2020 16:36:35 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sun, 29 Mar 2020 17:05:20 GMT</small></p>
       </div>
     </footer>
   </div>

@@ -384,22 +384,24 @@
                   <li><a href="https://github.com/babel/babel/pull/11158">Fix scope of function body when var redeclares param</a></li>
                   <li><a href="https://github.com/babel/babel/pull/11088">Allow redeclaration of loop variable in body</a></li>
                 </ul>
-                <p>Compiling certain features such as default parameters and for-of loops to 'old' JavaScript that doesn't have such features result in many edge cases that are unaccounted for. I helped to fix these bugs.</p>
-                <h3 id="my-observations-2">My Observations<a class="fa fa-anchor" href="#my-observations-2"></a></h3>
+                <p>Compiling certain features such as default parameters and for-of loops to 'old' JavaScript that doesn't have such features result in many edge cases that are unaccounted for. The first PR was relatively simple to familiarise myself with how Babel worked. The second PR was a lot more substantial, where I had to rewrite my implementation due to another edge case discovered by my reviewers. In essence, the representation of JavaScript used by Babel didn't allow us to accurately model what was dictated by the JavaScript specification, and so I had to make use of a small hack to achieve the correct result.</p>
+                <h3 id="my-observations-of-babel-suggestions-for-markbind">My Observations of Babel + Suggestions for MarkBind<a class="fa fa-anchor" href="#my-observations-of-babel-suggestions-for-markbind"></a></h3>
                 <h4 id="comprehensive-contributing-guide">Comprehensive contributing guide</h4>
                 <p>Babel's <a href="https://github.com/babel/babel/blob/master/CONTRIBUTING.md">contributing</a> guide lists all the steps needed to build and test Babel in an easy to follow manner. Also, it lists where to get help (their Slack channel), how to submit PRs, and lots of other important information.</p>
                 <h4 id="poor-documentation">Poor documentation</h4>
-                <p>Even big projects like Babel can be lacking in documentation. It was difficult to get started with Babel, since the project was so huge and it took many hours of trial and error to figure out where to even start. They had some small guides on their Abstract Syntax Tree and how to write plugins, but that was it. This unfortunately seems to be an issue with many projects as I faced the same difficulty when first starting out with MarkBind. Nonetheless, it would be great for these projects (and other projects too) to have better documentation. Not just so that it would be easier for new contributers like myself to submit PRs, but also for all maintainers to know why a certain thing was written that way a few years down the road.</p>
+                <p>Even big projects like Babel can be lacking in documentation. It was difficult to get started with Babel, since the project was so huge and it took many hours of trial and error to figure out where to even start. They had some small guides on their Abstract Syntax Tree and how to write plugins, but that was it. This unfortunately seems to be an issue with many projects as
+                  I faced the same difficulty when first starting out with MarkBind. Nonetheless, it would be great for these projects (and other projects too) to have better documentation. Not just so that it would be easier for new contributers like myself to submit PRs, but also for all maintainers to know why a certain thing was written that way a few years down the road.</p>
                 <h4 id="precise-specification">Precise specification</h4>
-                <p>In contrast with its lacking documentation (i.e. how to implement a feature), it was comparatively easy to know what that feature should do. Babel tries to implement the latest <a href="https://tc39.es/ecma262/">ECMAScript specification</a>, and the specification provides a very detailed explanation of exactly how a language feature (e.g. default parameters) should work. This is why bugs reported in Babel can be determined to be legitimate objectively and quickly: reference the specification and that's it!</p>
-                <p>This aspect is very different as compared to other compiler projects out there (inclduing MarkBind). MarkBind, React, Vue, etc are all projects where their specification is also a part of the project, and so when a legitimate bug is reported with regards to the syntax, the bug could either be a bug in the specification (but implementation correctly follows the specification), a bug in the implementation (does not correctly follow the specification), or maybe even both.</p>
+                <p>In contrast with its lacking documentation (i.e. how to implement a feature), it was comparatively easy to know <em>what</em> that feature should do. Babel tries to implement the latest <a href="https://tc39.es/ecma262/">ECMAScript specification</a>, and the specification provides a very detailed explanation of exactly how a language feature (e.g. default parameters) should work. This is why bugs reported in Babel can be determined to be legitimate objectively and quickly: reference the specification and that's it!</p>
+                <p>This aspect is very different as compared to other compiler projects out there (inclduing MarkBind). MarkBind, React, Vue, etc are all projects where their specification is also a part of the project, and so when a bug is reported with regards to the syntax, the bug could either be a bug in the specification (but implementation correctly follows the specification), a bug in the implementation (does not correctly follow the specification), or maybe even both.</p>
                 <p>Should MarkBind have a formal specification? It currently uses a mix of several different syntax, so unless a custom MarkBind parser is written we probably have no reason to do so.</p>
                 <h4 id="easy-testing">Easy testing</h4>
-                <p>The nature of Babel (compiling JavaScript into JavaScript) nicely gives rise to its test suite: One folder for each test, with each folder containing 2 files, <code>input.js</code> and <code>output.js</code>. <code>input.js</code> contains the code to be transpiled, and <code>output.js</code> contains the expected output. Adding and updating files are therefore really easy. Of course, there are other tests in Babel, but the one I described is the most commonly used. In a way, Babel is very similar to MarkBind, in that they are both compilers.</p>
+                <p>The nature of Babel (compiling JavaScript into JavaScript) nicely gives rise to its test suite: One folder for each test, with each folder containing 2 files, <code>input.js</code> and <code>output.js</code>. <code>input.js</code> contains the code to be transpiled, and <code>output.js</code> contains the expected output. Adding and updating files are therefore really easy. Of course, there are other tests in Babel, but the one I described is the most commonly used.</p>
+                <p>In a way, Babel is very similar to MarkBind, in that they are both compilers.</p>
                 <p>MarkBind currently tests Markbind snippets via the use of test sites, where there are a few test sites with many <code>.md</code> files that make up a full site. Then, the expected HTML output of all these files are stored in a separate folder. This makes it hard to compare the input and output, since location-wise the source MarkBind file and the output HTML file are quite far apart. It might be feasible for us to introduce this method of testing, or even rewrite our current test suite. Then test updates would also be more modular, as all additions would be entirely confined to an new folder, resulting in easier code reviews as well!</p>
                 <h4 id="easily-reproducible-bug-reports">Easily reproducible bug reports</h4>
-                <p>You can easily share a code snippet on the <a href="https://babeljs.io/repl">Babel playground</a>. You can choose between many different configuration options, plugins, and versions, and also share the link to the exact state of your REPL. This makes it an ideal way to submit bug reports, where anyone can read the issue and then click on the link that reproduces the issue exactly. This would eliminate many &quot;unable to reproduce&quot; bugs in practice, since the reporter can verify bugs on the playground itself before reporting.
-                  MarkBind might be able to implement this to a certain degree, such as self-contained MarkBind syntax that does not reference other files. This would allow easier verification of bugs, since developers can simply click on a link and see the bug in action instead of having to copy the offending code over and then building the site. However, we wouldn't be able to call this a true &quot;MarkBind playground&quot; since it does not include all features of MarkBind.</p>
+                <p>You can easily share a code snippet on the <a href="https://babeljs.io/repl">Babel playground</a>. You can choose between many different configuration options, plugins, and versions, and also share the link to the exact state of your REPL. This makes it an ideal way to submit bug reports, where anyone can read the issue and then click on the link that reproduces the issue exactly. This would eliminate many &quot;unable to reproduce&quot; bugs in practice, since the reporter can verify bugs on the playground itself before reporting.</p>
+                <p>MarkBind might be able to implement this to a certain degree, such as self-contained MarkBind syntax that does not reference other files. This would allow easier verification of bugs, since developers can simply click on a link and see the bug in action instead of having to copy the offending code over and then building the site. However, we wouldn't be able to call this a true &quot;MarkBind playground&quot; since it does not include all features of MarkBind.</p>
               </div>
             </panel>
           </box>
@@ -552,7 +554,7 @@
                   <li><a href="https://github.com/react-bootstrap/react-bootstrap/pull/5041">docs(Navs): Add missing documentation for NavDropdown on website #5041</a></li>
                   <li><a href="https://github.com/react-bootstrap/react-bootstrap/pull/5044">Make FormLabel support <code>as</code> prop #5044</a></li>
                 </ul>
-                <h3 id="my-observations-3">My Observations<a class="fa fa-anchor" href="#my-observations-3"></a></h3>
+                <h3 id="my-observations-2">My Observations<a class="fa fa-anchor" href="#my-observations-2"></a></h3>
                 <ol>
                   <li>
                     <p>The use of a <strong>sandbox environment with an intergrated editor</strong>, particulary via <a href="http://codesandbox.io">codesandbox.io</a> makes it easier to report bugs. One just needs to paste the corresponding source code, and the rendered output can be seen on the other half of the screen. Bug reporters would also give brief instructions, such as steps for reproduction or state what to focus on. The sandbox environment makes it easy for developers to see what bug is being reporting, and reproduce issues easily and quickly. It seems that for now, sandboxes in <a href="http://sandbox.io">sandbox.io</a> can be configured for popular libraries (such as Vue, React, Angular), it would be extremely nice to investigate how to configure one for MarkBind. Be it by talking to the developers of <a href="http://codesandbox.io">codesandbox.io</a> or by building our own code playground ourselves.</p>
@@ -730,7 +732,7 @@
                   <li><a href="https://github.com/python/mypy/pull/8303">Update common issues to include <strong>init</strong> without arguments</a></li>
                   <li><a href="https://github.com/zeromq/zeromq.org/pull/73">Problem: minor typo in hello_world c/cpp examples</a></li>
                 </ul>
-                <h3 id="my-observations-4">My Observations<a class="fa fa-anchor" href="#my-observations-4"></a></h3>
+                <h3 id="my-observations-3">My Observations<a class="fa fa-anchor" href="#my-observations-3"></a></h3>
                 <h4 id="babysitter-like-contribution-guide">Babysitter-like Contribution Guide</h4>
                 <p>Hugo's contribution guide is for anyone who's willing to contribute even if he/she doesn't have any experience in Go, GitHub or how Hugo works in specific. The content is written in a tutorial-like fashion with each step explicitly explained. It includes a ton of introductory learning resources for newcomers to refer to and takes different development environments into consideration (Mac/Windows/Linux).</p>
                 <p>It covers the following key points that are common for any type of contribution:</p>
@@ -953,7 +955,7 @@
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-5">My Contributions<a class="fa fa-anchor" href="#my-contributions-5"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
-                <h3 id="my-observations-5">My Observations<a class="fa fa-anchor" href="#my-observations-5"></a></h3>
+                <h3 id="my-observations-4">My Observations<a class="fa fa-anchor" href="#my-observations-4"></a></h3>
                 <p>Give your observations about the project here</p>
               </div>
             </panel>
@@ -982,7 +984,7 @@
                 <p>MarkBind is a tool for generating content-heavy websites from source files in Markdown format</p>
                 <h3 id="my-contributions-6">My Contributions<a class="fa fa-anchor" href="#my-contributions-6"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
-                <h3 id="my-observations-6">My Observations<a class="fa fa-anchor" href="#my-observations-6"></a></h3>
+                <h3 id="my-observations-5">My Observations<a class="fa fa-anchor" href="#my-observations-5"></a></h3>
                 <p>Give your observations about the project here</p>
               </div>
             </panel>
@@ -1012,7 +1014,7 @@
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-7">My Contributions<a class="fa fa-anchor" href="#my-contributions-7"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
-                <h3 id="my-observations-7">My Observations<a class="fa fa-anchor" href="#my-observations-7"></a></h3>
+                <h3 id="my-observations-6">My Observations<a class="fa fa-anchor" href="#my-observations-6"></a></h3>
                 <p>Give your observations about the project here</p>
               </div>
             </panel>
@@ -1041,7 +1043,7 @@
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-8">My Contributions<a class="fa fa-anchor" href="#my-contributions-8"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
-                <h3 id="my-observations-8">My Observations<a class="fa fa-anchor" href="#my-observations-8"></a></h3>
+                <h3 id="my-observations-7">My Observations<a class="fa fa-anchor" href="#my-observations-7"></a></h3>
                 <p>Give your observations about the project here</p>
               </div>
             </panel>
@@ -1216,102 +1218,12 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="projects-pylint-and-checkstyle">Projects: Pylint &amp; Checkstyle<a class="fa fa-anchor" href="#projects-pylint-and-checkstyle"></a></h3>
-                <p>Both Pylint and Checkstyle are static code analysis tools (for Python
-                  and Java programs respectively). Both tools are mature and well-known in the communities of their respective
-                  languages. Pylint has 370 checks available by default, with a project history
-                  spanning 17 years. Checkstyle has 170 checks available by default, and has been
-                  under development for 19 years.</p>
-                <p>Interestingly, though Python is a dynamically typed language, Pylint can perform
-                  some type checking as well.</p>
-                <p>Links to documents for new contributors:</p>
-                <ul>
-                  <li><a href="http://pylint.pycqa.org/en/latest/development_guide/contribute.html">Pylint's guide for new contributors</a> and <a href="http://pylint.pycqa.org/en/latest/technical_reference/index.html#technical-reference">the technical reference, which gives an overview of the project architecture</a></li>
-                  <li><a href="http://pylint.pycqa.org/en/latest/how_tos/custom_checkers.html">Pylint's guide for adding new checks</a></li>
-                  <li><a href="https://checkstyle.org/contributing.html">Checkstyle's guide for new contributors</a></li>
-                  <li><a href="https://checkstyle.sourceforge.io/writingchecks.html">Checkstyle's guide for adding a new check</a></li>
-                </ul>
+                <h3 id="project-foo-5">Project: Foo<a class="fa fa-anchor" href="#project-foo-5"></a></h3>
+                <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-9">My Contributions<a class="fa fa-anchor" href="#my-contributions-9"></a></h3>
-                <p>I added 2 new checks to Pylint, and a new command to the Pylint CLI tool.
-                  These contributions will be part of Pylint version 2.5</p>
-                <p>Links to PRs:</p>
-                <ul>
-                  <li><a href="https://github.com/PyCQA/pylint/pull/3346">Added a new check that detects incorrect usages of Python's <code>assert</code>
-                      statement</a></li>
-                  <li><a href="https://github.com/PyCQA/pylint/pull/3404">Added a new check that typechecks the arguments of a <code>isinstance</code> function
-                      application</a></li>
-                  <li><a href="https://github.com/PyCQA/pylint/commit/d3409000808faf3198597aa638c9c60e041a421a">Added a command that lists all extensions available in the Pylint CLI
-                      tool</a></li>
-                </ul>
-                <p>For Checkstyle, I wrote documentation to illustrate the usage of a check.</p>
-                <p>Link to PR:</p>
-                <ul>
-                  <li><a href="https://github.com/checkstyle/checkstyle/pull/7796">Add documentation examples for
-                      InnerAssignmentCheck</a></li>
-                </ul>
-                <h3 id="my-observations-9">My Observations<a class="fa fa-anchor" href="#my-observations-9"></a></h3>
-                <h4 id="automating-administrative-work-saves-time">Automating &quot;administrative work&quot; saves time</h4>
-                <p>Checkstyle has a comprehensive suite of continuous integration checks, that
-                  automates many administrative tasks. For example, their CI scripts can detect
-                  the following (amongst others):</p>
-                <ul>
-                  <li>whether the PR description contains a reference to the Issue being fixed (<a href="https://github.com/checkstyle/checkstyle/blob/master/.ci/travis/xtr_pr-description.sh">link to Travis
-                      script</a>)</li>
-                  <li>whether the PR branch is too far behind the master branch (<a href="https://github.com/checkstyle/checkstyle/blob/master/.ci/travis/travis.sh#L201-L223">link to Travis
-                      script</a>)</li>
-                  <li>whether the PR is fixing an issue that has not been approved yet (<a href="https://github.com/checkstyle/checkstyle/blob/master/.ci/travis/xtr_pr-description.sh">link to
-                      Travis
-                      script</a>)</li>
-                  <li>if there is a typo in documentation (using <a href="https://github.com/jsoref/spelling">this spellchecking
-                      tool</a>)</li>
-                </ul>
-                <p>With these checks, reviewers need not spend time catching violations of project
-                  conventions. They can focus on the actual review instead.</p>
-                <p><strong>Recommendation for RepoSense</strong></p>
-                <p>We should try to automate the &quot;admin work&quot; as far as possible.
-                  This process has been started as we have been investigating how GitHub actions
-                  can be applied (to close stale PRs, for example).</p>
-                <p>In addition, we can use a git hook to run the linters before every <code>git push</code>
-                  command is executed. This removes the need for reviewers to remind PR authors
-                  that the CI checks are failing due to a code style issue. We could also consider
-                  adopting the automated spell checker used by Checkstyle.</p>
-                <h4 id="attracting-new-members-by-setting-aside-meaningful-work-for-them">Attracting new members by setting aside meaningful work for them</h4>
-                <p>Given that open source projects (like those under NUS OSS) are often developed
-                  by volunteers, it's in the interest of projects to attract new members.</p>
-                <p>Both Pylint and Checkstyle attract a steady stream of new contributors.</p>
-                <p>One reason is that the maintainers use triaging to higlight areas where <em>new</em> contributors can
-                  <strong>realistically make meaningful contributions</strong>. On Pylint's issue tracker,
-                  several interesting (and realistic) ideas for new checks are set aside
-                  for new contributors. In Checkstyle's case, maintainers mark out not only &quot;good
-                  first issues&quot;, but also &quot;good second issues&quot; and &quot;good third issues&quot;. Such
-                  triaging makes it more likely for new members to invest time on the project,
-                  because they see a clear pathway towards making a significant impact.</p>
-                <p><strong>Recommendation for RepoSense</strong>:
-                  RepoSense does not have a high number of <strong>meaningful</strong> first-timer issues.
-                  We should consider brainstorming more such issues, especially in the periods when
-                  we are expecting new contributors.</p>
-                <p>Moreover, it can be confusing for new contributors to find a suitable task
-                  after making their first contribution. There could be
-                  an additional <code>Easy</code> label to help identify work for developers who have
-                  made <em>some</em> first contribution, but are still new to the project. There
-                  shouldn't be any restriction on the number of <code>Easy</code> issues one can fix.</p>
-                <p>With the <code>Easy</code> label and a larger number of first-timer issues, new
-                  contributors are more likely to invest time in RepoSense as they will see a
-                  clear pathway towards a meaningful contribution.</p>
-                <h4 id="comprehensive-commit-messages-make-the-project-more-accessible-for-new-members">Comprehensive commit messages make the project more accessible for new members</h4>
-                <p>When we implement a feature or fix a bug, there are often multiple possible
-                  solutions. Ultimately, we make a decision based on the team's judgement.
-                  However, the reasons for these technical decisions can become inaccessible to new
-                  members if they are not documented anywhere.</p>
-                <p>After working on Pylint, I have come to appreciate RepoSense's comprehensive
-                  commit messages. It is incredibly convenient that I can understand the evolution
-                  of most classes and methods by retrieving the commits associated with them.</p>
-                <p><strong>Recommendation for RepoSense</strong></p>
-                <p>Though RepoSense has strict conventions for commits on <code>master</code>,
-                  there are no conventions enforced for commits in PR branches.</p>
-                <p>I suggest that we should adopt the use of <code>git rebase</code> (and not <code>git merge</code>)
-                  when we want to bring our PR branches up to date with <code>master</code>.
-                  This will remove a significant amount of &quot;noise&quot; from merge commits in the PR branch.</p>
+                <p>Give a description of your contributions, including links to relevant PRs</p>
+                <h3 id="my-observations-8">My Observations<a class="fa fa-anchor" href="#my-observations-8"></a></h3>
+                <p>Give your observations about the project here</p>
               </div>
             </panel>
           </box>
@@ -1376,11 +1288,11 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-5">Project: Foo<a class="fa fa-anchor" href="#project-foo-5"></a></h3>
+                <h3 id="project-foo-6">Project: Foo<a class="fa fa-anchor" href="#project-foo-6"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-10">My Contributions<a class="fa fa-anchor" href="#my-contributions-10"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
-                <h3 id="my-observations-10">My Observations<a class="fa fa-anchor" href="#my-observations-10"></a></h3>
+                <h3 id="my-observations-9">My Observations<a class="fa fa-anchor" href="#my-observations-9"></a></h3>
                 <p>Give your observations about the project here</p>
               </div>
             </panel>
@@ -1636,7 +1548,7 @@
                   <li><a href="https://github.com/OpenRefine/OpenRefine/pull/2296">[#2280] Add fill down and blank down operations for all columns</a></li>
                 </ol>
                 <p>My contributions for the project starts off with mainly bug fixes (PR 1 &amp; 2) to ease my understanding to the large existing codebase. After having a deeper understanding of the existing codebase, I added some new features (PR 3 and 4) that provide more value and simplifies the effort of the user.</p>
-                <h3 id="my-observations-11">My Observations<a class="fa fa-anchor" href="#my-observations-11"></a></h3>
+                <h3 id="my-observations-10">My Observations<a class="fa fa-anchor" href="#my-observations-10"></a></h3>
                 <ol>
                   <li><strong>Motivation for new contributors</strong>. OpenRefine provides a good starting point for new contributors in the form of their <a href="https://github.com/OpenRefine/OpenRefine/blob/master/CONTRIBUTING.md">Contribution Guidelines</a>. The guidelines cover multiple ways to contribute (in the form of PRs, feature requests, bug reports, documentation) as well as things to take note before contributing. Several first timer issues and second timer issues were also offered to ensure that new contributors can ease their way through the codebase with simple features/fixes.</li>
                   <li><strong>Having good documentation is crucial for developers to get started with the project</strong>. Initially it was very daunting for me to start working on such as large codebase that are built with some technologies that I was not familiar with. OpenRefine's developer guide did not help me much either, as it only describes the application architecture on a high level, the content was not structured well, there's even missing info about several components. I had to take quite some time and dive deep into the code to figure out how the components tie with one another.</li>
@@ -1664,7 +1576,7 @@
                   <li><a href="https://github.com/whyboris/Video-Hub-App/issues/336">Adding tags to videos does not update tag tray if open</a></li>
                 </ol>
                 <p>My contributions for the project mainly consists of fixing and detecting bugs that exist in the application.</p>
-                <h3 id="my-observations-12">My Observations<a class="fa fa-anchor" href="#my-observations-12"></a></h3>
+                <h3 id="my-observations-11">My Observations<a class="fa fa-anchor" href="#my-observations-11"></a></h3>
                 <p>Video Hub App is a rather small and new application, with only two active developers working on features while other small bug fixes/features are open to external contributors.</p>
                 <ol>
                   <li><strong>Simple contribution guidelines</strong>. There's no format or procedures to follow in order to contribute to the project, there are no code styles to follow as well. I think it is fine at this stage, but I think in the future when the codebase increases in size, there needs to be a certain code style to follow so that code consistency is achieved, which makes code check ins and reviews easier.</li>
@@ -1819,11 +1731,11 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-6">Project: Foo<a class="fa fa-anchor" href="#project-foo-6"></a></h3>
+                <h3 id="project-foo-7">Project: Foo<a class="fa fa-anchor" href="#project-foo-7"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-13">My Contributions<a class="fa fa-anchor" href="#my-contributions-13"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
-                <h3 id="my-observations-13">My Observations<a class="fa fa-anchor" href="#my-observations-13"></a></h3>
+                <h3 id="my-observations-12">My Observations<a class="fa fa-anchor" href="#my-observations-12"></a></h3>
                 <p>Give your observations about the project here</p>
               </div>
             </panel>
@@ -1989,11 +1901,11 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-7">Project: Foo<a class="fa fa-anchor" href="#project-foo-7"></a></h3>
+                <h3 id="project-foo-8">Project: Foo<a class="fa fa-anchor" href="#project-foo-8"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-14">My Contributions<a class="fa fa-anchor" href="#my-contributions-14"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
-                <h3 id="my-observations-14">My Observations<a class="fa fa-anchor" href="#my-observations-14"></a></h3>
+                <h3 id="my-observations-13">My Observations<a class="fa fa-anchor" href="#my-observations-13"></a></h3>
                 <p>Give your observations about the project here</p>
               </div>
             </panel>
@@ -2019,11 +1931,11 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-8">Project: Foo<a class="fa fa-anchor" href="#project-foo-8"></a></h3>
+                <h3 id="project-foo-9">Project: Foo<a class="fa fa-anchor" href="#project-foo-9"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-15">My Contributions<a class="fa fa-anchor" href="#my-contributions-15"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
-                <h3 id="my-observations-15">My Observations<a class="fa fa-anchor" href="#my-observations-15"></a></h3>
+                <h3 id="my-observations-14">My Observations<a class="fa fa-anchor" href="#my-observations-14"></a></h3>
                 <p>Give your observations about the project here</p>
               </div>
             </panel>
@@ -2094,7 +2006,7 @@
                   </li>
                   <li><a href="https://github.com/d3/d3-random">d3-random</a>: authored <a href="https://github.com/d3/d3-random/pull/30">pull request #30</a> that fixed three issues among other improvements. Six new random number distributions were added and the implementation of other distributions improved. The PR was subsequently merged as part of a new release <a href="https://github.com/d3/d3-random/releases/tag/v2.1.0">v2.1.0</a>.</li>
                 </ul>
-                <h3 id="my-observations-16">My Observations<a class="fa fa-anchor" href="#my-observations-16"></a></h3>
+                <h3 id="my-observations-15">My Observations<a class="fa fa-anchor" href="#my-observations-15"></a></h3>
                 <p>The contrast between MarkBind (an NUS-OSS project) and D3 (an external project) provided some insights:</p>
                 <ol>
                   <li>MarkBind has a good number of developers who can cover for each other in merging pull requests and making other updates as necessary. Despite D3 being larger than MarkBind, there is only one developer who can push commits, its creator <a href="https://github.com/mbostock">Mike Bostock</a>, who has to tend to over 30 repositories (one for each module) that comprise the entire library. This leads to longer waiting times on pull requests for D3 than for MarkBind, though some informal responses (e.g. reactions on pull requests) provided quicker feedback as to the merits of my contributions. Hence, having more than one developer should be the norm for any project put into production use, as the major NUS-OSS projects all are.</li>
@@ -2126,11 +2038,11 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-9">Project: Foo<a class="fa fa-anchor" href="#project-foo-9"></a></h3>
+                <h3 id="project-foo-10">Project: Foo<a class="fa fa-anchor" href="#project-foo-10"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-17">My Contributions<a class="fa fa-anchor" href="#my-contributions-17"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
-                <h3 id="my-observations-17">My Observations<a class="fa fa-anchor" href="#my-observations-17"></a></h3>
+                <h3 id="my-observations-16">My Observations<a class="fa fa-anchor" href="#my-observations-16"></a></h3>
                 <p>Give your observations about the project here</p>
               </div>
             </panel>
@@ -2254,7 +2166,7 @@
                   <li><a href="https://github.com/gatsbyjs/gatsby/pull/22422">Migrate gatsby-dependents to TypeScript</a></li>
                 </ul>
                 <p>Initially, I familiarized myself with the Gatsby codebase by fixing a bug in the GraphiQL inspector. Once I was familiar with the project, I started to take up larger issues like refactoring <code>gatsby-node</code> into a set of well-structured utilities categorized by their function. I also contributed to their ongoing TypeScript migration, helping to migrate some of their source files and fixing some incorrect types.</p>
-                <h3 id="my-observations-18">My Observations<a class="fa fa-anchor" href="#my-observations-18"></a></h3>
+                <h3 id="my-observations-17">My Observations<a class="fa fa-anchor" href="#my-observations-17"></a></h3>
                 <p>These are some positive things that I've observed as a contributor on Gatsby.</p>
                 <ol>
                   <li>
@@ -2446,7 +2358,7 @@
                 <p>Hugo is a widely used static site generator written in Go, with over 40.7k stars on Github.</p>
                 <h3 id="my-contributions-19">My Contributions<a class="fa fa-anchor" href="#my-contributions-19"></a></h3>
                 <p>Added support for raw string literals to be used in the shortcode params. Link to PR <a href="https://github.com/gohugoio/hugo/pull/6753/">here</a></p>
-                <h3 id="my-observations-19">My Observations<a class="fa fa-anchor" href="#my-observations-19"></a></h3>
+                <h3 id="my-observations-18">My Observations<a class="fa fa-anchor" href="#my-observations-18"></a></h3>
                 <p>The lexer was based on a talk by Rob Pike and is quite interesting.</p>
               </div>
             </panel>
@@ -2516,11 +2428,11 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-10">Project: Foo<a class="fa fa-anchor" href="#project-foo-10"></a></h3>
+                <h3 id="project-foo-11">Project: Foo<a class="fa fa-anchor" href="#project-foo-11"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-20">My Contributions<a class="fa fa-anchor" href="#my-contributions-20"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
-                <h3 id="my-observations-20">My Observations<a class="fa fa-anchor" href="#my-observations-20"></a></h3>
+                <h3 id="my-observations-19">My Observations<a class="fa fa-anchor" href="#my-observations-19"></a></h3>
                 <p>Give your observations about the project here</p>
               </div>
             </panel>
@@ -2663,7 +2575,7 @@
                   <li><a href="https://github.com/zaproxy/zap-extensions/pull/2317">Add passive scan rule for dangerous js functions #2317</a></li>
                   <li><a href="https://github.com/zaproxy/zaproxy/pull/5882">Update scanners.md for dangerous js function scanner id #5882</a></li>
                 </ul>
-                <h3 id="my-observations-21">My Observations<a class="fa fa-anchor" href="#my-observations-21"></a></h3>
+                <h3 id="my-observations-20">My Observations<a class="fa fa-anchor" href="#my-observations-20"></a></h3>
                 <h4 id="external-project-workflow">External Project Workflow</h4>
                 <p>ZAP has extensive documentation on contribution and development guidelines. In brief, they follow a forking workflow similar to most OSS projects, and require that PRs made be associated with issues raised. There was also a very useful blog post series outlining in detail how one can start contributing to ZAP.</p>
                 <p>Relevant Links:</p>
@@ -2802,11 +2714,11 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-11">Project: Foo<a class="fa fa-anchor" href="#project-foo-11"></a></h3>
+                <h3 id="project-foo-12">Project: Foo<a class="fa fa-anchor" href="#project-foo-12"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-22">My Contributions<a class="fa fa-anchor" href="#my-contributions-22"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
-                <h3 id="my-observations-22">My Observations<a class="fa fa-anchor" href="#my-observations-22"></a></h3>
+                <h3 id="my-observations-21">My Observations<a class="fa fa-anchor" href="#my-observations-21"></a></h3>
                 <p>Give your observations about the project here</p>
               </div>
             </panel>
@@ -2919,7 +2831,7 @@
                 <ul>
                   <li><a href="https://github.com/netlify/netlify-cms/pull/3181">docs: fix media library usage #3181</a></li>
                 </ul>
-                <h3 id="my-observations-23">My Observations<a class="fa fa-anchor" href="#my-observations-23"></a></h3>
+                <h3 id="my-observations-22">My Observations<a class="fa fa-anchor" href="#my-observations-22"></a></h3>
                 <h4 id="external-project-workflow-2">External Project Workflow</h4>
                 <p>Netlify CMS has documentation page on contribution and development guidelines. They utilise a <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow">forking workflow</a> and <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow">feature branches</a>. Contributors are required to rebase on master when opening a Pull Request and before merging in a Pull Request. Pull Requests are reviewed by at least two maintainers prior to merging. There is also a community slack channel and forums to allow new developers to chat with maintainers and see what are some of the issues being actively discussed.</p>
                 <h4 id="well-documented-contributing-guide">Well-documented Contributing Guide</h4>
@@ -3004,7 +2916,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sun, 29 Mar 2020 15:30:55 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sun, 29 Mar 2020 15:38:01 GMT</small></p>
       </div>
     </footer>
   </div>

@@ -1059,7 +1059,10 @@
                   <img src="/2020/students/anubh-v/photo.png" width="100"><br></div>
                 <div class="col">
                   <p><strong>GitHub:</strong> <span><a href="https://www.github.com/anubh-v">https://www.github.com/anubh-v</a></span><br></p>
-                  <p><strong>Projects:</strong> <span><a href="https://github.com/reposense/RepoSense">RepoSense</a>, <a href="https://github.com/CATcher-org/CATcher">CATcher</a>, <a href="https://github.com/PyCQA/pylint">pylint</a></span></p>
+                  <p><strong>Projects:</strong> <span><a href="https://github.com/reposense/RepoSense">RepoSense</a>,
+                      <a href="https://github.com/CATcher-org/CATcher">CATcher</a>,
+                      <a href="https://github.com/PyCQA/pylint">pylint</a>,
+                      <a href="https://github.com/checkstyle/checkstyle">Checkstyle</a></span></p>
                 </div>
               </div>
             </div>
@@ -1218,12 +1221,104 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-5">Project: Foo<a class="fa fa-anchor" href="#project-foo-5"></a></h3>
-                <p>Give an intro to the project here ...</p>
+                <h3 id="projects-pylint-and-checkstyle">Projects: Pylint &amp; Checkstyle<a class="fa fa-anchor" href="#projects-pylint-and-checkstyle"></a></h3>
+                <p>Both Pylint and Checkstyle are static code analysis tools (for Python
+                  and Java programs respectively). Both tools are mature and well-known in the communities of their respective
+                  languages. Pylint has 370 checks available by default, with a project history
+                  spanning 17 years. Checkstyle has 170 checks available by default, and has been
+                  under development for 19 years.</p>
+                <p>Interestingly, though Python is a dynamically typed language, Pylint can perform
+                  some type checking as well.</p>
+                <p>Links to documents for new contributors:</p>
+                <ul>
+                  <li><a href="http://pylint.pycqa.org/en/latest/development_guide/contribute.html">Pylint's guide for new contributors</a> and <a href="http://pylint.pycqa.org/en/latest/technical_reference/index.html#technical-reference">the technical reference, which gives an overview of the project architecture</a></li>
+                  <li><a href="http://pylint.pycqa.org/en/latest/how_tos/custom_checkers.html">Pylint's guide for adding new checks</a></li>
+                  <li><a href="https://checkstyle.org/contributing.html">Checkstyle's guide for new contributors</a></li>
+                  <li><a href="https://checkstyle.sourceforge.io/writingchecks.html">Checkstyle's guide for adding a new check</a></li>
+                </ul>
                 <h3 id="my-contributions-9">My Contributions<a class="fa fa-anchor" href="#my-contributions-9"></a></h3>
-                <p>Give a description of your contributions, including links to relevant PRs</p>
+                <p>I added 2 new checks to Pylint, and a new command to the Pylint CLI tool.
+                  These contributions will be part of Pylint version 2.5</p>
+                <p>Links to PRs:</p>
+                <ul>
+                  <li><a href="https://github.com/PyCQA/pylint/pull/3346">Added a new check that detects incorrect usages of Python's <code>assert</code>
+                      statement</a></li>
+                  <li><a href="https://github.com/PyCQA/pylint/pull/3404">Added a new check that typechecks the arguments of a <code>isinstance</code> function
+                      application</a></li>
+                  <li><a href="https://github.com/PyCQA/pylint/pull/3366">Added a command that lists all extensions available in the Pylint CLI
+                      tool</a> - Note: the project maintainer merged my branch <strong>locally</strong>
+                    (as compared with merging via GitHub). Hence, the PR has been closed.
+                    <a href="https://github.com/PyCQA/pylint/commit/d3409000808faf3198597aa638c9c60e041a421a"><strong>Here is the commit</strong></a> showing my merged contribution.</li>
+                </ul>
+                <p>For Checkstyle, I wrote documentation to illustrate the usage of a check.</p>
+                <p>Link to PR:</p>
+                <ul>
+                  <li><a href="https://github.com/checkstyle/checkstyle/pull/7796">Add documentation examples for
+                      InnerAssignmentCheck</a></li>
+                </ul>
                 <h3 id="my-observations-8">My Observations<a class="fa fa-anchor" href="#my-observations-8"></a></h3>
-                <p>Give your observations about the project here</p>
+                <h4 id="automating-administrative-work-saves-time">Automating &quot;administrative work&quot; saves time</h4>
+                <p>Checkstyle has a comprehensive suite of continuous integration checks, that
+                  automates many administrative tasks. For example, their CI scripts can detect
+                  the following (amongst others):</p>
+                <ul>
+                  <li>whether the PR description contains a reference to the Issue being fixed (<a href="https://github.com/checkstyle/checkstyle/blob/master/.ci/travis/xtr_pr-description.sh">link to Travis
+                      script</a>)</li>
+                  <li>whether the PR branch is too far behind the master branch (<a href="https://github.com/checkstyle/checkstyle/blob/master/.ci/travis/travis.sh#L201-L223">link to Travis
+                      script</a>)</li>
+                  <li>whether the PR is fixing an issue that has not been approved yet (<a href="https://github.com/checkstyle/checkstyle/blob/master/.ci/travis/xtr_pr-description.sh">link to
+                      Travis
+                      script</a>)</li>
+                  <li>if there is a typo in documentation (using <a href="https://github.com/jsoref/spelling">this spellchecking
+                      tool</a>)</li>
+                </ul>
+                <p>With these checks, reviewers need not spend time catching violations of project
+                  conventions. They can focus on the actual review instead.</p>
+                <p><strong>Recommendation for RepoSense</strong></p>
+                <p>We should try to automate the &quot;admin work&quot; as far as possible.
+                  This process has been started as we have been investigating how GitHub actions
+                  can be applied (to close stale PRs, for example).</p>
+                <p>In addition, we can use a git hook to run the linters before every <code>git push</code>
+                  command is executed. This removes the need for reviewers to remind PR authors
+                  that the CI checks are failing due to a code style issue. We could also consider
+                  adopting the automated spell checker used by Checkstyle.</p>
+                <h4 id="attracting-new-members-by-setting-aside-meaningful-work-for-them">Attracting new members by setting aside meaningful work for them</h4>
+                <p>Given that open source projects (like those under NUS OSS) are often developed
+                  by volunteers, it's in the interest of projects to attract new members.</p>
+                <p>Both Pylint and Checkstyle attract a steady stream of new contributors.</p>
+                <p>One reason is that the maintainers use triaging to higlight areas where <em>new</em> contributors can
+                  <strong>realistically make meaningful contributions</strong>. On Pylint's issue tracker,
+                  several interesting (and realistic) ideas for new checks are set aside
+                  for new contributors. In Checkstyle's case, maintainers mark out not only &quot;good
+                  first issues&quot;, but also &quot;good second issues&quot; and &quot;good third issues&quot;. Such
+                  triaging makes it more likely for new members to invest time on the project,
+                  because they see a clear pathway towards making a significant impact.</p>
+                <p><strong>Recommendation for RepoSense</strong>:
+                  RepoSense does not have a high number of <strong>meaningful</strong> first-timer issues.
+                  We should consider brainstorming more such issues, especially in the periods when
+                  we are expecting new contributors.</p>
+                <p>Moreover, it can be confusing for new contributors to find a suitable task
+                  after making their first contribution. There could be
+                  an additional <code>Easy</code> label to help identify work for developers who have
+                  made <em>some</em> first contribution, but are still new to the project. There
+                  shouldn't be any restriction on the number of <code>Easy</code> issues one can fix.</p>
+                <p>With the <code>Easy</code> label and a larger number of first-timer issues, new
+                  contributors are more likely to invest time in RepoSense as they will see a
+                  clear pathway towards a meaningful contribution.</p>
+                <h4 id="comprehensive-commit-messages-make-the-project-more-accessible-for-new-members">Comprehensive commit messages make the project more accessible for new members</h4>
+                <p>When we implement a feature or fix a bug, there are often multiple possible
+                  solutions. Ultimately, we make a decision based on the team's judgement.
+                  However, the reasons for these technical decisions can become inaccessible to new
+                  members if they are not documented anywhere.</p>
+                <p>After working on Pylint, I have come to appreciate RepoSense's comprehensive
+                  commit messages. It is incredibly convenient that I can understand the evolution
+                  of most classes and methods by retrieving the commits associated with them.</p>
+                <p><strong>Recommendation for RepoSense</strong></p>
+                <p>Though RepoSense has strict conventions for commits on <code>master</code>,
+                  there are no conventions enforced for commits in PR branches.</p>
+                <p>I suggest that we should adopt the use of <code>git rebase</code> (and not <code>git merge</code>)
+                  when we want to bring our PR branches up to date with <code>master</code>.
+                  This will remove a significant amount of &quot;noise&quot; from merge commits in the PR branch.</p>
               </div>
             </panel>
           </box>
@@ -1288,7 +1383,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-6">Project: Foo<a class="fa fa-anchor" href="#project-foo-6"></a></h3>
+                <h3 id="project-foo-5">Project: Foo<a class="fa fa-anchor" href="#project-foo-5"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-10">My Contributions<a class="fa fa-anchor" href="#my-contributions-10"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -1731,7 +1826,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-7">Project: Foo<a class="fa fa-anchor" href="#project-foo-7"></a></h3>
+                <h3 id="project-foo-6">Project: Foo<a class="fa fa-anchor" href="#project-foo-6"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-13">My Contributions<a class="fa fa-anchor" href="#my-contributions-13"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -1901,7 +1996,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-8">Project: Foo<a class="fa fa-anchor" href="#project-foo-8"></a></h3>
+                <h3 id="project-foo-7">Project: Foo<a class="fa fa-anchor" href="#project-foo-7"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-14">My Contributions<a class="fa fa-anchor" href="#my-contributions-14"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -1931,7 +2026,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-9">Project: Foo<a class="fa fa-anchor" href="#project-foo-9"></a></h3>
+                <h3 id="project-foo-8">Project: Foo<a class="fa fa-anchor" href="#project-foo-8"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-15">My Contributions<a class="fa fa-anchor" href="#my-contributions-15"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -2038,7 +2133,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-10">Project: Foo<a class="fa fa-anchor" href="#project-foo-10"></a></h3>
+                <h3 id="project-foo-9">Project: Foo<a class="fa fa-anchor" href="#project-foo-9"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-17">My Contributions<a class="fa fa-anchor" href="#my-contributions-17"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -2428,7 +2523,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-11">Project: Foo<a class="fa fa-anchor" href="#project-foo-11"></a></h3>
+                <h3 id="project-foo-10">Project: Foo<a class="fa fa-anchor" href="#project-foo-10"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-20">My Contributions<a class="fa fa-anchor" href="#my-contributions-20"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -2714,7 +2809,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-12">Project: Foo<a class="fa fa-anchor" href="#project-foo-12"></a></h3>
+                <h3 id="project-foo-11">Project: Foo<a class="fa fa-anchor" href="#project-foo-11"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-22">My Contributions<a class="fa fa-anchor" href="#my-contributions-22"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -2916,7 +3011,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sun, 29 Mar 2020 15:38:01 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sun, 29 Mar 2020 15:46:56 GMT</small></p>
       </div>
     </footer>
   </div>

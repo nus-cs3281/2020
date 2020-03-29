@@ -2809,12 +2809,38 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-11">Project: Foo<a class="fa fa-anchor" href="#project-foo-11"></a></h3>
-                <p>Give an intro to the project here ...</p>
+                <h3 id="project-ionic">Project: Ionic<a class="fa fa-anchor" href="#project-ionic"></a></h3>
+                <p><a href="https://ionicframework.com/">Ionic</a> is the open-source mobile app development framework that makes it easy to build top quality native and progressive web apps with web technologies.</p>
+                <p>Ionic Framework is essentially a UI toolkit that consists of customized <a href="https://www.webcomponents.org/introduction">Web Components</a> that achieve the same functionality as native mobile components on iOS and Android and mimic their look and feel. A comprehensive list of components available in Ionic Framework can be found <a href="https://ionicframework.com/docs/components">here</a>.</p>
+                <h4 id="documentations">Documentations</h4>
+                <p>The document outlining the contribution workflow can be found here: <a href="https://github.com/ionic-team/ionic/blob/master/.github/CONTRIBUTING.md">CONTRIBUTING.md</a></p>
                 <h3 id="my-contributions-22">My Contributions<a class="fa fa-anchor" href="#my-contributions-22"></a></h3>
-                <p>Give a description of your contributions, including links to relevant PRs</p>
+                <p>Bug fixes:</p>
+                <ul>
+                  <li><a href="https://github.com/ionic-team/ionic/pull/20359">fix(overlay): attach overlay element to document body</a></li>
+                  <li><a href="https://github.com/ionic-team/ionic/pull/20665">fix(datetime): max property now works when hour, minute, or second set to 0</a></li>
+                </ul>
+                <p>New feature:</p>
+                <ul>
+                  <li><a href="https://github.com/ionic-team/ionic/pull/20804">feat(datetime): add default value when picker opens</a></li>
+                </ul>
                 <h3 id="my-observations-21">My Observations<a class="fa fa-anchor" href="#my-observations-21"></a></h3>
-                <p>Give your observations about the project here</p>
+                <p>The contributing workflow of Ionic is a standard one similar to other open-source projects. Since Ionic Framework consists of multiple packages (core, angular, react, and vue), all new issues submitted by the contributors are first labelled <code>triage</code>. One of the core developers then attends to the issue and label the issue with its package and type (bug or feature request).</p>
+                <p>Here are some observations made while contributing to Ionic:</p>
+                <ul>
+                  <li>
+                    <p><strong>Use CodePen to reproduce front-end bugs.</strong> One advantage of Ionic being a front-end framework that works with VanillaJS, is the ease of testing and presenting the bugs. CodePen functions as an online code editor where developers can create code snippets and test them. To illustrate a bug of a particular Ionic component, contributors can simply paste the code that reproduces the bug in CodePen, and attach the script to Ionic's <code>js</code> and <code>css</code> files in the <code>&lt;head&gt;</code> section of HTML. CodePen then displays the rendered page side-by-side. Any changes made to the code segment also reflect in the rendered page in real time. Code segments on CodePen can be saved and shared with links. Hence, it is recommended to include a link to the code segment that presents the bug for easy verification and assessment of the bug by other contributors.</p>
+                  </li>
+                  <li>
+                    <p><strong>Use bot created by GitHub App to manage issues.</strong> All the issues submitted by contributors will first be labelled <code>triage</code> automatically by the <code>ionitron-bot</code> which manages the issues. It highlights the new issues to the core developers so that they are not easily missed and prompts further actions from the core developers, such as categorizing the issue or seeking for clarification. The bot also automates closing and locking issues that are not following the provided issue template, not within the scope (support type / &quot;how to&quot; questions), or with an inactive conversation for weeks. It also automatically provides a message to the contributor while closing the issue, saving the need for core developers to repeat same instructions for many times. With the bot, the core developers can spend their time on more important issues. This can possibly be adopted by TEAMMATES if the number of contributors and issues grows.</p>
+                  </li>
+                  <li>
+                    <p><strong>Make constant releases.</strong> As an open-source front-end framework that is used by many projects, Ionic makes constant releases to deliver bug fixes as soon as possible. The intervals between releases are not fixed; depending on the importance and urgency of bug fixes, the intervals range from two weeks to one day. Moreover, there is a clear distinction between releases involving bug fixes and new features. Patch releases (version number changes by <code>0.0.1</code>) only contain bug fixes while minor releases (version number changes by <code>0.1.0</code>) contain both bug fixes and new features. Major releases (version number changes by <code>1.0.0</code>) contain breaking changes and are preceded by beta releases (<code>X.X.X-beta.X</code>). These clear distinctions ensure that developers using Ionic will not easily introduce new behaviors or breaking changes while upgrading the framework.</p>
+                  </li>
+                  <li>
+                    <p><strong>Do screenshot tests.</strong> Since Ionic is a front-end framework, it is important that a PR should not introduce changes to a component's look and behavior when it is not supposed to. With the aforementioned bot, screenshot checks are carried out to compare the look of components before and after the changes made in the PR, pixel by pixel. It automatically takes more than one thousand screenshots and highlights to the contributor any mismatched screenshots after comparison. The drawback of this test is that it needs extra computational resources and is very time-consuming. A complete round of screenshot test takes about 8 days to finish. Hence, only PRs made by core developers can trigger screenshot tests.</p>
+                  </li>
+                </ul>
               </div>
             </panel>
           </box>
@@ -3011,7 +3037,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sun, 29 Mar 2020 15:47:57 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sun, 29 Mar 2020 16:36:35 GMT</small></p>
       </div>
     </footer>
   </div>

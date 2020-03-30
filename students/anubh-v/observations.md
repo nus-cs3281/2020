@@ -18,16 +18,17 @@ Links to documents for new contributors:
 ### My Contributions
 
 I added 2 new checks to Pylint, and a new command to the Pylint CLI tool.
-These contributions will be part of Pylint version 2.5
+These contributions will be part of Pylint version 2.5.
 
 Links to PRs:
 - [Added a new check that detects incorrect usages of Python's `assert`
   statement](https://github.com/PyCQA/pylint/pull/3346)
-- [Added a new check that typechecks the arguments of a `isinstance` function
+- [Added a new check that typechecks the arguments of an `isinstance` function
   application](https://github.com/PyCQA/pylint/pull/3404)
 - [Added a command that lists all extensions available in the Pylint CLI
-  tool](https://github.com/PyCQA/pylint/pull/3366) - Note: the project maintainer merged my branch **locally**
-  (as compared with merging via GitHub). Hence, the PR has been closed.
+  tool](https://github.com/PyCQA/pylint/pull/3366) - Note: the project maintainer merged my branch **from the CLI**
+  (as compared with merging via GitHub). Hence, the PR has been closed though
+  the contribution was merged.
   [**Here is the commit**](https://github.com/PyCQA/pylint/commit/d3409000808faf3198597aa638c9c60e041a421a) showing my merged contribution.
 
 For Checkstyle, I wrote documentation to illustrate the usage of a check.
@@ -90,7 +91,7 @@ we are expecting new contributors.
 
 Moreover, it can be confusing for new contributors to find a suitable task
 after making their first contribution. There could be
-an additional `Easy` label to help identify work for developers who have
+an additional `Easy` label that identifies work for developers who have
 made *some* first contribution, but are still new to the project. There
 shouldn't be any restriction on the number of `Easy` issues one can fix.
 
@@ -115,5 +116,5 @@ Though RepoSense has strict conventions for commits on `master`,
 there are no conventions enforced for commits in PR branches.
 
 I suggest that we should adopt the use of `git rebase` (and not `git merge`)
-when we want to bring our PR branches up to date with `master`.
+for bringing PR branches up to date with `master`.
 This will remove a significant amount of "noise" from merge commits in the PR branch.

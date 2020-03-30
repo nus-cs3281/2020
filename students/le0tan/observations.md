@@ -40,7 +40,7 @@ While GitHub issues can be used as a forum, sometimes it's not ideal for people 
 
 #### Self-sufficient Pull Requests
 
-PRs for Hugo must be self-sufficient to be merged, which means bug fixes must come with extended tests, feature implementations must come with inline documentation, user documentation and unit tests.
+PRs for Hugo must be self-sufficient to be merged, which means bug fixes must come with extended tests, feature implementations must come with inline documentation, user documentation and unit tests. 
 
 #### Lack of Developer's Guide
 
@@ -50,7 +50,10 @@ The maintainer (especially [the founder](https://github.com/bep)) is rather part
 
 1. **Separate source code from documentation**: Hugo has two separate repositories for documentation website and source code. For projects that are more like a [platform](https://nus-cs2103-ay1920s2.github.io/website/se-book-adapted/chapters/reuse.html#platforms), it makes more sense to separate the documentation from the source code as its usage is meant to be extended by the community's creativity (i.e. it's not limited to be used as it is).
 1. **Testing for multiple platforms**: Hugo makes use of AppVeyor to test on Windows.
+1. **Automated documentation generation**: Hugo supports several types of configuration syntax (e.g. JSON, YAML, etc.), and in the documentation the author only needs to write one version - a special template will parse the provided one and convert it to different languages.
 1. **Official template gallery**: as mentioned in a previous point, a platform-like project should have a place for the community to showoff their creativity.
+1. **Active master with versioned branches**: When a PR is approved in Hugo, normally the reviewer will merge it to master before the next release. And each release is branched periodically from master. This could possibly save some work from resolving conflicts at one time when doing a release - but the milage may vary on the project basis.
+1. **Extremely Active Maintainers**: [bep](https://github.com/bep) reviewed my PRs within hours and sometimes our communication is like chatting on Telegram. Although this is not realistic for every OSS project, but the contributors would feel much more supported if the feedback is timely.
 
 ### Insights for Internal Projects
 
@@ -59,5 +62,9 @@ Hugo has similar audience and use cases as [MarkBind](https://markbind.org/), he
 1. MarkBind could benefit from a more welcoming contributor's guide - the current developer's guide is more like documentation instead of a guide. And the contributor's guide and developer's guide can be more easily accessible from the official website - currently there's no easy way of locating two essential pieces of documentation from [markbind.org](https://markbind.org/).
 1. In the [Project Structure](https://markbind.org/devdocs/devGuide/index.html#project-structure) section of the developer guide, it briefly mentioned how MarkBind rendering pipeline works. However as the project evolves, this part is not updated timely and the current approach is more complicated than what's described in the guide. It would be best if there is a dedicated blog post about the inner workings of MarkBind at a certain version for newcomers (especially future CS3281/2 students) to refer to.
 1. The documentation for MarkBind can be separated from the main repo as 1) a large portion of MarkBind's functionality is in VueStrap, which is already outside of the main repo, 2) MarkBind has the potential to develop a community of templates and plugins in the future, and a separate documentation repo would make the management easier.
+1. When reviewing the PRs, it could be better enforced that the author needs to provide documentation and tests for any functional changes.
 
- 
+As I did some contribution to [CATcher](https://github.com/CATcher-org/CATcher), some insights from Hugo applies too:
+
+1. CATcher has to have companion GitHub organization and repositories to work properly and be tested, therefore it could be better if the dev team have a testing organization for contributors, or have a more detailed guide in terms of how to create such orgs/repos and link them to the app.
+1. The developers' guide for CATcher is quite minimal - actually the information included is rather redundant as people can read `package.json` to find possible `npm` commands anyways. Some introductory materials on how Angular and Electron works could be nice.

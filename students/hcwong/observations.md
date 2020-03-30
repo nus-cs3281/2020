@@ -42,7 +42,7 @@ I've enjoyed working with the Hugo codebase, in no doubt due to the following fe
 
 Hugo's creator and chief maintainer, bep, does a great job responding to new issues and PR fixes. All my PRs were reviewed within 3 days. This responsiveness 
 enables contributors to contribute more effectively, as they are able to quickly follow up with fixes while the context of the PR is still fresh in their mind. 
-However, more importantly, Hugo also has their own forum, where its many users ca ask questions and get fellow Hugo users, or maintainers to help answer it. The forum is fairly active and is very friendly and welcoming to newcomers, making it an effective way to integrate new users and developers. In fact, Hugo's Github Issue tracker is used primarily for proposing enhancements or formalizig bug reports. This also reduces the burden on maintainers and developers, especially since Hugo is not supported by big companies, unlike projects like React.
+However, more importantly, Hugo also has their own forum, where its many users can ask questions and get fellow Hugo users, or maintainers to help answer it. The forum is fairly active and is very friendly and welcoming to newcomers, making it an effective way to integrate new users and developers. In fact, Hugo's Github Issue tracker is used primarily for proposing enhancements or formalizing bug reports. This also reduces the burden on maintainers and developers, especially since Hugo is not supported by big companies, unlike projects like React.
 
 2. Great external documentation
 
@@ -60,5 +60,5 @@ TEAMMATES and Hugo have similar review processes, including the need for PRs to 
 
 As a school/student-run repository, TEAMMATES may not have the resources or time to setup such a complex forum. However, what we could do could be to setup a simple Telegram Chat, or Slack channel where developers can ask questions quickly without the hassle of raising a Github Issue. This is also important as it seems that many of our one-time contributors are students, and Slack and Telegram are widely used by this demographic. The Slack channel will also enable maintainers to quickly onboard new developers, as we may not check Github that often.
 
-Another thing we could learn would be the excellent documentation. TEAMMATES actually has a good developer guide, however, it is not frequently updated, and a good deal of issues on our Issue Tracker are related to setting up. The documentation for setting up could be reviewed and expanded to cover different OSs and even expand the FAQ session when we spot common bugs occuring. This way, we can get more people to contribute to the project.
+Another thing we could learn would be the excellent documentation. TEAMMATES actually has a good developer guide, however, it is not frequently updated, and a good deal of issues on our Issue Tracker are related to setting up. The documentation for setting up could be reviewed and expanded to cover different OSs and even expand the FAQ section when we spot common bugs occuring. This way, we can get more people to contribute to the project.
 

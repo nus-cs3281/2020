@@ -11,7 +11,7 @@ Oppia is an online learning tool that enables anyone to easily create and share 
 
 I chose this project as I liked the way they interacted with the first time contributors and their response rate to PRs. They gave equal amount of importance to a first-time contributor's suggestion in comparison to a senior developer's suggestion and this was something I really appreciated.
 
-* Did the March testing release ([Version 2.9.1](https://github.com/oppia/oppia/releases) for Oppia
+* Did the March testing release ([Version 2.9.1](https://github.com/oppia/oppia/releases)) for Oppia
 * **Submitted Issue**: [Page takes lot of time to load when switching to translations](https://github.com/oppia/oppia/issues/8838)
 
 ### My Observations

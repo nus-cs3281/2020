@@ -6,7 +6,7 @@
 
 #### Enhancement: CSRF Token Regeneration in HTTP Manual Resend
 
-I added a button to the HTTP manual resend screen in ZAP core to enable regeneration of the Anti-CSRF token if any were present. This addition was difficult as it involved code from the UI all the way to the HTTP APIs. Furthermore, extensive research on Cross Site Request Forgery (CSRF) attacks and their protection mechanisms was required to understand how to regenerate anti-csrf tokens and inject them into the HTTP request to be sent out.
+I added a button to the HTTP manual resend screen in ZAP core to enable regeneration of the Anti-CSRF token if any were present. This addition was difficult as it involved code from the UI all the way to the HTTP APIs. Extensive research on Cross Site Request Forgery (CSRF) attacks and their protection mechanisms was required to understand how to regenerate anti-CSRF tokens and inject them into the HTTP request to be sent out.
 
 Relevant PRs:
 - [Add a button on the resend screen to inject a CSRF token #5828](https://github.com/zaproxy/zaproxy/pull/5828)
@@ -14,7 +14,7 @@ Relevant PRs:
 
 #### Enhancement: Passive Scan Rule for Dangerous JS Functions
 
-I added a new passive scan rule to ZAP which would allow for the scanning of HTML and javascript responses to look for dangerous JS functions that could leave a web application vulnerable. The implementation for this was particularly difficult as the senior developers suggested I support a custom payload so that users can define their own functions to look for at runtime. On top of learning how HTML/JS is structured for effective scanning, I had to learn how to utilise a custom extension and manage dependencies in gradle.
+I added a new passive scan rule to ZAP which would allow for the scanning of HTML and javascript responses to look for dangerous JS functions that could leave a web application vulnerable. The implementation for this was particularly difficult as the senior developers suggested I support a custom payload so that users can define their own functions to look for at runtime. On top of learning how HTML/JS is structured for effective scanning, I learned how to utilise a custom extension and manage dependencies in gradle.
 
 Relevant PRs:
 - [Add passive scan rule for dangerous js functions #2317](https://github.com/zaproxy/zap-extensions/pull/2317)

@@ -17,6 +17,10 @@ Week | Achievements
 9 | Merged PR: [Add StudentProfileService Tests #9985](https://github.com/TEAMMATES/teammates/pull/9985)
 9 | Reviewed PR: [Create Unit Tests for Feedback*QuestionDetails classes #9984](https://github.com/TEAMMATES/teammates/pull/9984)
 10 | Merged PR: [Add Instructor Institution Validation #9912](https://github.com/TEAMMATES/teammates/pull/9912)
+11 | Reviewed PR: [Added Teammates link in course register email #10001](https://github.com/TEAMMATES/teammates/pull/10001)
+11 | Reviewed PR: [Add session result action access control test #9994](https://github.com/TEAMMATES/teammates/pull/9994)
+12 | Reviewed PR: [Typo in the pop-up message of the button "Send Invite" #9997](https://github.com/TEAMMATES/teammates/pull/9997)
+12 | Merged PR: [Add CourseService Tests #10005](https://github.com/TEAMMATES/teammates/pull/10005)
 
 ### MarkBind
 

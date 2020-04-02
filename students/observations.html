@@ -754,14 +754,14 @@
             <p><a href="https://www.zaproxy.org">ZAP</a> is a flagship project from the Open Web Application Security Project (<a href="https://owasp.org">OWASP</a>) that has become the world's most popular free, open source web security tool. ZAP is actively used by penetration testers and security specialists worldwide, maintained by a dedicated international team of volunteers. Under the hood, ZAP is a complex and mature Java desktop application created for web application security testing with an experienced and dedicated core of developers and maintainers.</p>
             <h3 id="my-contributions-20">My Contributions<a class="fa fa-anchor" href="#my-contributions-20"></a></h3>
             <h4 id="enhancement-csrf-token-regeneration-in-http-manual-resend">Enhancement: CSRF Token Regeneration in HTTP Manual Resend</h4>
-            <p>I added a button to the HTTP manual resend screen in ZAP core to enable regeneration of the Anti-CSRF token if any were present. This addition was difficult as it involved code from the UI all the way to the HTTP APIs. Furthermore, extensive research on Cross Site Request Forgery (CSRF) attacks and their protection mechanisms was required to understand how to regenerate anti-csrf tokens and inject them into the HTTP request to be sent out.</p>
+            <p>I added a button to the HTTP manual resend screen in ZAP core to enable regeneration of the Anti-CSRF token if any were present. This addition was difficult as it involved code from the UI all the way to the HTTP APIs. Extensive research on Cross Site Request Forgery (CSRF) attacks and their protection mechanisms was required to understand how to regenerate anti-CSRF tokens and inject them into the HTTP request to be sent out.</p>
             <p>Relevant PRs:</p>
             <ul>
               <li><a href="https://github.com/zaproxy/zaproxy/pull/5828">Add a button on the resend screen to inject a CSRF token #5828</a></li>
               <li><a href="https://github.com/zaproxy/zap-core-help/pull/301">Add help message for Regenerate Anti-CSRF #301</a></li>
             </ul>
             <h4 id="enhancement-passive-scan-rule-for-dangerous-js-functions">Enhancement: Passive Scan Rule for Dangerous JS Functions</h4>
-            <p>I added a new passive scan rule to ZAP which would allow for the scanning of HTML and javascript responses to look for dangerous JS functions that could leave a web application vulnerable. The implementation for this was particularly difficult as the senior developers suggested I support a custom payload so that users can define their own functions to look for at runtime. On top of learning how HTML/JS is structured for effective scanning, I had to learn how to utilise a custom extension and manage dependencies in gradle.</p>
+            <p>I added a new passive scan rule to ZAP which would allow for the scanning of HTML and javascript responses to look for dangerous JS functions that could leave a web application vulnerable. The implementation for this was particularly difficult as the senior developers suggested I support a custom payload so that users can define their own functions to look for at runtime. On top of learning how HTML/JS is structured for effective scanning, I learned how to utilise a custom extension and manage dependencies in gradle.</p>
             <p>Relevant PRs:</p>
             <ul>
               <li><a href="https://github.com/zaproxy/zap-extensions/pull/2317">Add passive scan rule for dangerous js functions #2317</a></li>
@@ -927,7 +927,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Tue, 31 Mar 2020 17:04:55 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Thu, 02 Apr 2020 06:42:55 GMT</small></p>
       </div>
     </footer>
   </div>

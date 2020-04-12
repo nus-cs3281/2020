@@ -186,7 +186,7 @@ Opened and Investigated Issues
 </tr>
 
 <tr>
-<td>10 <br> {{ weekStart | date(format, 10 * 7) }} <br> to <br> {{ weekEnd | date(format, 10 * 7) }}</td>
+<td>10</td>
 <td>
 
 Merged PRs
@@ -207,7 +207,7 @@ Investigated Issues
 </tr>
 
 <tr>
-<td>11 <br> {{ weekStart | date(format, 11 * 7) }} <br> to <br> {{ weekEnd | date(format, 11 * 7) }}</td>
+<td>11</td>
 <td>
 
 Merged PRs
@@ -228,7 +228,7 @@ Investigated Issues
 </tr>
 
 <tr>
-<td>12 <br> {{ weekStart | date(format, 12 * 7) }} <br> to <br> {{ weekEnd | date(format, 12 * 7) }}</td>
+<td>12</td>
 <td>
 
 Merged PRs
@@ -249,7 +249,7 @@ Investigated Issues
 </tr>
 
 <tr>
-<td>13 <br> {{ weekStart | date(format, 13 * 7) }} <br> to <br> {{ weekEnd | date(format, 13 * 7) }}</td>
+<td>13</td>
 <td>
 
 Merged PRs

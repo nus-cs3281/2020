@@ -24,7 +24,19 @@ Week | Achievements
 8 | Authored PRs: [Add start from line number functionality to code blocks markbind/#1115](https://github.com/MarkBind/markbind/pull/1115)
 8 | Reviewed PRs: [Allow special tags to be self-closing markbind/#1101](https://github.com/MarkBind/markbind/pull/1101)
 8 | Reviewed PRs: [Fix refactor to processDynamicResources markbind/#1092](https://github.com/MarkBind/markbind/pull/1092)
-
+8 | Reviewed PRs: [Support variables to be defined in JSON markbind/#1117](https://github.com/MarkBind/markbind/pull/1117)
+9 | Authored PRs: [Remove OK button from modals markbind/ #1134](https://github.com/MarkBind/markbind/pull/1134)
+9 | Reviewed PRs: [Code blocks: Implement inline markdown support for heading markbind/#1137](https://github.com/MarkBind/markbind/pull/1137)
+10 | [Parse popovers for footnotes markbind/#1155](https://github.com/MarkBind/markbind/pull/1155)
+10 | Merged PRs: [Remove OK button from modals markbind/ #1134](https://github.com/MarkBind/markbind/pull/1134)
+11 | Merged PRs: [Add start from line number functionality to code blocks markbind/#1115](https://github.com/MarkBind/markbind/pull/1115)
+11 | Reviewed PRs: [Add plugin local asset collection markbind/#1129](https://github.com/MarkBind/markbind/pull/1129)
+11 | Reviewed Prs: [Move preprocessThumbnails to componentParser markbind/#1160](https://github.com/MarkBind/markbind/pull/1160)
+11 | Authored PRs: [Use <br> to separate lines of code block markbind/#1176](https://github.com/MarkBind/markbind/pull/1176)
+12 | Merged PRs: [Use <br> to separate lines of code block markbind/#1176](https://github.com/MarkBind/markbind/pull/1176)
+12 | Reviewed PRs: [Normalize inline puml line ending before hashing markbind/#1174](https://github.com/MarkBind/markbind/pull/1174)
+12 | Merged PRs: [Parse popovers for footnotes markbind/#1155](https://github.com/MarkBind/markbind/pull/1155)
+12 | Investigated issue: [Code blocks: unexplained content movement over hover #1179](https://github.com/MarkBind/markbind/issues/1179)
 
 ### Reposense
 

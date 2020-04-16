@@ -18,8 +18,8 @@ Week | Achievements
 9 | Merged Internal PRs: <ul><li>[[MarkBind#1123] Update documentation on icon slot for boxes](https://github.com/MarkBind/markbind/pull/1123)</li><li>[[VueStrap#136] Change _icon to icon for user exposure](https://github.com/MarkBind/vue-strap/pull/136)</li></ul>Opened (and/or investigated) issues: <ul><li>[[MarkBind#1159] Remove duplicate codes in syntax documentation](https://github.com/MarkBind/markbind/issues/1159)</li><li>[[MarkBind#1161] Link to DevGuide in markbind.org](https://github.com/MarkBind/markbind/issues/1161)</li></ul>
 10 | Merged Internal PRs: <ul><li>[[MarkBind#1146] Update navbar doc](https://github.com/MarkBind/markbind/pull/1146)</li></ul> 
 11 | Merged Internal PRs: <ul><li>[[MarkBind#1158] Update devGuide.md](https://github.com/MarkBind/markbind/pull/1158)</li></ul> 
-12 | Merged Internal PRs: <ul><li>[[MarkBind#1160] Move preprocessThumbnails to componentParser](https://github.com/MarkBind/markbind/pull/1160)</li><li>[[MarkBind#1122] Add class support for octicons](https://github.com/MarkBind/markbind/pull/1122)</li><li>[[MarkBind#1039] Update JSDoc type and param info for Page/Site.js](https://github.com/MarkBind/markbind/pull/1039)</li></ul> On-going Internal PRs: <ul><li>[[MarkBind#1191] Fix anchor navigation in panel headers](https://github.com/MarkBind/markbind/pull/1191) <br> Actually this feature is so tricky that I implemented four different approaches to that: <ul><li>[original](https://github.com/MarkBind/markbind/pull/982)</li><li>[v2](https://github.com/MarkBind/markbind/pull/1190)</li><li>[v3](https://github.com/MarkBind/markbind/pull/1187)</li><li>[v4](https://github.com/MarkBind/markbind/pull/1187)</li></ul></li><li>[[MarkBind#1192] Add notes on merging conflicts](https://github.com/MarkBind/markbind/pull/1192)</li></ul>
-13 | 
+12 | Merged Internal PRs: <ul><li>[[MarkBind#1160] Move preprocessThumbnails to componentParser](https://github.com/MarkBind/markbind/pull/1160)</li><li>[[MarkBind#1122] Add class support for octicons](https://github.com/MarkBind/markbind/pull/1122)</li><li>[[MarkBind#1039] Update JSDoc type and param info for Page/Site.js](https://github.com/MarkBind/markbind/pull/1039)</li></ul>
+13 | Merged Internal PRs: <ul><li>[[MarkBind#1191] Fix anchor navigation in panel headers](https://github.com/MarkBind/markbind/pull/1191) <br> Actually this feature is so tricky that I implemented four different approaches to that: <ul><li>[original](https://github.com/MarkBind/markbind/pull/982)</li><li>[v2](https://github.com/MarkBind/markbind/pull/1190)</li><li>[v3](https://github.com/MarkBind/markbind/pull/1187)</li><li>[v4](https://github.com/MarkBind/markbind/pull/1187)</li></ul></li><li>[[MarkBind#1192] Add notes on merging conflicts](https://github.com/MarkBind/markbind/pull/1192)</li></ul>
 
 ## se-edu/learningresources
 
@@ -33,7 +33,7 @@ Reviewed two chapters:
 - [Workflow Automation with Github Actions](https://github.com/se-edu/learningresources/pull/187)
 - [Improve NodeJS chapter](https://github.com/se-edu/learningresources/pull/182)
 
-## List of reviewed PRs
+## Some of the PRs reviewed
 
 - https://github.com/MarkBind/markbind/pull/1175
 - https://github.com/MarkBind/markbind/pull/1186

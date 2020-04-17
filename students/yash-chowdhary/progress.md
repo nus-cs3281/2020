@@ -30,6 +30,15 @@ Recess | Authored PR (WIP) : [Add copy code-block plugin #1043](https://github.c
 10 | Submitted Issue : [PlantUML diagrams always "update" on updating test sites #1130](https://github.com/MarkBind/markbind/issues/1130)
 10 | Investigated Issue : [Improper linking of headings that have part of text enclosed within "<>" #1076](https://github.com/MarkBind/markbind/issues/1076)
 10 | Reviewed PR : [Add panel expand and collapse transitions #132](https://github.com/MarkBind/vue-strap/pull/132)
+11 | Merged PR : [Upgrade js-beautify and provide option to turn it off #1116](https://github.com/MarkBind/markbind/pull/1116)
+11 | Merged PR : [bugfix: Fix hrefs for headings with angular brackets #1089](https://github.com/MarkBind/markbind/pull/1089)
+11 | Merged PR : [Align and use fixed widths for icons #131](https://github.com/MarkBind/vue-strap/pull/131)
+12 | Authored PR : [Use min-width property instead of width #142](https://github.com/MarkBind/vue-strap/pull/142)
+12 | Submitted Issue : [User Guide: Update members in About Us #1171](https://github.com/MarkBind/markbind/issues/1171)
+12 | Reviewed PR : [User Guide: Update members in About Us #1186](https://github.com/MarkBind/markbind/pull/1186)
+12 | Reviewed PR : [Fix link to profile #1197](https://github.com/MarkBind/markbind/pull/1197)
+12 | Reviewed PR : [Document adding new site content in DG #1153](https://github.com/MarkBind/markbind/pull/1153)
+13 | Merged PR : [Use min-width property instead of width #142](https://github.com/MarkBind/vue-strap/pull/142)
 
 
 ### RepoSense
@@ -43,3 +52,4 @@ Week | Achievements
 7 | Authored PR (Under Review) : [[#937] Use generic 'throw Exception' in all tests #1072](https://github.com/reposense/RepoSense/pull/1072)
 8 | Authored PR (Approved) : [[#1046] Refactor duplicate code #1056](https://github.com/reposense/RepoSense/pull/1056)
 10 | Merged PR : [[#1046] Refactor duplicate code #1056](https://github.com/reposense/RepoSense/pull/1056)
+11 | Merged PR : [[#1097][#929][#1002]: Remove unused code #1177](https://github.com/reposense/RepoSense/pull/1177)

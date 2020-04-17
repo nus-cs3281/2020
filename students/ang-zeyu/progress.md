@@ -53,6 +53,7 @@ Merged PRs:
 Merged PRs
 - [Move markdown-it parsing to /markbind vue-strap/#120](https://github.com/MarkBind/vue-strap/pull/120)
 - [Move markdown-it parsing to /markbind markbind/#975](https://github.com/MarkBind/markbind/pull/975)
+
 Authored PRs
 - [Add bootswatch theme specific tip box styles markbind/#999](https://github.com/MarkBind/markbind/pull/999)
 
@@ -107,7 +108,6 @@ Merged PRs
 Opened Issues
 - [Implement warning logging when deprecated or inconsistent attributes are used](https://github.com/MarkBind/markbind/issues/1048)
 
-Investigated Issues
 
 
 </td>
@@ -117,13 +117,9 @@ Investigated Issues
 <td>Recess week</td>
 <td>
 
-Merged PRs
-
 Opened Issues
 - [Upgrade js-beautify and provide a site configuration option to turn it on](https://github.com/MarkBind/markbind/issues/1067)
 - [Render navbar at compile time using a template](https://github.com/MarkBind/markbind/issues/1054)
-
-Investigated Issues
 
 
 </td>
@@ -145,25 +141,9 @@ Opened Issues
 - [Investigate removing boilerplateIncludeSrc](https://github.com/MarkBind/markbind/issues/1081)
 - [Investigate removing context.mode completely](https://github.com/MarkBind/markbind/issues/1084)
 
-Investigated Issues
-
 Opened and Investigated Issues
 - [Investigate the baseUrl resolving process as a whole](https://github.com/MarkBind/markbind/issues/1083)
 - [Allow vue named slots shorthand and start deprecating old syntax](https://github.com/MarkBind/markbind/issues/1078)
-
-</td>
-</tr>
-
-<tr>
-<td>8</td>
-<td>
-
-Merged PRs
-
-Opened Issues
-
-Investigated Issues
-
 
 </td>
 </tr>
@@ -176,8 +156,6 @@ Merged PRs
 - [Unify markdown-it parser variants](https://github.com/MarkBind/markbind/pull/1056)
 - [Fix flex shrink not applying in content wrapper](https://github.com/MarkBind/markbind/pull/1135)
 - [Add panel expand and collapse transitions](https://github.com/MarkBind/vue-strap/pull/132)
-
-Opened Issues
 
 Opened and Investigated Issues
 - [Expand functional test extensions and check for whitespace](https://github.com/MarkBind/markbind/issues/1131)
@@ -200,7 +178,6 @@ Merged PRs
 Opened Issues
 - [Restructure plugin documentation](https://github.com/MarkBind/markbind/issues/1151)
 
-Investigated Issues
 
 
 </td>
@@ -218,10 +195,6 @@ Merged PRs
 - [Fix cropped nested expandable content in panels](https://github.com/MarkBind/vue-strap/pull/137)
 - [Increase panel animation speed](https://github.com/MarkBind/vue-strap/pull/138)
 - [Fix panel max height for older browsers](https://github.com/MarkBind/vue-strap/pull/139)
-
-Opened Issues
-
-Investigated Issues
 
 
 </td>
@@ -242,9 +215,6 @@ Opened Issues
 - [Add more hooks for plugins](https://github.com/MarkBind/markbind/issues/1188)
 - [Migrate from fs-extra-promise back to fs-extra](https://github.com/MarkBind/markbind/issues/1194)
 
-Investigated Issues
-
-
 </td>
 </tr>
 
@@ -252,29 +222,14 @@ Investigated Issues
 <td>13</td>
 <td>
 
-Merged PRs
-
 Opened Issues
-
-Investigated Issues
+- [Improve minimized design for panels](https://github.com/MarkBind/markbind/issues/1201)
+- [Polish inline code and fenced code blocks patch for htmlparser2](https://github.com/MarkBind/markbind/issues/1205)
 
 
 </td>
 </tr>
 
-<tr>
-<td>13+</td>
-<td>
-
-Merged PRs
-
-Opened Issues
-
-Investigated Issues
-
-
-</td>
-</tr>
 
 </tbody>
 </table>
@@ -391,6 +346,20 @@ Merged PRs
 - [Refactor ramp and zoom globals](https://github.com/reposense/RepoSense/pull/1114)
 - [Authorship: improve file collapsing mechanism](https://github.com/reposense/RepoSense/pull/1065)
 
+
+</td>
+</tr>
+
+<tr>
+<td>13</td>
+<td>
+
+Merged PRs
+- [Hotfix: remove duplicate commits in contributions](https://github.com/reposense/RepoSense/pull/1050)
+- [Add auto scrolling when a segment is collapsed](https://github.com/reposense/RepoSense/pull/1090)
+
+Opened and Investigated Issues
+- [Reorganise commit extraction, analyzing, aggregation architecture](https://github.com/reposense/RepoSense/issues/1238)
 
 </td>
 </tr>

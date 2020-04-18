@@ -53,3 +53,5 @@ Week | Achievements
 8 | Authored PR (Approved) : [[#1046] Refactor duplicate code #1056](https://github.com/reposense/RepoSense/pull/1056)
 10 | Merged PR : [[#1046] Refactor duplicate code #1056](https://github.com/reposense/RepoSense/pull/1056)
 11 | Merged PR : [[#1097][#929][#1002]: Remove unused code #1177](https://github.com/reposense/RepoSense/pull/1177)
+13 | Merged PR : [[#937] Use generic 'throw Exception' in all tests #1072](https://github.com/reposense/RepoSense/pull/1072)
+13 | Merged PR : [Add issue templates #1063](https://github.com/reposense/RepoSense/pull/1063)

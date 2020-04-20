@@ -1,3 +1,16 @@
+### Learning Resources
+
+Merged PRs:
+
+- [Fix minor js chapters issues](https://github.com/se-edu/learningresources/pull/136)
+- [Add Elm](https://github.com/se-edu/learningresources/pull/158)
+
+Reviewed PRs:
+
+- [Improve NodeJS Chapter](https://github.com/se-edu/learningresources/pull/182)
+- [Improve VueJS Chapter](https://github.com/se-edu/learningresources/pull/143)
+
+
 ### Markbind
 
 Week | Achievements

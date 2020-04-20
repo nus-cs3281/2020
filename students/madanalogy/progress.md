@@ -21,6 +21,13 @@ Week | Achievements
 11 | Reviewed PR: [Add session result action access control test #9994](https://github.com/TEAMMATES/teammates/pull/9994)
 12 | Reviewed PR: [Typo in the pop-up message of the button "Send Invite" #9997](https://github.com/TEAMMATES/teammates/pull/9997)
 12 | Merged PR: [Add CourseService Tests #10005](https://github.com/TEAMMATES/teammates/pull/10005)
+12 | Triage Issue: [Links in the Instructor's 'Getting Started' page do not work as expected #10003](https://github.com/TEAMMATES/teammates/issues/10003)
+13 | Reviewed PR: [Typescript Utility Types and Resource Endpoints #10014](https://github.com/TEAMMATES/teammates/pull/10014)
+13 | Reviewed PR: [Refactor Admin Endpoints #10004](https://github.com/TEAMMATES/teammates/pull/10004)
+13 | Reviewed PR: [Prevent potential overflow in TaskQueuer.java #10023](https://github.com/TEAMMATES/teammates/pull/10023)
+13 | Triage Issue: [Missing space afterword "successfully" in the string #10021](https://github.com/TEAMMATES/teammates/issues/10021)
+13 | Triage Issue: [cookie is added to response without the 'secure' flag being set. #10019](https://github.com/TEAMMATES/teammates/issues/10019)
+13 | Triage Issue: [Add "Search bar" & "Sort By" in Student-Course-Details-Page #10015](https://github.com/TEAMMATES/teammates/issues/10015)
 
 ### MarkBind
 

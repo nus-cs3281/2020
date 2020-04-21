@@ -15,3 +15,5 @@ Week | Achievements
 9 | TEAMMATES: <ul><li>Merged Internal PR [[#9940] Instructor module: standardize API endpoints, remove HttpRequestService ](https://github.com/TEAMMATES/teammates/pull/9972)</li></ul>
 10 | TEAMMATES: <ul><li>Merged Internal PR [[#9940] Refactor remaining instructor endpoints](https://github.com/TEAMMATES/teammates/pull/9978)</li></ul>
 11 | TEAMMATES: <ul><li>Merged Internal PR [[#9940] Refactor Admin Endpoints](https://github.com/TEAMMATES/teammates/pull/10004)</li><li>Reviewed PR [[#9946] Migration to new RESTful search endpoints - Admin search service](https://github.com/TEAMMATES/teammates/pull/9998)</li></ul>
+12 | TEAMMATES: <ul><li>Committed code for Internal PR [[#9963] Typescript Utility Types and Resource Endpoints](https://github.com/TEAMMATES/teammates/pull/10004)</li></ul>
+13 | TEAMMATES: <ul><li>Merged Internal PR [[#9963] Typescript Utility Types and Resource Endpoints](https://github.com/TEAMMATES/teammates/pull/10004)</li></ul>

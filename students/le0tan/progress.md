@@ -20,6 +20,7 @@ Week | Achievements
 11 | Merged Internal PRs: <ul><li>[[MarkBind#1158] Update devGuide.md](https://github.com/MarkBind/markbind/pull/1158)</li></ul> 
 12 | Merged Internal PRs: <ul><li>[[MarkBind#1160] Move preprocessThumbnails to componentParser](https://github.com/MarkBind/markbind/pull/1160)</li><li>[[MarkBind#1122] Add class support for octicons](https://github.com/MarkBind/markbind/pull/1122)</li><li>[[MarkBind#1039] Update JSDoc type and param info for Page/Site.js](https://github.com/MarkBind/markbind/pull/1039)</li></ul>
 13 | Merged Internal PRs: <ul><li>[[MarkBind#1191] Fix anchor navigation in panel headers](https://github.com/MarkBind/markbind/pull/1191) <br> Actually this feature is so tricky that I implemented four different approaches to that: <ul><li>[original](https://github.com/MarkBind/markbind/pull/982)</li><li>[v2](https://github.com/MarkBind/markbind/pull/1190)</li><li>[v3](https://github.com/MarkBind/markbind/pull/1187)</li><li>[v4](https://github.com/MarkBind/markbind/pull/1187)</li></ul></li><li>[[MarkBind#1192] Add notes on merging conflicts](https://github.com/MarkBind/markbind/pull/1192)</li></ul>
+14 | Investigated issues: <ul><li>[[MarkBind#981] Request to rebrand vuestrap as an independent npm package under MarkBind org](https://github.com/MarkBind/markbind/issues/981#)</li><li>[[MarkBind#1161] Link to DevGuide in markbind.org](https://github.com/MarkBind/markbind/issues/1161)</li>
 
 ## se-edu/learningresources
 
@@ -42,3 +43,4 @@ Reviewed two chapters:
 - https://github.com/MarkBind/vue-strap/pull/129
 - https://github.com/se-edu/learningresources/pull/187
 - https://github.com/se-edu/learningresources/pull/182
+- https://github.com/MarkBind/markbind/pull/1211

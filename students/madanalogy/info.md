@@ -4,5 +4,5 @@
 
 <!-- Give your internal and external projects related to the module -->
 <span id="projects">[TEAMMATES](https://github.com/TEAMMATES/teammates), 
-[MarkBind](https://github.com/MarkBind/markbind), 
-[OWASP ZAP](https://github.com/zaproxy)</span>
+[MarkBind](https://github.com/MarkBind/markbind), [OWASP ZAP](https://github.com/zaproxy) 
+</span>

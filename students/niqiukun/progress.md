@@ -50,7 +50,7 @@ Week | Achievements
 (Since Ionic only introduces new features for minor releases, not likely to be merged soon)
 
 
-## Learning Resources
+### Learning Resources
 - Reviewed PR: [#138 table of contents (Security & Bash)](https://github.com/se-edu/learningresources/pull/180)
 - Reviewed PR: [Add introduction to Spring Framework](https://github.com/se-edu/learningresources/pull/172)
 - Merged PR: [Update code example in React page to use Hooks](https://github.com/se-edu/learningresources/pull/163)

@@ -333,6 +333,7 @@ Opened and Investigated Issues
 
 Authored PRs:
 - [Move tab resizing to a new component](https://github.com/reposense/RepoSense/pull/1179)
+  - <small>not yet merged - likely before finals ends</small>
 
 </td>
 </tr>
@@ -358,11 +359,29 @@ Merged PRs
 - [Hotfix: remove duplicate commits in contributions](https://github.com/reposense/RepoSense/pull/1050)
 - [Add auto scrolling when a segment is collapsed](https://github.com/reposense/RepoSense/pull/1090)
 
+Opened Issues
+- [Investigate moving zoom tab hash removal to zoom component](https://github.com/reposense/RepoSense/issues/1242)
+
 Opened and Investigated Issues
 - [Reorganise commit extraction, analyzing, aggregation architecture](https://github.com/reposense/RepoSense/issues/1238)
 
 </td>
 </tr>
+
+
+<tr>
+<td>14 (reading week)</td>
+<td>
+
+Merged PRs
+- [Save authorship tab controls as hash parameters](https://github.com/reposense/RepoSense/pull/1057)
+
+Opened Issues
+- [Remove unused / undefined styles](https://github.com/reposense/RepoSense/issues/1248)
+
+</td>
+</tr>
+
 
 
 </tbody>

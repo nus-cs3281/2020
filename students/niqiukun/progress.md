@@ -14,11 +14,12 @@ Week | Achievements
 6 | Authored PR: [[#9382] Enable downloading of feedback session results as CSV](https://github.com/TEAMMATES/teammates/pull/9961)
 Recess | Merged PR: [[#9302] Support rich text for MCQ option text](https://github.com/TEAMMATES/teammates/pull/9944)
 7 | Reviewed PR: [[#9419] Add form validation to course edit](https://github.com/TEAMMATES/teammates/pull/9975)
-9 | Authored PR (Pending Review): [[#9382] Migrate remaining features to session result page](https://github.com/TEAMMATES/teammates/pull/9992)
+9 | Authored PR: [[#9382] Migrate remaining features to session result page](https://github.com/TEAMMATES/teammates/pull/9992)
 11 | Merged PR: [[#9950] Prevent form submission to backend when invalid fields defected in frontend](https://github.com/TEAMMATES/teammates/pull/9953)
 11 | Merged PR: [[#9382] Enable downloading of feedback session results as CSV](https://github.com/TEAMMATES/teammates/pull/9961)
 11 | Submitted Issue: [[#10006] Student home page view responses button is disabled incorrectly](https://github.com/TEAMMATES/teammates/issues/10006)
 11 | Merged PR: [[#10006] Fix incorrect `disabled` flag for student home page view responses button](https://github.com/TEAMMATES/teammates/pull/10007)
+13+ | Merged PR: [[#9382] Migrate features to session result page](https://github.com/TEAMMATES/teammates/pull/9992)
 
 
 ### RepoSense

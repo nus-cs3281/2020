@@ -48,3 +48,6 @@ Week | Achievements
 12 | Reviewed PR: [ [#1170] Update total contribution to reflect based on checked file types #1171 ](https://github.com/reposense/RepoSense/pull/1171)
 12 | Reviewed PR: [ [#1181] Allow filtering of ramps by file type #1192 ](https://github.com/reposense/RepoSense/pull/1192)
 13 | Reviewed PR: [ [#1213] Regressions from #1059 #1218 ](https://github.com/reposense/RepoSense/pull/1218)
+13 | Merged PR: [ [#1146] Add caret icon to indicate collapsible authorship file panel #1169 ](https://github.com/reposense/RepoSense/pull/1169)
+13 | Merged PR: [ [#1178] Make github profile and repo hyperlinks more consistent #1186 ](https://github.com/reposense/RepoSense/pull/1186)
+13 | Merged PR: [ [#1249] Disable view code icon when merge group and group by authors #1250 ](https://github.com/reposense/RepoSense/pull/1250)

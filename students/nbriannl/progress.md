@@ -57,3 +57,4 @@ Week | Achievements
 14 | Authored PR: [Add PR template vue-strap/#145](https://github.com/MarkBind/vue-strap/pull/145)
 15 | Authored PR: [Set up jest snapshot testing for vue-strap vue-strap/#146](https://github.com/MarkBind/vue-strap/pull/146)
 15 | Authored PR: [Add and organise tests for boxes and code blocks markbind/#1143](https://github.com/MarkBind/markbind/pull/1143)
+15 | Merged PR: [Add PR template vue-strap/#145](https://github.com/MarkBind/vue-strap/pull/145)

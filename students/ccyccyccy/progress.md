@@ -56,8 +56,8 @@ Week | Achievements
 8 | Merged PR: [ Add preview for background highlight points #2011 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2011)
 9 | Reviewed PR: [ #2002 replace with clipboard lose image quality #2013 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2013)
 11 | Authored PR: [ #2014 Empty clipboard exception #2020 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2020)
-11 | Authored PR: [ #1681 Optimize sync selection pane ui #2019 ]https://github.com/PowerPointLabs/PowerPointLabs/pull/2019)
-12 | Merged PR: [ #1681 Optimize sync selection pane ui #2019 ]https://github.com/PowerPointLabs/PowerPointLabs/pull/2019)
+11 | Authored PR: [ #1681 Optimize sync selection pane ui #2019 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2019)
+12 | Merged PR: [ #1681 Optimize sync selection pane ui #2019 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2019)
 
 ### OPENDOTA
 

@@ -9,3 +9,4 @@ Week | Achievements
 11 | Reviewed PR: [ [#2019] Optimize sync selection pane ui](https://github.com/PowerPointLabs/PowerPointLabs/pull/2019)
 13 | Closed PR (Made obselete by PR #2021) [ [#2016] Improve UI Dark Theme](https://github.com/PowerPointLabs/PowerPointLabs/pull/2016)
 13 | Submitted PR: [ [#2021] Improve UI Dark Theme](https://github.com/PowerPointLabs/PowerPointLabs/pull/2021)
+14 | Merged PR: [ [#2021] Improve UI Dark Theme](https://github.com/PowerPointLabs/PowerPointLabs/pull/2021)

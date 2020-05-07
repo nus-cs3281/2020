@@ -41,3 +41,4 @@ Week | Achievements
 11 | Reviewed PR: [[#2020] #2014 Empty clipboard exception](https://github.com/PowerPointLabs/PowerPointLabs/pull/2020)
 15 | Reviewed PR: [[#2021] #2008 Improve UI Dark Theme](https://github.com/PowerPointLabs/PowerPointLabs/pull/2021)
 15 | Merged PR: [[#2018] #2017 replace with clipboard only keeps first and last animation and has undo exception](https://github.com/PowerPointLabs/PowerPointLabs/pull/2018)
+15 | Submitted Issue: [[#2024] 2016, ReplaceWithClipboard: Undo-ing twice causes animations to be duplicated](https://github.com/PowerPointLabs/PowerPointLabs/issues/2024)

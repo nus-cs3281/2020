@@ -32,6 +32,7 @@ Week | Achievements
 8 | Submitted Issue: [[#2012] Replace with clipboard feature deletes custom movement animation path](https://github.com/PowerPointLabs/PowerPointLabs/issues/2012)
 9 | Authored PR: [[#2013] #2002 replace with clipboard lose image quality](https://github.com/PowerPointLabs/PowerPointLabs/pull/2013)
 9 | Authored PR: [[#2015] #1370 paste into group exception after undo](https://github.com/PowerPointLabs/PowerPointLabs/pull/2015)
+9 | Authored PR: [[#2018] #2017 replace with clipboard only keeps first and last animation and has undo exception](https://github.com/PowerPointLabs/PowerPointLabs/pull/2018)
 9 | Merged PR: [[#2015] #1370 paste into group exception after undo](https://github.com/PowerPointLabs/PowerPointLabs/pull/2015)
 9 | Submitted Issue: [[#2014] Uncaught exception thrown if clipboard is empty](https://github.com/PowerPointLabs/PowerPointLabs/issues/2014)
 9 | Submitted Issue: [[#2017] ReplaceWithClipboard only preserves first and last animation, exception thrown on undo and replace again](https://github.com/PowerPointLabs/PowerPointLabs/issues/2017)
@@ -39,3 +40,4 @@ Week | Achievements
 11 | Reviewed PR: [[#2019] #1681 Optimize sync selection pane ui](https://github.com/PowerPointLabs/PowerPointLabs/pull/2019)
 11 | Reviewed PR: [[#2020] #2014 Empty clipboard exception](https://github.com/PowerPointLabs/PowerPointLabs/pull/2020)
 15 | Reviewed PR: [[#2021] #2008 Improve UI Dark Theme](https://github.com/PowerPointLabs/PowerPointLabs/pull/2021)
+15 | Merged PR: [[#2018] #2017 replace with clipboard only keeps first and last animation and has undo exception](https://github.com/PowerPointLabs/PowerPointLabs/pull/2018)

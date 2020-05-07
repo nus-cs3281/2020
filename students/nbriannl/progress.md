@@ -60,3 +60,4 @@ Week | Achievements
 15 | Merged PR: [Add PR template vue-strap/#145](https://github.com/MarkBind/vue-strap/pull/145)
 15 | Merged PR: [Add and organise tests for code blocks markbind/#1143](https://github.com/MarkBind/markbind/pull/1143)
 15 | Merged PR: [Set up jest snapshot testing for vue-strap vue-strap/#146](https://github.com/MarkBind/vue-strap/pull/146)
+15 | Merged PR: [Replace console.warn with logger.warn: componentParser.js markbind/#1207](https://github.com/MarkBind/markbind/pull/1207)

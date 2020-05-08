@@ -48,3 +48,9 @@
 | 10 | Submitted PR: [[#1128] Octicons: support icon-size property](https://github.com/MarkBind/markbind/pull/1128)
 | 10 | PR Merged: [[#1133] Fix fontawsome icons don't show underlines to indicate modal/tooltip](https://github.com/MarkBind/markbind/pull/1133)
 | 10 | PR Merged: [[#1133] Fix fontawsome icons don't show underlines to indicate modal/tooltip](https://github.com/MarkBind/markbind/pull/1133)
+
+# Book Chapters
+| Week | Tasks |
+| ----- | ----- |
+| 9 | Reviewed PR: [[#166] Make hadings follow titleCase](https://github.com/se-edu/learningresources/pull/166) | 
+| 12 | Reviewed PR: [[#178]  table of contents (SE Tools and Other Topics(Com Vision to MultiThreading](https://github.com/se-edu/learningresources/pull/178) |

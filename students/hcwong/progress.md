@@ -31,6 +31,7 @@
 | 11 | Merged PR: [[#9990] Add additional fields for Student Search Migration](https://github.com/TEAMMATES/teammates/pull/9990)
 | 11 | Merged PR: [[#9991] Add additional fields for Instructor Search Migration](https://github.com/TEAMMATES/teammates/pull/9991)
 | 11 | Reviewed PR: [[#10004] Refactor Admin Endpoints](https://github.com/TEAMMATES/teammates/pull/10004)
+| 11 | Reviwed PR: [[#9995] Migration to new RESTful search endpoints - Instructor search service](https://github.com/TEAMMATES/teammates/pull/9995)
 | 12 | Merged PR: [[#9998] Migration to new RESTful search endpoints - Admin search service](https://github.com/TEAMMATES/teammates/pull/9998)
 | 12 | PR Submitted: [[#10018] Migrate to new admin search point](https://github.com/TEAMMATES/teammates/pull/10018)
 | 13 | Merged PR: [[#10018] Migrate to new admin search point](https://github.com/TEAMMATES/teammates/pull/10018)
@@ -47,3 +48,9 @@
 | 10 | Submitted PR: [[#1128] Octicons: support icon-size property](https://github.com/MarkBind/markbind/pull/1128)
 | 10 | PR Merged: [[#1133] Fix fontawsome icons don't show underlines to indicate modal/tooltip](https://github.com/MarkBind/markbind/pull/1133)
 | 10 | PR Merged: [[#1133] Fix fontawsome icons don't show underlines to indicate modal/tooltip](https://github.com/MarkBind/markbind/pull/1133)
+
+# Book Chapters
+| Week | Tasks |
+| ----- | ----- |
+| 9 | Reviewed PR: [[#166] Make hadings follow titleCase](https://github.com/se-edu/learningresources/pull/166) | 
+| 12 | Reviewed PR: [[#178]  table of contents (SE Tools and Other Topics(Com Vision to MultiThreading](https://github.com/se-edu/learningresources/pull/178) |

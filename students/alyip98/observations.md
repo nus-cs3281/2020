@@ -1,11 +1,13 @@
-### Project: Markbind
+### Project: Text-to-Image
 
-MarkBind is a tool for generating content-heavy websites from source files in Markdown format
+A library for generating an image data URI representing an image containing the text of your choice.
 
 ### My Contributions
 
-Give a description of your contributions, including links to relevant PRs
+Add a synchronous variant of the library's main function.
 
 ### My Observations
 
-Give your observations about the project here
+The project is well documented and has a comprehensive test coverage using Jest. 
+
+MarkBind could improve test coverage. 

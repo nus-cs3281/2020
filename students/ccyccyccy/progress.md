@@ -1,11 +1,11 @@
+### REPOSENSE
+
 Week | Achievements
 ---- | ------------
 1 | Merged PR: [ [#940] ReportGenerator#generateReposReport: SLAP copying of template file #977](https://github.com/reposense/RepoSense/pull/977)
-2 | Submitted Issue: [ ZoomLab: Drill down clipboard error #2004 ](https://github.com/PowerPointLabs/PowerPointLabs/issues/2004)
 3 | Submitted Issue: [ Summary Page: Error message extends out of red box if box is too thin #1037 ](https://github.com/reposense/RepoSense/issues/1037)
 3 | Authored PR: [ [#1037] Add word-wrap break-word to error box #1038 ](https://github.com/reposense/RepoSense/pull/1038)
 4 | Authored PR: [[#674] List binary files touched #1053](https://github.com/reposense/RepoSense/pull/1053)
-4 | Authored PR: [ #1947 HighlightLab bug: Background & Point highlight overwrite each other #2006 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2006)
 5 | Authored PR: [ [#1044] Update date hashes on reset date range #1068 ](https://github.com/reposense/RepoSense/pull/1068)
 5 | Authored PR: [ [#1043] Fix bug of incorrect commit dates when merge group #1045 ](https://github.com/reposense/RepoSense/pull/1045)
 5 | Authored PR: [ Change totalLineCount and totalBlankLineCount to computed values #1088 ](https://github.com/reposense/RepoSense/pull/1088)
@@ -13,21 +13,14 @@ Week | Achievements
 6 | Reviewed PR: [ [#999] Remove empty zoom__day divs #1000 ](https://github.com/reposense/RepoSense/pull/1000)
 6 | Reviewed PR: [ [#1076] Author: Add a `isIgnoringFile` method #1085 ](https://github.com/reposense/RepoSense/pull/1085)
 6 | Reviewed PR: [ [#947] Authorship view: update sort controls #1074 ](https://github.com/reposense/RepoSense/pull/1074)
-6 | Reviewed PR: [ #1597 copying overrides clipboard #2007 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2007)
 6 | Reviewed PR: [ [#1060] Report: Record time taken for report generation in hidden element #1066 ](https://github.com/reposense/RepoSense/pull/1066)
 6 | Reviewed PR: [ [#1004] Make Code Panel consistent with Chart Panel #1080 ](https://github.com/reposense/RepoSense/pull/1080)
-6 | Submitted Issue: [ Highlight background does not preview animation #2009 ](https://github.com/PowerPointLabs/PowerPointLabs/issues/2009)
-7 | Reviewed PR: [ #2000 Convert ShapesToTooltip UT failing #2001 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2001)
 7 | Reviewed PR: [ Refactor the structure of summary-charts__title #1106 ](https://github.com/reposense/RepoSense/pull/1106)
-7 | Merged PR: [ #1947 HighlightLab bug: Background & Point highlight overwrite each other #2006 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2006)
 7 | Merged PR: [ [#1044] Update date hashes on reset date range #1068 ](https://github.com/reposense/RepoSense/pull/1068)
 8 | Reviewed PR: [ [#1137][#1138] Expand pug-lint glob and remove fix option in lint #1136 ](https://github.com/reposense/RepoSense/pull/1136)
 8 | Authored PR: [ [#850] Ignore git submodules when analyzing repos #1127 ](https://github.com/reposense/RepoSense/pull/1127)
-8 | Authored PR: [ Add preview for background highlight points #2011 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2011)
-8 | Merged PR: [ Add preview for background highlight points #2011 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2011)
 8 | Submitted Issue: [ Not intuitive that authorship file detail is collapsible #1146 ](https://github.com/reposense/RepoSense/issues/1146)
 9 | Reviewed PR: [ [#1167] Revert PR #967 and make zoom tab independent of summary #1172 ](https://github.com/reposense/RepoSense/pull/1172)
-9 | Reviewed PR: [ #2002 replace with clipboard lose image quality #2013 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2013)
 9 | Submitted Issue: [ Authorship / Zoom tab bug from regressions introduced by PR #967 #1167 ](https://github.com/reposense/RepoSense/issues/1167)
 9 | Merged PR: [ [#850] Ignore git submodules when analyzing repos #1127 ](https://github.com/reposense/RepoSense/pull/1127)
 9 | Authored PR: [ [#1146] Indicate authorship file panel collapsable #1169 ](https://github.com/reposense/RepoSense/pull/1169)
@@ -39,12 +32,34 @@ Week | Achievements
 10 | Reviewed PR: [ [#1150] Consistency between Code panel and Chart panel for file type selection #1152 ](https://github.com/reposense/RepoSense/pull/1152)
 10 | Reviewed PR: [ [#996] Add functionality to view code for entire repository #1175 ](https://github.com/reposense/RepoSense/pull/1175)
 10 | Authored PR: [ [#1178] Make github profile and repo hyperlinks more consistent #1186 ](https://github.com/reposense/RepoSense/pull/1186)
-11 | Authored PR: [ #2014 Empty clipboard exception #2020 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2020)
 11 | Reviewed PR: [ [#956] Convert documentation to MarkBind and deploy using Surge #1197 ](https://github.com/reposense/RepoSense/pull/1197)
 11 | Reviewed PR: [ [#961] vuex for event emit #1162 ](https://github.com/reposense/RepoSense/pull/1162)
 11 | Reviewed PR: [ Docs: Update current members' list #1208 ](https://github.com/reposense/RepoSense/pull/1208)
-11 | Authored PR: [ #1681 Optimize sync selection pane ui #2019 ]https://github.com/PowerPointLabs/PowerPointLabs/pull/2019)
-12 | Merged PR: [ #1681 Optimize sync selection pane ui #2019 ]https://github.com/PowerPointLabs/PowerPointLabs/pull/2019)
 12 | Reviewed PR: [ [#1170] Update total contribution to reflect based on checked file types #1171 ](https://github.com/reposense/RepoSense/pull/1171)
 12 | Reviewed PR: [ [#1181] Allow filtering of ramps by file type #1192 ](https://github.com/reposense/RepoSense/pull/1192)
 13 | Reviewed PR: [ [#1213] Regressions from #1059 #1218 ](https://github.com/reposense/RepoSense/pull/1218)
+13 | Merged PR: [ [#1146] Add caret icon to indicate collapsible authorship file panel #1169 ](https://github.com/reposense/RepoSense/pull/1169)
+13 | Merged PR: [ [#1178] Make github profile and repo hyperlinks more consistent #1186 ](https://github.com/reposense/RepoSense/pull/1186)
+13 | Merged PR: [ [#1249] Disable view code icon when merge group and group by authors #1250 ](https://github.com/reposense/RepoSense/pull/1250)
+
+### POWERPOINTLABS
+
+Week | Achievements
+---- | ------------
+2 | Submitted Issue: [ ZoomLab: Drill down clipboard error #2004 ](https://github.com/PowerPointLabs/PowerPointLabs/issues/2004)
+4 | Authored PR: [ #1947 HighlightLab bug: Background & Point highlight overwrite each other #2006 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2006)
+6 | Reviewed PR: [ #1597 copying overrides clipboard #2007 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2007)
+6 | Submitted Issue: [ Highlight background does not preview animation #2009 ](https://github.com/PowerPointLabs/PowerPointLabs/issues/2009)
+7 | Reviewed PR: [ #2000 Convert ShapesToTooltip UT failing #2001 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2001)
+7 | Merged PR: [ #1947 HighlightLab bug: Background & Point highlight overwrite each other #2006 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2006)
+8 | Authored PR: [ Add preview for background highlight points #2011 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2011)
+8 | Merged PR: [ Add preview for background highlight points #2011 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2011)
+9 | Reviewed PR: [ #2002 replace with clipboard lose image quality #2013 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2013)
+11 | Authored PR: [ #2014 Empty clipboard exception #2020 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2020)
+11 | Authored PR: [ #1681 Optimize sync selection pane ui #2019 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2019)
+12 | Merged PR: [ #1681 Optimize sync selection pane ui #2019 ](https://github.com/PowerPointLabs/PowerPointLabs/pull/2019)
+
+### OPENDOTA
+
+- Feature: [ Show items bought in player matches page ](https://github.com/odota/web/pull/2462)
+- Feature: [ Item popularity endpoint ](https://github.com/odota/core/pull/2116)

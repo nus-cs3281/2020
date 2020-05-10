@@ -1,4 +1,4 @@
-### TEAMMATES
+### CS3281 Internal Project: TEAMMATES
 
 Week | Achievements
 ---- | ------------
@@ -29,7 +29,7 @@ Week | Achievements
 13 | Triage Issue: [cookie is added to response without the 'secure' flag being set. #10019](https://github.com/TEAMMATES/teammates/issues/10019)
 13 | Triage Issue: [Add "Search bar" & "Sort By" in Student-Course-Details-Page #10015](https://github.com/TEAMMATES/teammates/issues/10015)
 
-### MarkBind
+### CS3282 2nd Internal Project: MarkBind
 
 Week | Achievements
 ---- | ------------
@@ -37,3 +37,13 @@ Week | Achievements
 4 | Merged PR: [Fix inconsistent navigation links whitespace #1018](https://github.com/MarkBind/markbind/pull/1018)
 5 | Merged PR: [Add help usage to user guide #996](https://github.com/MarkBind/markbind/pull/996)
 
+### CS3282 External Project: OWASP ZAP
+
+- [Add a button on the resend screen to inject a CSRF token #5828](https://github.com/zaproxy/zaproxy/pull/5828)
+- [Add help message for Regenerate Anti-CSRF #301](https://github.com/zaproxy/zap-core-help/pull/301)
+- [Add passive scan rule for dangerous js functions #2317](https://github.com/zaproxy/zap-extensions/pull/2317)
+- [Update scanners.md for dangerous js function scanner id #5882](https://github.com/zaproxy/zaproxy/pull/5882)
+
+### CS3282 Book Chapter: Security Testing
+
+- [Add Introduction to Security Testing #170](https://github.com/se-edu/learningresources/pull/170)

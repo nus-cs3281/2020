@@ -10,3 +10,11 @@ Week | Achievements
 13 | Closed PR (Made obselete by PR #2021) [ [#2016] Improve UI Dark Theme](https://github.com/PowerPointLabs/PowerPointLabs/pull/2016)
 13 | Submitted PR: [ [#2021] Improve UI Dark Theme](https://github.com/PowerPointLabs/PowerPointLabs/pull/2021)
 14 | Merged PR: [ [#2021] Improve UI Dark Theme](https://github.com/PowerPointLabs/PowerPointLabs/pull/2021)
+14 | Reviewed PR: [ [#2020] Empty clipboard exception](https://github.com/PowerPointLabs/PowerPointLabs/pull/2020)
+14 | Reviewed PR: [ [#2026] unable to run tests on older powerpoint versions](https://github.com/PowerPointLabs/PowerPointLabs/pull/2026)
+
+## Book Chapter
+
+Week | Achievements
+---- | ------------
+14 | Submitted PR: [ [#195] Add C# Asynchronous Programming Async/Await Chapter](https://github.com/se-edu/learningresources/pull/195)

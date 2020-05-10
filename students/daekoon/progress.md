@@ -13,3 +13,6 @@ Week | Achievements
 10 | Authored PR (TEAMMATES): [ [#10008] Deprecate getfeedbackquestionid method from Backdoor](https://github.com/TEAMMATES/teammates/pull/10009)
 12 | Merged PR (TEAMMATES): [ [#10008] Deprecate getfeedbackquestionid method from Backdoor](https://github.com/TEAMMATES/teammates/pull/10009)
 12 | Authored PR (TEAMMATES): [ [#9651] Enhance Jmeter result population upon running test](https://github.com/TEAMMATES/teammates/pull/10022)
+16 | Merged PR (TEAMMATES): [ [#9651] Enhance Jmeter result population upon running test](https://github.com/TEAMMATES/teammates/pull/10022)
+16 | Created PR (PowerPoint Labs): [ [#2022] unable to run tests on older powerpoint versions (Approved)](https://github.com/PowerPointLabs/PowerPointLabs/pull/2026)
+16 | Created PR (PowerPoint Labs): [ [#1994] Fix CropLab CropToShape on PowerPoint 2010](https://github.com/PowerPointLabs/PowerPointLabs/pull/2028)

@@ -15,5 +15,5 @@ Week | Achievements
 12 | Authored PR (TEAMMATES): [ [#9651] Enhance Jmeter result population upon running test](https://github.com/TEAMMATES/teammates/pull/10022)
 16 | Merged PR (TEAMMATES): [ [#9651] Enhance Jmeter result population upon running test](https://github.com/TEAMMATES/teammates/pull/10022)
 16 | Authored PR (PowerPoint Labs): [ [#2022] unable to run tests on older powerpoint versions (Approved, waiting for merge)](https://github.com/PowerPointLabs/PowerPointLabs/pull/2026)
-16 | Authored PR (PowerPoint Labs): [ [#1994] Fix CropLab CropToShape on PowerPoint 2010 (Waiting for review)](https://github.com/PowerPointLabs/PowerPointLabs/pull/2028)
+16 | Merged PR (PowerPoint Labs): [ [#1994] Fix CropLab CropToShape on PowerPoint 2010](https://github.com/PowerPointLabs/PowerPointLabs/pull/2028)
 16 | Submitted Issue (PowerPoint Labs):[ [#2027] CropToShape does not work properly on PPT2010 on slides from newer versions](https://github.com/PowerPointLabs/PowerPointLabs/issues/2027)

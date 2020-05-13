@@ -18,3 +18,4 @@ Week | Achievements
 Week | Achievements
 ---- | ------------
 14 | Submitted PR: [ [#195] Add C# Asynchronous Programming Async/Await Chapter](https://github.com/se-edu/learningresources/pull/195)
+14 | Merged PR: [ [#195] Add C# Asynchronous Programming Async/Await Chapter](https://github.com/se-edu/learningresources/pull/195)

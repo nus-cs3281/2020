@@ -4000,12 +4000,26 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-5">Project: Foo<a class="fa fa-anchor" href="#project-foo-5"></a></h3>
-                <p>Give an intro to the project here ...</p>
+                <h3 id="project-tmk-qmk">Project: TMK/QMK<a class="fa fa-anchor" href="#project-tmk-qmk"></a></h3>
+                <p>TMK is a keyboard firmware with useful features for micro-controllers started by <a href="https://github.com/tmk">@hasu</a>, a keyboard enthusiast in Tokyo, Japan.
+                  QMK branched out from TMK to offer support for proprietary keyboards from certain Western companies.</p>
+                <p>TMK/QMK goes beyond providing basic functionalities but also allow users to customize keymaps.
+                  Keymaps allow for fine control over the keyboard where anything from LED light patterns to OLED screen displays can be customized.</p>
                 <h3 id="my-contributions-16">My Contributions<a class="fa fa-anchor" href="#my-contributions-16"></a></h3>
-                <p>Give a description of your contributions, including links to relevant PRs</p>
+                <p>I prepared a patch to enable two-way communication between a <a href="https://github.com/kata0510/Lily58">Lily58 keyboard</a> and the computer, displaying output on the two LED screens attached.
+                  This is achieved by having a HID server running upon OS startup to ping the keyboard with an initialization packet to start the exchange of data.</p>
+                <p>Unfortunately this relies on the new split-keyboard API, a <a href="https://github.com/qmk/qmk_firmware/pull/6260#issuecomment-620291169">PR</a> which was proposed in July 2019 and just got merged on May 2020.</p>
                 <h3 id="my-observations-15">My Observations<a class="fa fa-anchor" href="#my-observations-15"></a></h3>
-                <p>Give your observations about the project here</p>
+                <p>TMK is sparse in documentation and contribution guides.
+                  Potential contributors are recommended to reach out to @hasu before even opening a PR.
+                  Otherwise, <a href="https://github.com/tmk/tmk_keyboard/pulls">PRs</a> are simply ignored due to lack of attention and manpower.</p>
+                <p>As a result, the barrier to even start contributing to TMK is extremely high.</p>
+                <p>On the other hand, QMK made the decision to allow all contributors to commit their own flavor of keyboard firmwares into the main repository.
+                  Not only that, each keyboard firmware contains <a href="https://github.com/qmk/qmk_firmware/tree/master/keyboards/lets_split/keymaps">multiple user submitted keymaps</a> which rely on the API to provided personalized features.
+                  Over time, hundreds of firmwares and keymaps have accumulated and every future change must either not break existing code or be changed with permission from the initial contributor.
+                  End users will end up pulling unnecessary files too.</p>
+                <p>This extra burden offers little convenience to end-users at the overhead of slowing down project velocity by orders of magnitude.
+                  I would suggest abstracting the drivers of QMK out into its own repository and having manufactures/users import that as a git submodule.</p>
               </div>
             </panel>
           </box>
@@ -4642,7 +4656,7 @@
             </panel>
             <panel header="**Observations**" minimized>
               <div>
-                <h3 id="project-foo-6">Project: Foo<a class="fa fa-anchor" href="#project-foo-6"></a></h3>
+                <h3 id="project-foo-5">Project: Foo<a class="fa fa-anchor" href="#project-foo-5"></a></h3>
                 <p>Give an intro to the project here ...</p>
                 <h3 id="my-contributions-19">My Contributions<a class="fa fa-anchor" href="#my-contributions-19"></a></h3>
                 <p>Give a description of your contributions, including links to relevant PRs</p>
@@ -5334,7 +5348,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sat, 16 May 2020 13:24:20 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sat, 16 May 2020 13:46:46 GMT</small></p>
       </div>
     </footer>
   </div>

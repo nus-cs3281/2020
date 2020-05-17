@@ -256,12 +256,17 @@
           <h2 id="yip-seng-yeun">YIP SENG YEUN<a class="fa fa-anchor" href="#yip-seng-yeun"></a></h2>
           <div>
             <h3 id="project-text-to-image">Project: Text-to-Image<a class="fa fa-anchor" href="#project-text-to-image"></a></h3>
-            <p>A library for generating an image data URI representing an image containing the text of your choice.</p>
+            <p><a href="https://github.com/bostrom/text-to-image">Text-to-Image</a> is a library for generating an image data URI representing an image containing the text of your choice. It supports a large variety of options, such as font size, font family, color, rotation, custom margins/kerning. The library exposes a single function that parses all those options and converts the supplied text to an image.</p>
             <h3 id="my-contributions-6">My Contributions<a class="fa fa-anchor" href="#my-contributions-6"></a></h3>
-            <p>Add a synchronous variant of the library's main function.</p>
+            <ul>
+              <li>Add a synchronous variant of the library's main function <a href="https://github.com/bostrom/text-to-image/pull/34">PR</a></li>
+            </ul>
+            <p>The existing implementation is a Promise based async function, which cannot be used in a sync rendering flow, such as in the plugin rendering context of Markbind. After understanding the project code, I was able to cleanly refactor the existing code to separate the core logic from the function entry point, which allowed me to implement a synchronous variant of the same function with minimal duplicated code.</p>
             <h3 id="my-observations-5">My Observations<a class="fa fa-anchor" href="#my-observations-5"></a></h3>
-            <p>The project is well documented and has a comprehensive test coverage using Jest.</p>
-            <p>MarkBind could improve test coverage.</p>
+            <h4 id="good-user-documentation">Good User Documentation</h4>
+            <p>The user facing documentation is very well written. It is clear and easy to understand, containing just enough examples to illustrate its use without being verbose. We could adopt this approach in our internal projects,</p>
+            <h4 id="comprehensive-test-coverage">Comprehensive Test Coverage</h4>
+            <p>This project has a 100% code coverage using Jest. In this case it is feasible and practical as it is a small project, but I think the spirit of it could be reproduced in our internal projects. The comprehensive arsenal of unit tests check for everything imaginable, including an interesting test where a few pixels of the generated image was checked. If we haven't already, Markbind could look into tests that employ a similar screenshotting method to augment our diff checks.</p>
           </div>
         </box>
         <h1 id="powerpointlabs">PowerPointLabs<a class="fa fa-anchor" href="#powerpointlabs"></a></h1>
@@ -968,7 +973,7 @@
     </div>
     <footer>
       <div class="text-center">
-        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sat, 16 May 2020 13:46:46 GMT</small></p>
+        <p><small>This page was built with <img src="https://markbind.org/favicon.ico" width="20"> <a href="https://markbind.org/">MarkBind 2.3.0</a> at Sun, 17 May 2020 05:23:10 GMT</small></p>
       </div>
     </footer>
   </div>

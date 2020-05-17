@@ -42,6 +42,8 @@ Week | Achievements
 12 | Submitted Issue: [[#1229] Author display name changes as sort within group changes](https://github.com/reposense/RepoSense/issues/1229)
 12 | Submitted Issue: [[#1230] Show all commit messages link shown when no messages available](https://github.com/reposense/RepoSense/issues/1230)
 12 | Authored PR (Pending Review): [[#1230] Hide show all commit messages link when no messages available](https://github.com/reposense/RepoSense/pull/1231)
+13+ | Merged PR: [[#1230] Hide show all commit messages link when no messages available](https://github.com/reposense/RepoSense/pull/1231)
+13+ | Pending Final Review: [[#1221] Allow merging of individual groups](https://github.com/reposense/RepoSense/pull/1223)
 
 
 ### Ionic

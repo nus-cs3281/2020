@@ -43,7 +43,7 @@ Week | Achievements
 12 | Submitted Issue: [[#1230] Show all commit messages link shown when no messages available](https://github.com/reposense/RepoSense/issues/1230)
 12 | Authored PR (Pending Review): [[#1230] Hide show all commit messages link when no messages available](https://github.com/reposense/RepoSense/pull/1231)
 13+ | Merged PR: [[#1230] Hide show all commit messages link when no messages available](https://github.com/reposense/RepoSense/pull/1231)
-13+ | Pending Final Review: [[#1221] Allow merging of individual groups](https://github.com/reposense/RepoSense/pull/1223)
+13+ | Merged PR: [[#1221] Allow merging of individual groups](https://github.com/reposense/RepoSense/pull/1223)
 
 
 ### Ionic
